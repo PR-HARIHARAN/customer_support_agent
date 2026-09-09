@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+#Dataset from the kaggle : https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter?resource=download
+data/twcs.csv
