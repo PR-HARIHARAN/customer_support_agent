@@ -35,6 +35,30 @@ def conversation_label(conversation: dict) -> str:
     return f"{conversation['conversation_id']}  |  {message_count} messages"
 
 
+def matching_messages(conversation: dict, keywords: list[str]) -> list[dict]:
+    return [
+        message
+        for message in conversation.get("messages", [])
+        if all(
+            keyword in str(message.get("text", "")).lower()
+            for keyword in keywords
+        )
+    ]
+
+
+def conversation_matches(conversation: dict, keywords: list[str]) -> bool:
+    if not keywords:
+        return True
+
+    searchable_text = " ".join(
+        [
+            str(conversation.get("conversation_id", "")),
+            *(str(message.get("text", "")) for message in conversation.get("messages", [])),
+        ]
+    ).lower()
+    return all(keyword in searchable_text for keyword in keywords)
+
+
 st.set_page_config(
     page_title="AmericanAir Support Conversations",
     page_icon="✈️",
@@ -67,22 +91,17 @@ conversation_ids = list(conversation_by_id)
 with st.sidebar:
     st.header("Find a conversation")
     search_text = st.text_input(
-        "Search conversation ID or message text",
-        placeholder="Try 1000 or flight delay",
+        "Search keywords",
+        placeholder="Try: flight delay refund",
+        help="Enter one or more keywords. Every keyword must appear in the conversation.",
     ).strip().lower()
+    keywords = [keyword for keyword in search_text.split() if keyword]
 
-    if search_text:
-        matching_conversations = [
-            conversation
-            for conversation in conversations
-            if search_text in str(conversation["conversation_id"]).lower()
-            or any(
-                search_text in str(message.get("text", "")).lower()
-                for message in conversation.get("messages", [])
-            )
-        ]
-    else:
-        matching_conversations = conversations
+    matching_conversations = [
+        conversation
+        for conversation in conversations
+        if conversation_matches(conversation, keywords)
+    ]
 
     st.caption(f"{len(matching_conversations):,} matching conversations")
     matching_ids = [str(item["conversation_id"]) for item in matching_conversations]
@@ -103,6 +122,9 @@ with st.sidebar:
     )
     st.session_state["conversation_id"] = selected_id
 
+    if keywords:
+        st.caption("Keywords: " + ", ".join(keywords))
+
     st.divider()
     st.metric("Total conversations", f"{len(conversations):,}")
     st.metric(
@@ -112,6 +134,19 @@ with st.sidebar:
 
 conversation = conversation_by_id[selected_id]
 messages = conversation.get("messages", [])
+matched = matching_messages(conversation, keywords)
+
+if keywords:
+    st.info(f"Found {len(matching_conversations):,} matching conversations.")
+    if matched:
+        with st.expander("Matching message excerpts", expanded=True):
+            for message in matched:
+                st.markdown(
+                    f"**{message.get('role', 'customer').title()}**  "
+                    f"({format_timestamp(message.get('created_at'))})  "
+                    f"`{message.get('tweet_id', '')}`\n\n"
+                    f"> {message.get('text', '')}"
+                )
 
 header_left, header_right = st.columns([3, 1])
 with header_left:
