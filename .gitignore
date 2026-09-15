@@ -1,13 +1,52 @@
-# Python-generated files
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
 __pycache__/
-*.py[oc]
+*.py[co]
 build/
 dist/
 wheels/
 *.egg-info
+*.whl
 
+# ---------------------------------------------------------------------------
 # Virtual environments
-.venv
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
 
-#Dataset from the kaggle : https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter?resource=download
+# ---------------------------------------------------------------------------
+# Raw dataset (Kaggle): Customer Support on Twitter (TWCS)
+# https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter
+# ---------------------------------------------------------------------------
 data/twcs.csv
+
+# ---------------------------------------------------------------------------
+# Regenerable / heavy derived artifacts
+# ---------------------------------------------------------------------------
+# FAISS indexes are reproducible from notebooks/004 via nomic-embed-text
+# (metadata.json is kept tracked to record index provenance).
+data/faiss_customer_message/index.*
+data/faiss_full_conversation/index.*
+data/processed/customer_messages_with_candidate_intent*_v1.jsonl
+data/processed/conversations_with_intents_full_v1.jsonl
+
+# Unvalidated / large experiment artifacts, kept locally for reference only.
+data/retired/
+data/processed/experiments/*.pt
+data/processed/experiments/*.npz
+data/processed/experiments/*encoder/
+
+# Runtime backup produced by label_app.py on every save.
+data/processed/golden_set.backup.csv
+
+# ---------------------------------------------------------------------------
+# Notebook / editor / streamlit
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+.streamlit/
+.idea/
+.vscode/
+*.log
