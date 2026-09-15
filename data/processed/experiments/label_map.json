@@ -1,0 +1,42 @@
+{
+ "label2id": {
+  "baggage_damaged": 0,
+  "baggage_delayed_lost": 1,
+  "change_fee_dispute": 2,
+  "flight_cancellation": 3,
+  "flight_delay": 4,
+  "flight_status_inquiry": 5,
+  "forced_gate_check_complaint": 6,
+  "general_dissatisfaction_venting": 7,
+  "missed_connection_rebooking": 8,
+  "other_acknowledgement_thanks": 9,
+  "other_non_actionable": 10,
+  "other_out_of_domain": 11,
+  "positive_feedback_praise": 12,
+  "refund_request": 13,
+  "seat_assignment_change": 14,
+  "seat_upgrade_request": 15,
+  "service_failure_complaint": 16,
+  "staff_conduct_complaint": 17
+ },
+ "id2label": {
+  "0": "baggage_damaged",
+  "1": "baggage_delayed_lost",
+  "2": "change_fee_dispute",
+  "3": "flight_cancellation",
+  "4": "flight_delay",
+  "5": "flight_status_inquiry",
+  "6": "forced_gate_check_complaint",
+  "7": "general_dissatisfaction_venting",
+  "8": "missed_connection_rebooking",
+  "9": "other_acknowledgement_thanks",
+  "10": "other_non_actionable",
+  "11": "other_out_of_domain",
+  "12": "positive_feedback_praise",
+  "13": "refund_request",
+  "14": "seat_assignment_change",
+  "15": "seat_upgrade_request",
+  "16": "service_failure_complaint",
+  "17": "staff_conduct_complaint"
+ }
+}

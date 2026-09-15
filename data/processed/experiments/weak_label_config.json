@@ -1,0 +1,26 @@
+{
+ "threshold": 0.0054800000000000005,
+ "train_precision": 0.6984126984126984,
+ "silver_n": 35526,
+ "total": 44199,
+ "silver_dist": {
+  "positive_feedback_praise": 4139,
+  "other_non_actionable": 3885,
+  "missed_connection_rebooking": 3550,
+  "flight_delay": 3409,
+  "flight_status_inquiry": 2896,
+  "other_acknowledgement_thanks": 2414,
+  "general_dissatisfaction_venting": 2264,
+  "change_fee_dispute": 1845,
+  "staff_conduct_complaint": 1843,
+  "service_failure_complaint": 1606,
+  "baggage_delayed_lost": 1551,
+  "forced_gate_check_complaint": 1525,
+  "flight_cancellation": 1494,
+  "seat_assignment_change": 1232,
+  "refund_request": 877,
+  "baggage_damaged": 593,
+  "seat_upgrade_request": 262,
+  "other_out_of_domain": 141
+ }
+}

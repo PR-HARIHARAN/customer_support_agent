@@ -1,0 +1,1202 @@
+[
+  {
+    "conversation_id": "1000",
+    "customer_query": "@AmericanAir have a flight at 330pm (45mins) I’m almost to Lax. I’m legally blind and didn’t know where to let you know I need assistance. @AmericanAir Could you have someone on your lax team available to guide me to my gate ASAP",
+    "agent_resolution": "@115904 Our apologies for the delay in responding to you. Have you made it to LAX? Let us know if you still need assistance.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1000419",
+    "customer_query": "wtf? @116450 has a lounge at MSP but @AmericanAir doesn’t?!",
+    "agent_resolution": "@194745 We're always looking at new places to add, here's a list of where we currently offer clubs: https://t.co/oEYHhbsqOI",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1000421",
+    "customer_query": "@151271 bumping @43773 “Shoulder Lean” in the @AmericanAir terminal #classicsong #sundaymotivation",
+    "agent_resolution": "@256648 Stay motivated! Always a joy to have travel with you.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1000426",
+    "customer_query": ".@AmericanAir just successfully offered $1800/person + meals/hotel to get 2 people 2 take same flt 2mrw from ORD—&gt;SAN. $AAL",
+    "agent_resolution": "@356842 That's #AAwesome, Mike! Where are we going?",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1000432",
+    "customer_query": "Airlines need to make announcements that earphones must be used when listening to music/watching TV/playing games. It's getting ridiculous. Looking @ you, @Delta @AmericanAir!",
+    "agent_resolution": "@314830 Our apologies. If you're traveling with us today and need a pair, please check with our team on board.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1000435",
+    "customer_query": "@AmericanAir worst service ever today. Ended up having to get an Uber to Love field and buy a southwest ticket. Per your cs desk suggestion!",
+    "agent_resolution": "@356843 We're sorry if you weren't able to fly with us today, John. You can submit for a refund via this link: https://t.co/xM8Vkc7BvM",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1000444",
+    "customer_query": "@AmericanAir Future pilot! Thanks for the awesome service! https://t.co/f0JVYJWMqT",
+    "agent_resolution": "@356844 He's #AAdorable! It's a pleasure flying with you guys and when he's ready to fly, steer him this way: https://t.co/n0sFQy7p25",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1000449",
+    "customer_query": "FYI @AmericanAir is worst airline to fly alone with child. Their suggestion to avoid minor overage in weight... bring two bags. It’s cheaper @AmericanAir How in the world would they expect me to transport two bags and a child on my own? @AmericanAir So instead of charging $25 for an extra bag @AmericanAir charged me $100 extra for my one bag going slightly over 50lbs. #meantomoms",
+    "agent_resolution": "@312572 Carol, we didn't mean to upset you. We do provide sky cap service if you need help with your luggage upon arrival.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1001324",
+    "customer_query": "@AmericanAir the kiosk didn't print me a receipt for my checked bag, &amp; gate agent can't print one. how do I get one, need for work trip.",
+    "agent_resolution": "@357056 We'd be glad to look up that info for you, Kristi. Please provide your 6 letter booking info via DM.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1001326",
+    "customer_query": "@AmericanAir is consistent, stopped flying with you and 3 years ago,simple trip KC-Chicago today 1hr late and no gate on arrvl still waiting",
+    "agent_resolution": "@357057 Jim, we always want to get you to your destination on time. Our apologies for disrupting your travel plans.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1001329",
+    "customer_query": "\"Thanks for paying $600 for your flight on @AmericanAir; now two people will smash your ribs for five hours.\"",
+    "agent_resolution": "@357058 We want everyone to be comfortable on board, Evan. Please speak with an attendant to see if any other seats may be available!",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1001331",
+    "customer_query": "Fraud issues on my @117176 cc.  Frustrating that I'm not earning @AmericanAir  miles while I wait for a new card. #savingforsummer",
+    "agent_resolution": "@165865 Your AAdvantage number is a different account number and you don't have to wait for your card. Click here https://t.co/l3I1yRJcdb",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1001333",
+    "customer_query": "@AmericanAir  We paid $50 for baggage handling and you broke bags #AmericanAirsucks https://t.co/KvdhCCz7k5",
+    "agent_resolution": "@357059 Oh, sorry to see your bags like that. Please report this to our Baggage Service Office: https://t.co/c2WPmpJSpV",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1001336",
+    "customer_query": "@AmericanAir thx for everything yesterday, amazing view, amazing treatment and amazing flight! https://t.co/4N9biqlrht",
+    "agent_resolution": "@357060 We're absolutely thrilled to be flying you to all the amazing places you want to go and giving you amazing service, too!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1001529",
+    "customer_query": "@AmericanAir Cutest couple (he's a vet) flying AA for honeymoon. Any way to have crew announce congratulations?",
+    "agent_resolution": "@357094 While we can't make any promises, we can certainly put a note in the reservation. Please DM their record locator.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1001546",
+    "customer_query": "Is checking in 2 hours before departure not enough time for DFW to load my bags? @AmericanAir",
+    "agent_resolution": "@357100 Our apologies for the delay of your bags. Please be sure to file a report with the Baggage Service Office.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1001548",
+    "customer_query": "Hey @AmericanAir, thanks for the breathtaking views on the ride into ORD this morning! (AA248) \n\n#cloudporn #travelphotography https://t.co/d4tORnGGgb",
+    "agent_resolution": "@354633 You're very welcome! Thanks for spending part of your Saturday with us.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1001551",
+    "customer_query": "The one time we fly @AmericanAir &amp; they lose our damn luggage on a non stop flight. Way to kick off the wedding anniversary weekend 😡",
+    "agent_resolution": "@357101 We didn't want your weekend to begin like this. Please make sure to file a report so we can get your bags back to you soon.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1001554",
+    "customer_query": "So @AmericanAir can't resolve \"pending\" tix issue after 48hrs &amp; can't connect me to tix dept to resolve. Cancel tix &amp; AA loses out on $4500.",
+    "agent_resolution": "@357102 We're sorry for any frustration this has caused you. Some tickets can take longer to process than others.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1001594",
+    "customer_query": "@AmericanAir you’ve got a great crew on 4635. They invited first time flyers to see the cockpit and genuinely thanked us for flying AA.",
+    "agent_resolution": "@357110 Thanks for the shout-out to our crew! We'll be sure to pass this on to our #AATeam for recognition.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1001596",
+    "customer_query": "Wow that was crazy.. never been on a plane diverted for an emergency. Big props to our pilot at @AmericanAir for getting us down so fast.",
+    "agent_resolution": "@357111 Thanks for the shout-out to our crew. Please follow and DM your record locator and we'll pass this on to our #AATeam.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1001705",
+    "customer_query": "@AmericanAir done with UK job, off to the states with the 787-8.  Looking for another cozy ride.  #closertoplatinum https://t.co/hO7HG5KyoA",
+    "agent_resolution": "@357130 We're excited to see you again, Paolo! Platinum will look good on you.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1002",
+    "customer_query": "Ben Tennyson and an American Airlines pilot. 🎃 #trunkortreat #halloween #2017 #diycostume #parenting @americanair … https://t.co/f1nNHQ0iLa https://t.co/lDViDkRdB1",
+    "agent_resolution": "@115905 Aww, that's definitely a future pilot in the making! #HappyHalloween",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1002409",
+    "customer_query": "CMH✈️LGA\nBDL✈️CMH\nCMH✈️ORD\nORD✈️CMH\nCMH✈️ORD\nORD✈️LHR\nLHR✈️CMH\nCMH✈️LGA\nLGA ✈️CMH\n\nI'm fully confident I'll level up on @AmericanAir again",
+    "agent_resolution": "@189054 That's a lot of flying - nice! Exactly what's needed for that next level. #exciting",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1002416",
+    "customer_query": "Hi! @AmericanAir &amp; @116450 Need your help! Sent a bunch of info via DM Thanks so much in advance!",
+    "agent_resolution": "@195193 Hey, Eric! We didn't receive your DM, would you mind sending it to us again?",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1002419",
+    "customer_query": "@AmericanAir  y’all have the worst customer service I have ever experienced. FIX IT please",
+    "agent_resolution": "@357292 Oh my, what's going on and how can we help?",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1002424",
+    "customer_query": "Delayed @AmericanAir from AUS arrived in DFW 5 min prior departing flight to DCA. Hold for a few min? Nope it left 3 min early! #rebookline https://t.co/tzzQbggLk0",
+    "agent_resolution": "@357293 Daniel, we see you've already been rebooked via ORD at 10:30am. Please proceed to gate A16 as soon as possible.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1002428",
+    "customer_query": "@AmericanAir return home !! Rocio &amp; Tomas rigth now, AA 999 from Miami to Buenos Aires  !!! https://t.co/JXl9o72OMx",
+    "agent_resolution": "@356514 You two look nice and cozy! Sit back, relax and enjoy the ride to EZE.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1002430",
+    "customer_query": "S/O to the lady at @AmericanAir for moving seats around for me to sit next to @43253! We didn’t even have to ask!! #ORDgateK20",
+    "agent_resolution": "@357294 We have some of the best around when it comes to helping our customers! #AATeam",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1002436",
+    "customer_query": "Everything is terrible, @AmericanAir cancelled my flight and is going to charge me more money to change my flight.",
+    "agent_resolution": "@181519 If we must cancel a flight, we'll rebook you at no charge. If the rebooking options won't work, it's eligible for a refund.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1002986",
+    "customer_query": "@AmericanAir Look into your process for fams with children at AUS. Curbside doesn’t take carseats and inside is a 3step process w/ no help",
+    "agent_resolution": "@357417 Our apologies for any difficulties that you experienced today. We hope the rest of your travel is flawless today.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1002995",
+    "customer_query": "Canceling my @AmericanAir rewards cc today. No flexibility at all. Book a reward flight after spending thnds &amp; need to make a change? Nope @AmericanAir Seriously. 10s of thousand spent on that credit card and no flexibility. Why am I using this card if they won’t actually help? Done. @AmericanAir I’m a credit card and airline free agent.",
+    "agent_resolution": "@147372 AAdvantage award tickets are subject to availability when booking and making changes. We're sorry for your frustration.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1002998",
+    "customer_query": "@AmericanAir why should I pay extra for a premium seat when you flight attendants let anyone move into it for free?  Just another ripoff.",
+    "agent_resolution": "@357420 We encourage our team to keep customers in their assigned seating. What's your flight number?",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1003018",
+    "customer_query": "Love that @AmericanAir pushed away from gate so as we taxied they announced we would sit on the runway 1.5 hours.  On time departure though!",
+    "agent_resolution": "@357426 Daniel, we'd like to see what's going on? What's your flight number?",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1003020",
+    "customer_query": "Super disappointed with @AmericanAir this morning! Considering canceling my Advantage card and using other airlines from now on! #badservice",
+    "agent_resolution": "@357427 That's not what we like to hear. How can we help you this morning?",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1003048",
+    "customer_query": "JUST made my new flight. @AmericanAir came through when I was about to lose it. Now I can go home (way earlier than anticipated) &amp; rest.",
+    "agent_resolution": "@354947 We're glad to hear you made it, Maya. We hope you enjoy your flight.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1003051",
+    "customer_query": "@AmericanAir According to @AmericanAir customer service there were no notifications in place. Meanwhile, @116450 @Delta did &amp; helped fellow travelers.",
+    "agent_resolution": "@357433 We have your DM and will answer you there.",
+    "coarse_intent": null
+  },
+  {
+    "conversation_id": "1004114",
+    "customer_query": "Bad customer service , and unexceptional manners @AmericanAir",
+    "agent_resolution": "@357665 What happened, Kimia? We are here to help.",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1004117",
+    "customer_query": "@AmericanAir you should be embarrassed I have to pay extra to sit as a family with a 2 year old and a 5 year old",
+    "agent_resolution": "@357666 Purchased seats are always optional, Steve. Our airport team does their best to assign families together on day of departure.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1004120",
+    "customer_query": "Snow? Sand? Clouds? @AmericanAir #upintheair https://t.co/57Tz5G0QAH",
+    "agent_resolution": "@345114 Wow, this is an AAmazing #americanview! Looks like beautiful white sand. We're glad to have you with us this Saturday morning.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1004127",
+    "customer_query": "#AmericanAirlines @AmericanAir @2189 disappointed- decade+ of loyalty and fortune in unused tickets that can’t use - no courtesy",
+    "agent_resolution": "@211266 That doesn't sound right. Please follow and DM your details and we'll be happy to look into this for you.",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1004132",
+    "customer_query": "@AmericanAir hi I need some help I’m missing my flight",
+    "agent_resolution": "@313402 We're sorry to hear that you may miss your flight. Please work with our airport team for all rebooking options to your destination.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1004134",
+    "customer_query": "@AmericanAir flight 3305 been sitting on runway 20 minutes waiting for the flight plan. Seriously is this your first week of flying?",
+    "agent_resolution": "@347731 We're sorry for the wait, Scott. We'll have you departing as soon as possibly.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1004398",
+    "customer_query": "Any airline that can help me and my friend get home to Sonoma County, CA? We’re currently in Copenhagen @116450 @5768 @AmericanAir",
+    "agent_resolution": "@162362 Take a look at https://t.co/rZn1O8tOMy for some great deals, Calee.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1004753",
+    "customer_query": "Thanks, @AmericanAir. 4th delay. Haven’t left my home airport yet. No explanation, just automation. #valuedcustomer",
+    "agent_resolution": "@357812 Maintenance issues can be very frustrating for all of us, Ashley. We show it's planned to depart at 11:55am. We'll provide an upate soon.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1004756",
+    "customer_query": "@AmericanAir the attendant in Dallas for flight AA0335 truly is making a piss poor attempt to provide acceptable customer service today! https://t.co/2zpDOI0rvg @AmericanAir There’s literally no reason why I had to say “Hi. Good Morning!” to her 3x to get a response AFTER she made 👀 contact w/ me.",
+    "agent_resolution": "@191588 We always want you to have a great welcome once you board our aircraft. Our apologies for any rudeness you experienced.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1004759",
+    "customer_query": "@AmericanAir Hi am I able to upgrade and Avis booking in economy to business on an international flight with money. Thanks.",
+    "agent_resolution": "@357813 We'll be happy to check on this for you if you can meet us in DM with your record locator!",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1004761",
+    "customer_query": "Probably shouldn't have been running the @43729 with a heel spur, but I'd do it all again. Thank you @AmericanAir for the help. https://t.co/ln3z1UmkkA",
+    "agent_resolution": "@357814 We respect your toughness and are always here to help whenever you need! Looking forward to flying with you again soon.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1004775",
+    "customer_query": "Thanks @AmericanAir for making changing my tickets to Htown this coming weekend so very easy. I screwed up. You fixed it. #wellplayed",
+    "agent_resolution": "@357815 We're always here to help and understand things happen. Really looking forward to seeing you again this week!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1004777",
+    "customer_query": "@AmericanAir had a friend with an Executive AA credit card denied access to the Admirals Club at SFO yesterday. Can you help?",
+    "agent_resolution": "@126401 That's a bit unusual. Please ask your friend to contact us directly so we can dig deeper.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1004783",
+    "customer_query": "@AmericanAir (2) understand my needs as a customer and they change the flight that they rescheduled",
+    "agent_resolution": "@357817 We'd be happy to help you if you need assistance. Please follow and DM your record locator and details.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1004793",
+    "customer_query": "@AmericanAir Thank you for making my son's first flight memorable and having an awesome Flight Crew! https://t.co/KBJtFKG6ww",
+    "agent_resolution": "@357820 What an adorable picture! We love the smiling faces. Please DM your record locator so we can recognize our flight crew.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1004795",
+    "customer_query": "First class upgrade for free 💁🏼. Thanks @AmericanAir !",
+    "agent_resolution": "@357821 We love spoiling you and look forward to an excellent flight together. #enjoy",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1004802",
+    "customer_query": "Now taking off: your next adventure. Prepare to get inspired by our new safety video. https://t.co/jwPERnMkOp",
+    "agent_resolution": "@357822 Thanks for giving us a shot, we can't wait to see you Tuesday!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1004810",
+    "customer_query": "@AmericanAir I have had a day and a half with your phone customer service. You could at least provide free WiFi for the day.",
+    "agent_resolution": "@354475 We always want things to be a breeze when working with our Reservations team and apologize for any difficulties. Thanks for working with us.",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1005",
+    "customer_query": "I’m sorry, what? It’s going to COST me $50 to transfer 4,000 AA Advantage points to my spouse? @AmericanAir this is ridiculous!!",
+    "agent_resolution": "@115906 This is a great option for customers who want to share miles and it's cheaper than having to purchase them.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "100551",
+    "customer_query": "@AmericanAir flying from Heathrow to New York on the 17th December and then from New York to New Orleans on the 22nd, will these flights be ok?? 🤞🤞",
+    "agent_resolution": "@137991 We're expecting to run a normal schedule with on time departures. You can sign up to receive notifications here: https://t.co/OtDaH7XmLN",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "100553",
+    "customer_query": "So last year my son gets sick and we couldn't travel so i wanted to use the funds this year but American Airlines wouldn't extend a voucher by one week their response was sorry thanks for your money  @AmericanAir",
+    "agent_resolution": "@137992 If you share more details with us via DM, we'd be happy to take a closer look.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "100559",
+    "customer_query": "@AmericanAir What is happening here?? https://t.co/lQ5QuZ3A8P We've booked a package holiday through BA and are on an AA flight. If you cant get cover for our flight, what are our options? We are flying on 23rd December to Disney with children!!",
+    "agent_resolution": "@137993 The holiday season is a very important time for travel and we have every intention on operating flights on schedule.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "100565",
+    "customer_query": "Fuck @AmericanAir and @124202 !! Gate changes, terminal changes, and delayed flight with no email, text, or verbal announcement &amp; no organization or direction from employees. Thank god @122986 keeps their flight info updated. 😑",
+    "agent_resolution": "@137994 We always want to keep you well informed. What's the flight number? We'll check the status.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "100567",
+    "customer_query": "There hasn’t been a single time I’ve flown @AmericanAir that it has been on time and I’m never flying it again",
+    "agent_resolution": "@137995 We assure you that's not a pattern we'd care to keep and always do our best to leave on time. We'll have you airborne ASAP!",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "100570",
+    "customer_query": "When @AmericanAir lines FORCES you to check your bag when there was more than enough space by your seat 🙄🙄🙄🙄🙄\n highly annoyed https://t.co/Tg1xCiJEaO",
+    "agent_resolution": "@137996 We're sorry there ended up being space available but we'll get your bag back as soon as you reach your destination.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "100583",
+    "customer_query": "Another day, another opportunity to get f—-d by @AmericanAir. @AmericanAir Pro tip, @americanair: If your pilots would show up more than 240 seconds before scheduled takeoff, they’d have more time to deal with your disintegrating airplanes.",
+    "agent_resolution": "@137997 An on-time departure is always the goal and we apologize for the wait. Our team will have you up and on your way as quickly as we can.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "100592",
+    "customer_query": "I’m getting Poke from Pokeland as soon as I get back to TO. I’m freaking hungry as heck and @AmericanAir didn’t give out any crappy snacks on my flight :(",
+    "agent_resolution": "@138000 We serve Biscoff cookies and drinks for free, Jasen and then for a cost, you can purchase a wide variety of snacks: https://t.co/j9ZwUnZ7sY",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "100596",
+    "customer_query": "Are you flying @AmericanAir this #holidayseason ? You might want a flight update. 🤔 https://t.co/rUjQ4ht5Zv",
+    "agent_resolution": "@138001 We want to keep families flying this holiday season and fully expect to avoid cancellations, Cora.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "100599",
+    "customer_query": "@AmericanAir Does the pilot issue affect Republic and PSA AA EAGLE flights?",
+    "agent_resolution": "@138002 As of now, no flights are being affected. We should have a resolution and will avoid any cancellations during holiday travel.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "100602",
+    "customer_query": "😭😭 what's a girl gotta do to get an affordable honeymoon flight around here! I can't book any of these $1,300 flights, I just got married! What's the secret @JetBlue @SouthwestAir @Delta @116450 @AmericanAir I'm desperate here!",
+    "agent_resolution": "@138003 We have our best deals on our website and the prices can change quickly. Congrats on getting married and we look forward to seeing you soon!",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "100610",
+    "customer_query": "@AmericanAir whats gonna happen to flights if you cant get pilots? can we just get a refund now?cc @5837",
+    "agent_resolution": "@138004 We'll take care of our pilots and ensure we get everyone where they need to be over the holidays.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "100612",
+    "customer_query": "@AmericanAir I won’t get to go home for a few years. Please don’t cancel my flights this December 🙏",
+    "agent_resolution": "@138005 Our team will take great care of you and we expect a full operation. We look forward to having you on board!",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "100616",
+    "customer_query": "Too bad the outlets don’t work, ever!  @AmericanAir",
+    "agent_resolution": "@138006 We want you to stay connected. Are you having issues with connectivity?",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "100618",
+    "customer_query": "@5839 #DalyInspirations flying into #LAX today. Thanks @AmericanAir for a smooth ride https://t.co/XMK0KJT9W3",
+    "agent_resolution": "@138007 You bet! Thanks for flying the friendly skies with us today.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1006193",
+    "customer_query": "Is there a way to determine whether an @AmericanAir ticket (purchased) is \"Basic Economy\" or traditional \"Economy\"? I'm at a complete loss",
+    "agent_resolution": "@358144 Danny, if you purchase this fare, you'll be provided all the details before you finalize your purchase. Do you have a booking we can look at",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "100620",
+    "customer_query": "\"I'll be home for Christmas — if only @AmericanAir would schedule pilots for my flight\" 🎶\" https://t.co/3IavgR7viS",
+    "agent_resolution": "@138008 We fully expect to run a normal operation and avoid cancellations. We can't wait to fly you home for the holidays!",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1006206",
+    "customer_query": "Really disappointed whenever I call @AmericanAir customer service. Reps have 0 power or desire to help AAdvantage customers. When I fly @JetBlue I don’t have these issues",
+    "agent_resolution": "@358146 Everyday our agents take excellent care of our customers and we're sorry if that wasn't your experience. How can we help turn things around?",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1006210",
+    "customer_query": "Made it. Now to track down my luggage that’s still back in PHL. @americanair (@ Tampa International Airport) https://t.co/puGQMzyKOS",
+    "agent_resolution": "@358147 Glad to hear you've landed and we'll reunite you with your belongings as early as possible.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1006215",
+    "customer_query": "People always ragetweet at airlines so I want to take a minute to thank Denise &amp; Chrissy of @AmericanAir for being AWESOME today! I cried.",
+    "agent_resolution": "@358148 Thanks for letting us know about your AAwesome experience with our #AATeam! Please share our record locator, we'd love to recognize them.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "100622",
+    "customer_query": "Thank you to Mrs Hernandez from @AmericanAir for coming to talk to our social media class today https://t.co/RPCLNdRgBg",
+    "agent_resolution": "@138009 We loved talking with you and you two look great! #selfiegamestrong",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1006224",
+    "customer_query": "Fuuuuuckkk .. I'ma fucking roll over .. Missed my flight because of the shitty service with @AmericanAir . Your employees are trash asf .",
+    "agent_resolution": "@358149 You sound upset with us and we'd like to help. Are you working with our team at the airport?",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1006227",
+    "customer_query": "Hey American Airlines - Fuck You @AmericanAir  Flight 4540 to JFK. We’ll never fly this shitshow again.",
+    "agent_resolution": "@358151 Sean, we show you're on your way to JFK and will arrive before 4:22pm. Our crew is doing all we can to make up time in the air.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1006229",
+    "customer_query": "I’ve been waiting for them to get their shit together longer than I’ve been traveling today.... @AmericanAir 🖕🏾",
+    "agent_resolution": "@358152 We're sorry for the missed connection. Please follow and DM your record locator and we'll review your reservation.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1006233",
+    "customer_query": "Just had a lovely on time flight from PWM to Philly on @AmericanAir even upgraded to business. Question: Is this necessary? #nastyfeet https://t.co/sZMC8bcxoW",
+    "agent_resolution": "@358153 It was certainly a pleasure flying with you, Paul. And no. We don't think that's necessary, either.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "100624",
+    "customer_query": "@AmericanAir thanks to Annette Hernandez for an awesome presentation and water bottles! https://t.co/VJG34m78vB",
+    "agent_resolution": "@138010 She's pretty #fAAbulous!",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "100626",
+    "customer_query": "Big thanks to Annette from @AmericanAir for coming to speak to our class today! So cool to hear all about how great their social media is!",
+    "agent_resolution": "@138011 Our team is AAmazing and we're so happy to have Annette as our leader. We're glad you enjoyed her presentation!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "100629",
+    "customer_query": "One of the reasons I hate flying @AmericanAir — trying to get home earlier after traveling on business and they want to charge you an arm and a leg. #stupid #ripoff",
+    "agent_resolution": "@138012 We'd be happy to take a look with you and see what your options are. Please send a quick DM with your record locator.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1006905",
+    "customer_query": "Let’s fly this morning! @AmericanAir https://t.co/klriM66yiX",
+    "agent_resolution": "@242034 Good morning! We can't wait to get you in the air and on your way.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1006907",
+    "customer_query": "@AmericanAir thanks for your great customer service on this busy travel AM",
+    "agent_resolution": "@358269 Thanks for choosing us to fly today, Lynn. It was pleasure to have you on board!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1007250",
+    "customer_query": "@AmericanAir the new (to me) safety video is awesome. I watched.",
+    "agent_resolution": "@358353 Safety is always first and we're thrilled to hear your positive feedback of our new safety video! #yay",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1007253",
+    "customer_query": "Hit Gold status and I’m still Group 6? Hey @AmericanAir, what gives? What’s the benefit of Gold if I’m still fighting for the overhead? https://t.co/dd5JCCojvm",
+    "agent_resolution": "@358354 Please follow and DM your record locator and we'll take a look at your reservation.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1007256",
+    "customer_query": "Who on earth flys @AmericanAir when other options? Another horrible #AmericanAirlines ops &amp; cust.svc experience @196746. Rude, uninformed.",
+    "agent_resolution": "@358355 We like to see that you’re flying with us and would love to keep it that way. What happened during this trip?",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1007263",
+    "customer_query": "TIL American Airlines is straight garbage. 3.5+ hour delay, mechanical problems, multiple gate changes...friendly crew though. AND ITS A BRAND NEW PLANE Awful job today @AmericanAir",
+    "agent_resolution": "@358356 Adam, we care about your recent travel experience. Please share more info with us via DM.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1007265",
+    "customer_query": "@AmericanAir you better believe my 200,000 social media followers will get EVERY DETAIL",
+    "agent_resolution": "@358357 We always want to provide great customer service and if you DM your record locator, we'll take a look at what happened.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1007267",
+    "customer_query": "FUCK @AmericanAir..... The contents in my luggage were stolen by @120943/ @AmericanAir. #IWorkHardBih",
+    "agent_resolution": "@347387 Jessica, we value your business and are here to help you in any way we can. We've received your DM and will answer you shortly.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1007271",
+    "customer_query": "When you’re sad about leaving @358359 @358360 &amp; Cali &amp; the gate agent @AmericanAir makes you laugh 😥☺️💛#smilingthroughthetears",
+    "agent_resolution": "@358358 Awe, Mary we don't want you to feel sad. We'll be happy to bring you back to LA!  We'll make sure our #AATeam will continue making you smile",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1007274",
+    "customer_query": "@AmericanAir thanks to supervisor Anne RRL QST-not. Such a helpless feeling. Glad it's not your family. Hope yoy guys pull the call records",
+    "agent_resolution": "@353886 We're here to help and waiting for their flight details. We'll meet you in DM for more info.",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1007281",
+    "customer_query": "@AmericanAir terrible customer service",
+    "agent_resolution": "@358361 What's wrong, Erin? We're listening.",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1007284",
+    "customer_query": "Set up a countdown timer on a site, has an advert for @AmericanAir\n\nToo late!\n\nThe countdown timer is for my AA flight to America anyway X3",
+    "agent_resolution": "@358362 Nice! We're looking forward to seeing you soon.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1007980",
+    "customer_query": "Got a plane but no crew. So I sit. Thanks @americanair you really are out doing yourself two trips back to back #RoadWarrior #SEAtoSYR https://t.co/FOw8Joy70d",
+    "agent_resolution": "@325741 We apologize for the delay but we'll have you in the skies as soon as possible. We appreciate your continued patience.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1007983",
+    "customer_query": "@AmericanAir Hi There, I would like to know how will it cost to add a luggage on hold in a flight from SouthAm to France pls ?",
+    "agent_resolution": "@358518 We're confused by your question so please clarify and we'll properly answer.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1007988",
+    "customer_query": "@AmericanAir AA1359 MIA-YYZ Oct18 boarded. Then, PA: 'this aircraft is going out of service, new dep gate is E10'. (Period!)... No apologies",
+    "agent_resolution": "@358519 We're sorry for the equipment change and truly appreciate you working with our crew that day.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1007992",
+    "customer_query": "Thanks to the gate agents with @AmericanAir in DFW. Everyone we worked with was great &amp; worked to get our group home.",
+    "agent_resolution": "@358520 We love hearing our #AATeam perform as a team to achieve the same goal and appreciate you for sharing your positive feedback.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1008017",
+    "customer_query": "Who downgrades a full flight to a smaller plane &amp; leaves 20 passengers stuck? Terrible service @AmericanAir.",
+    "agent_resolution": "@358523 We don't like leaving anyone behind. Our team works hard to avoid any possible cancellation.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1008020",
+    "customer_query": "Flying @AmericanAir Chicago to… https://t.co/NBYFyG9Ky5 https://t.co/EIFGHqg6kj",
+    "agent_resolution": "@154289 We always enjoy having you on board! We look forward to our next AAdventure together.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1008553",
+    "customer_query": "@AmericanAir You are awesome just for checking!!!",
+    "agent_resolution": "@302526 The earliest departure right now is 7a.",
+    "coarse_intent": null
+  },
+  {
+    "conversation_id": "1008557",
+    "customer_query": "amazing trip to nyc but rude, unhelpful, DISGUSTING service w/ @AmericanAir at @124202 , will try my best to never fly with again",
+    "agent_resolution": "@358659 Our team loves providing great service and we'd like some more details. Please follow and DM them with your record locator.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1009",
+    "customer_query": "Heading to London tonight will be there for 5 days doing some exciting stuff:) @AmericanAir get the drinks ready I coming aboard:) JB",
+    "agent_resolution": "@115907 It's always a pleasure to have you on board, John. Have a wonderful flight over the pond!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1009324",
+    "customer_query": "AA not the best choice! Capitalism dehumanizes. #americanairlines @AmericanAir",
+    "agent_resolution": "@358828 We'd like to have the chance to change your opinion of us. We see your DM and will respond to you there.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1009348",
+    "customer_query": "Hey @AmericanAir, the male flight attendant on 5628 to Grand Rapids could use some more training. Incredibly sarcastic and threatening. 1/ @AmericanAir Acted put out when I asked to go to the bathroom before takeoff. Complained about the size of the men next to his jump seat. 2/ @AmericanAir Embarrassed a lady who was simply asking about her bag and when her husband spoke up, he said, \"Excuse me?\" and was absolutely looking 3/ @AmericanAir For a fight, even threatening to take him off the flight. He said, \"It's already been one of those days and I don't need smart comments.\" 4/ @AmericanAir Then proceeded to complain about the size of another customer on a previous flight. This was all between boarding and take off. 5/5",
+    "agent_resolution": "@358835 Please follow and DM your record locator, Aron. We'd like to review this info.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1009387",
+    "customer_query": "While @AmericanAir couldn’t find a pilot for my original flight to ORD, @824 found a seat for me on a MSN-DCA direct.",
+    "agent_resolution": "@358844 Our sincere apologies for the unexpected delay. We're glad to hear you found an alternate to work for you.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1009457",
+    "customer_query": "@AmericanAir  reason for delay AA205 LAX OGG ?",
+    "agent_resolution": "@358856 It looks like our previous plane was delayed causing the later start today. Rest assured, we'll have you #wheelsup very soon.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1009460",
+    "customer_query": "@AmericanAir Yes but arriving to LAX at midnight and a 2 hour ride to San Diego to be at work at 7am on Monday.",
+    "agent_resolution": "@358857 We're so sorry but we'll have you in the skies as soon as possible. Thanks for working with our airport team members.",
+    "coarse_intent": null
+  },
+  {
+    "conversation_id": "1010110",
+    "customer_query": "Thank you @19396 for taking care of @359015 !!! @AmericanAir https://t.co/cEUSoCjK3G",
+    "agent_resolution": "@359014 We look forward to seeing Tracy again! We always love to have her in the Club #cheers.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1010119",
+    "customer_query": "Did you know that you can be booted from your seat on a plane after sitting there for 40 mins because you checked in later than others? I didn't. But apparently that's what @AmericanAir just did, dividing a couple across the aisle from me, downgrading one of them. @AmericanAir (Oh and two sitting senators are on this flight. Plus @44255.) @AmericanAir @44255 Obviously millions of things in the world that are worse than this, but it's still unpleasant to watch or experience w paying customers.",
+    "agent_resolution": "@359016 This concerns us and we'd love to help. Please DM your record locator and we'll take a look at what's going on.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1010127",
+    "customer_query": "@AmericanAir I wish we could upgrade our tickets, but customer service is rude &amp; saying their system is dead. #HorribleCustomerService",
+    "agent_resolution": "@359017 We'll be happy to check on that for you if you DM your record locator and let us know the type of upgrade you're wanting.",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1010680",
+    "customer_query": "@AmericanAir after 2 week biz trip, what a lovely way to arrive home after 30 hour flight. Will reconsider my loyalty to you. Beyond upset.",
+    "agent_resolution": "@359161 We do appreciate your loyalty, Alex. Please make your way to Baggage Services to file a claim and we'll start locating your bag for you.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1010683",
+    "customer_query": "The \"resolution\" line at @AmericanAir.  Been in it 30 minutes and can't see the front yet https://t.co/liSyE3Aotx",
+    "agent_resolution": "@359162 We're sorry for the wait, Jennifer. Our team will be there to help work through that line and get you all checked in.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1010686",
+    "customer_query": "@AmericanAir  can you help me with my pnr via dm",
+    "agent_resolution": "@359163 We've received your DMs and will respond shortly. Thanks for your patience.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1010954",
+    "customer_query": "Someone please explain to me why every @AmericanAir flight that I’m on always gets delayed? 3/4 flights so far. I want a refund for my time",
+    "agent_resolution": "@359205 Our apologies for the delays you've experienced. We're always striving to have you in the air on time.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1010956",
+    "customer_query": "“If seated next to a child - or someone who acts like a child - put your mask on first.”\n\n- @AmericanAir crew safety announcement #LoveIt",
+    "agent_resolution": "@343753 We're glad you like that! Not all flights have entertainment screens but you can see which ones do here: https://t.co/O6Fdx4Pk6T",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1011588",
+    "customer_query": "Can @AmericanAir be any worse? @359349 flight2051 phl-bos delayed for over an hour because it has too much fuel? Thats a lie. Do better! @AmericanAir @359349 Even if it is true. Too much fuel is a miscalculation on @AmericanAir. You should know the plan routes and schedules to prevent this.",
+    "agent_resolution": "@359348 Bobby, our PHL team and crews have been working with weather concerns all day. Rest assured, routes can change at any moment.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1011590",
+    "customer_query": "I don’t think @AmericanAir has any idea what time my flight is going to take off... So much for all that “youngest fleet” talk. #old #A321 https://t.co/jHLMZZzDaX",
+    "agent_resolution": "@359350 We're sorry for the long day, Robby. We're just making sure you're receiving communication as soon as we get updated.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1011592",
+    "customer_query": "Stranded in Dallas YET AGAIN thanks to @AmericanAir. Y’all. No bueno. I would like a comped margarita + nachos for the struggle.",
+    "agent_resolution": "@359351 We're happy to take a closer look at this for you. DM us your record locator, please.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1011594",
+    "customer_query": "@AmericanAir I was charged 12 times for a 1 time $50 seat upgrade. WTH? 😐",
+    "agent_resolution": "@359352 Please DM your record locator Lesa. We'd like to take a look.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1012019",
+    "customer_query": "TY @AmericanAir for 34yr support of @316933 work to end bc. Very appreciative of you &amp; employees &amp; honored to have y'all at our side. https://t.co/FBBX0Pkz3z",
+    "agent_resolution": "@359459 Thanks for the shout-out! We're proud to support such an amazing cause.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1012021",
+    "customer_query": "@americanair terminal for fly.aa186pek to order?",
+    "agent_resolution": "@359460 That flight arrived into Terminal 5 Gate M5.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1012023",
+    "customer_query": "@AmericanAir Aaaaaaaaaaaaand now we missed our connecting flight.",
+    "agent_resolution": "@354197 We're sorry for the wait, Sean. Please follow and DM your record locator and we'll check on your connection.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1012026",
+    "customer_query": "Work.  OU/Texas.  @176804 / Dodgers.  \nBusy day.\n#RedRiverRivalry \n#NLCS\n#BoomerSooner \n#FlyTheW\n@AmericanAir",
+    "agent_resolution": "@176803 There's some big games going on this weekend, Mike. We hope your able to get updates while you work.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1012032",
+    "customer_query": "@AmericanAir why am I being rebooked on a flight from a different originating city with no reimbursement for cost of transportation?",
+    "agent_resolution": "@359461 We try to find the best flight options to get you to going quickly. If it doesn't work for you let us know and we'll check other flights.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1012034",
+    "customer_query": "@AmericanAir flight keeps pushed back, I paid for a 6am flight not a 10am, what's the point of paying more? 😡",
+    "agent_resolution": "@359462 What's your flight number, Ashley? We'll be happy to check on the status for you.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1012066",
+    "customer_query": "And this is why I don’t fly @AmericanAir 8:15 flight delayed to an 11. MSY&gt;ORD #brokenplane",
+    "agent_resolution": "@359473 Our apologies for the late start in getting you going to Chicago this morning.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1012464",
+    "customer_query": "Hey @AmericanAir , what's going on with flight 6026?",
+    "agent_resolution": "@335635 We're sorry for the wait, Annie. We should be making an announcement shortly with more info. We hope to begin boarding soon.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1012728",
+    "customer_query": "@AmericanAir is there a restriction to checked baggage on basic economy? I need to take a sports equipment bag with me",
+    "agent_resolution": "@359642 There is not and you can check out our policies on sporting equipment here: https://t.co/2JD986KY0h",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1012730",
+    "customer_query": "I'm at American Airlines Admirals Club -- Terminal B - @americanair in Grapevine, TX https://t.co/NiAdsFKKKw",
+    "agent_resolution": "@359643 Starting off on the right foot, we're glad we get to share the skies with you today!",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1013024",
+    "customer_query": "@AmericanAir FA comes to row 13, says first person this row to raise their hand gets the last upgrade to 1st. Then takes a woman in row 12 😡",
+    "agent_resolution": "@359489 Please reach out to a crewmember for help, Tracie.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1013173",
+    "customer_query": "@AmericanAir messed up my connection from Dallas to Montreal.  No time to get between gates. Door closed on 8 ppl.  #fail",
+    "agent_resolution": "@359743 We're sorry you're not on your way to YUL. Please tell us what happened, we see you landed on time from IAH?",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1013182",
+    "customer_query": "I shared the FC cabin on a commercial @AmericanAir flight with Grace Jones when her book came out and she was lovely https://t.co/ny9Z57GJVG",
+    "agent_resolution": "@358658 You never know who you'll bump into on our flights, Marie.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1013184",
+    "customer_query": "@AmericanAir -collaboration with physical therapists on seat design could promote overall wellness to passengers #advocacy #ForwardHead https://t.co/7HZWtQULg4",
+    "agent_resolution": "@359747 We care about the comfort and safety of our customers! We thank you for your feedback.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1013265",
+    "customer_query": "Thunderstorm delays, then the ceiling starts to drip.  Now we have to switch planes. #thanksobama @AmericanAir Hey @SouthwestAir where ya at",
+    "agent_resolution": "@359765 We don't like weather delays either, Tom. What's your flight number, we're here to help?",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1013269",
+    "customer_query": "Shoutout to @AmericanAir for great customer svc on the phone and at kiosk. Sorry I can’t get my life together today.",
+    "agent_resolution": "@359766 We love when you have a great experience with our #AATeam, Whitney!",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1013272",
+    "customer_query": "@AmericanAir can you tell me which terminal I depart PEK-ORD AA186 in 12 hours? Thanks",
+    "agent_resolution": "@359767 You'll be departing from Terminal 2, David. See you soon!",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1013275",
+    "customer_query": "@AmericanAir AA2227 on 10/9. Sat on the tarmac for two hours before finally taking off. No food remaining by the time the cart came to our row. Really bad experience.",
+    "agent_resolution": "@359768 We know that delays are frustrating and we're truly sorry for any inconvenience.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1013279",
+    "customer_query": "@AmericanAir it took a us 2 hours to get through check-in &amp; security. Told to go in different lines #missedflight #frustrated",
+    "agent_resolution": "@359770 We never want to leave anyone behind, Cheryl. Please follow and DM your record locator and we can take a look.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1013282",
+    "customer_query": "In typical fashion, @AmericanAir delays my flight due to maintenance for maintenance that,in fact, was already completed. Pathetic. Sad!",
+    "agent_resolution": "@359771 We're sorry for the delay this morning. We'll have you on your way as soon as possible.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1013286",
+    "customer_query": "Thank you @AmericanAir for attentive #CustomerService #OwningIt",
+    "agent_resolution": "@359772 We're glad to be help, Doug. We hope to see you again in the near future!",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1013289",
+    "customer_query": "@AmericanAir hello??????",
+    "agent_resolution": "@193642 Our apologies for the wait this morning. We'll have them out to you as soon as possible. Thanks for your patience.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1013961",
+    "customer_query": "@AmericanAir I was forced to check my carryon, and it came out of baggage claim covered in vomit. Please make right by this! https://t.co/LFmxg8MBqO",
+    "agent_resolution": "@359929 Nicole, we're sorry you received your bag like this. Please make sure you show our bag team before leaving the airport.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1013963",
+    "customer_query": "Took @AmericanAir 2 hours to put blue fluid in a toilet.  But at least the flight attendants chirped like a drunk office karaoke party.",
+    "agent_resolution": "@359930 Our apologies for the delay, we know it's important to stick to schedule. We're glad that you should be on your way now.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1013967",
+    "customer_query": "@AmericanAir Had I anticipated the reaction, I'd have taken a picture, it extended past the next gate and the internal cordons.",
+    "agent_resolution": "@359931 We have your DM and will answer there.",
+    "coarse_intent": null
+  },
+  {
+    "conversation_id": "1013970",
+    "customer_query": "@AmericanAir weak service, no clue what’s going on, time for new airlines.  Easy to disrupt when most are bad.",
+    "agent_resolution": "@355854 We see your DM, Jeff and will respond to you there.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1013972",
+    "customer_query": "@AmericanAir is it possible to change the frequent flyer programme for an upcoming AA flight from BA to Aadvantage?",
+    "agent_resolution": "@359932 We can take a look. DM your record locator, Andrew.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1014551",
+    "customer_query": "Flying from Birmingham to Chicago through thunderstorms this morning. Our flight crew is  awesome. @360074 @AmericanAir https://t.co/f9Voulxv92",
+    "agent_resolution": "@360073 Our #AATeam is the #BestintheBiz, Susan. We're happy to fly you over the clouds and into Chicago safely.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1014558",
+    "customer_query": "@AmericanAir sent PM help plz",
+    "agent_resolution": "@360075 We've received your private message and will respond shortly.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1014562",
+    "customer_query": "@AmericanAir Over an hour late on Flight 3943 out of Grand Island airport. Missing Flight 536 to Vegas. Frustrating. Which next flight?",
+    "agent_resolution": "@360076 We're sorry for the late start. We don't want you to miss your connection and we'll do all we can to make up time once we're in the air.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1014565",
+    "customer_query": "I swear @AmericanAir is run by dwarfs.  \n\nIt's the only reasonable explanation for their seat sizes these days.",
+    "agent_resolution": "@360077 We do offer Main Cabin Extra seats which give extra legroom: https://t.co/N9kHMrvr7b",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1015023",
+    "customer_query": "Thanks @AmericanAir for the broken seat #AAvantagePlatinum benefits 😂 https://t.co/MN258Cujmk",
+    "agent_resolution": "@360151 We don't like seeing this, Ray. Please follow and DM your flight details so we can send this over to the righ team.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1015027",
+    "customer_query": "@AmericanAir Your poor management has once again created a mess. Don't blame this on Air Traffic Control - this is all you. #OwnIt",
+    "agent_resolution": "@360152 We're here to be honest and transparent with our customers. What's your flight number?",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1015030",
+    "customer_query": "@AmericanAir paid for flights, used my upgrades I earned,  they put us next to the lavatory, we were nauseous, they won't refund upgrades",
+    "agent_resolution": "@360153 We'll be happy to take a closer look if you meet us in DM with your record locator, Marcia.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1015044",
+    "customer_query": ".@AmericanAir just announced our ORD-SYR flight's delayed 90 mins b/c flight crew just left for Peoria &amp; will return \"soon\". Fuck you, AA!",
+    "agent_resolution": "@360154 Air traffic control has affected many of our flights causing our crews to be out of rotation. We appreciate your patience, Dan.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1015047",
+    "customer_query": "@AmericanAir Your customer service is starting to tank like @SouthwestAir. 2nd time I’ve used you guys from Miami and had issues.",
+    "agent_resolution": "@360155 We aim to provide you great service. Please share your recent experience with us via DM?",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1015836",
+    "customer_query": "@AmericanAir can I travel with coffee in my carry on from Costa Rica to Miami?",
+    "agent_resolution": "@360354 As long as it's dried coffee grounds, that would be allowed.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1015840",
+    "customer_query": "Told by mgr Tina @19936 t8 that what @AmericanAir says doesnt matter and forced me to remove 40 pounds(!) of luggage and repack everything :(",
+    "agent_resolution": "@360355 We're very happy to hear your interaction with Samantha was a good one. DM us more details about the baggage concern you have.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1015843",
+    "customer_query": "@AmericanAir Hi American! May I DM you about a reservation?",
+    "agent_resolution": "@159693 You sure can!",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1015846",
+    "customer_query": "Thanks @AmericanAir for the worst travel and customer service that I have experienced.",
+    "agent_resolution": "@360356 Crystal, we aim to provide you excellent service.  We've received your DM and will answer you shortly.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1015943",
+    "customer_query": "Your Austin front desk staff are very inconsiderate and mean. \n\n@AmericanAir",
+    "agent_resolution": "@339114 Our team loves providing great service, what's going on that has you feeling this way?",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1015947",
+    "customer_query": "@AmericanAir is it safe to have a car seat in a seat with an airbag in the seatbelt?",
+    "agent_resolution": "@224772 We've shared some info with you in DM, please take a look.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1015952",
+    "customer_query": "@AmericanAir is very insensitive towards the big issue.  Not only did they make me miss an important deadline upon arrival but I'm to blame!",
+    "agent_resolution": "@190303 We've responded to you in DMs asking for your phone number. Please respond back to us and we'll get in contact with you ASAP!",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1016639",
+    "customer_query": "Flight delayed, missed connection and now an hour wait time for @AmericanAir costumer service.  Good times.",
+    "agent_resolution": "@118409 Ethan, we're sorry your trip isn't going as planned. We'll be happy to assist you. Meet us in DM with your record locator.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1016648",
+    "customer_query": "@AmericanAir sitting inside the plane for an hour at St. Louis airport with no updates.#AA1585",
+    "agent_resolution": "@360538 We're sorry our team didn't provide an update. We're having weather delays at ORD. We'll have you in the air soon.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1016653",
+    "customer_query": "Official. @AmericanAir has the WORST customer service. Arrive 2 hrs before boarding with 2 yr old toddler and made to wait. Missed flight",
+    "agent_resolution": "@175746 We don't like to hear that you missed your flight. Please follow and share what happened with us via DM?",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1016655",
+    "customer_query": "Just had the BEST flight attendant on @44016 flight 3295. Hey, @AmericanAir , give Shawn (sp?) a RAISE! She's fabulous!",
+    "agent_resolution": "@360539 Shawn is one of our #AAllstars, Jeannie! We'll be sure to pass on the praises to her and the rest of our #AATeam.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1016676",
+    "customer_query": "@AmericanAir you delay my flight 12 hours, I finally sit on the plane and then you forget to put a pilot on the flight . Are you kidding?!",
+    "agent_resolution": "@360543 We'd like to take a closer look. Please provide your 6 letter record locator.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1016916",
+    "customer_query": "@AmericanAir a 7.5 hour delay from Phoenix to PDX?! Seriously? Not acceptable for a non Weather related issue.",
+    "agent_resolution": "@360607 Our team is doing their best to get you to your final destination. Thanks for your patience with us today.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1016919",
+    "customer_query": "And my struggle with @AmericanAir continues as I land in Sydney... Can’t believe I’ve flown almost 2M miles on them 😡 https://t.co/67pNY64NsD",
+    "agent_resolution": "@351546 Our sincere apologies for any miscommunication. We're so glad to hear you found the bag.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1016923",
+    "customer_query": ". @AmericanAir \"soon\" is not an answer when our flight will arrive in Charlotte. A little honesty goes a long way!!",
+    "agent_resolution": "@360608 Hey, Bill, we'd like to take look at your flight. Please DM your record locator and we'll check the status.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1016926",
+    "customer_query": "Horrible experience with @AmericanAir today. Reconsidering whether I ever fly with them again #worstflightattendants",
+    "agent_resolution": "@360609 We have some of the best crew in the business. We're sorry to hear that we've disappointed you today.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1016930",
+    "customer_query": "@AmericanAir getting it done! DM'd me to get a seat # so they could speed up maintenance! 😍",
+    "agent_resolution": "@360610 We're always glad to help. Thanks for the feedback.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1016934",
+    "customer_query": "Dear @AmericanAir,\nI’m trying super hard to make my connection from CLT to MSP - flight AA2086. I’m on AA2658. Can you help a guy out?😬🙏❤️ @AmericanAir I made it! ❤️☺️❤️",
+    "agent_resolution": "@360611 We're glad to see you made it! Time to sit back, relax and our crew will take great care of you.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1017153",
+    "customer_query": "@AmericanAir - Rockie at LAX for flight 68 turned our day around with outstanding #customerservice Great reminder why we fly with you!",
+    "agent_resolution": "@360666 We're here to help, Christina! Just know you can always #TweetUsIfYouNeedUs.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1017155",
+    "customer_query": "I wish I could access my boarding pass, @AmericanAir 😩 https://t.co/d5cNHMJQyG",
+    "agent_resolution": "@290966 Oh no, we're sorry about this. You can print your boarding pass from one of our self service kiosks, Emily.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1017159",
+    "customer_query": "@AmericanAir need promo code promised during yesterday's flight for Advantage club",
+    "agent_resolution": "@360667 Click here for more info https://t.co/OQin18JiZ1. You can access your account and apply.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1017178",
+    "customer_query": "Another day, another damaged @AmericanAir plane. Pretty clear this company does zero preventive maintenance. #travel #delay #flt1911",
+    "agent_resolution": "@262166 Safety is our always our top priority and see you've left the gate now. We'll have you airborne just as quickly as we can!",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1017912",
+    "customer_query": "@AmericanAir Given the fires in California @116450 is waiving fees for flight changes to SFO, yet ur charging us $200 plus fare diff?!",
+    "agent_resolution": "@360838 We have a travel waiver in affect for flights to Sonoma through today. Here's more info: https://t.co/kNkPUilgez",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1017917",
+    "customer_query": "@AmericanAir can I check a box? #luggageprobs",
+    "agent_resolution": "@171678 We do allow boxes but certain times of the year there's an embargo. See here for more info: https://t.co/8ZMEswac1N",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1018214",
+    "customer_query": "@AmericanAir flight from ORD delayed 3x for maintence. Sitting next to people whose flight was just cancelled for maintenance. Ridiculous.",
+    "agent_resolution": "@360910 We do our best to make sure we're always ready to go and apologize for your delay. We'll have you airborne as quickly as possible!",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1018218",
+    "customer_query": "When you book 22E on an A321 then @AmericanAir stealthily changes plane to a 737 - need app to warn 3 feet of legroom just changed to 3\" 😂 https://t.co/n5tVmGxing",
+    "agent_resolution": "@360911 We always want you to be comfy. Main Cabin Extra seating can be purchased, check out the details here: https://t.co/N9kHMrvr7b.",
+    "coarse_intent": "Seat upgrades"
+  },
+  {
+    "conversation_id": "1018237",
+    "customer_query": "@AmericanAir your flight attendants just completely ignored me and my brother and denied us our beverages. Thanks! #costumerdiservice",
+    "agent_resolution": "@360915 We're so sorry to hear that. Our team should always be kind and ready to help.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1018244",
+    "customer_query": "@AmericanAir always delaying flights 👎🏽",
+    "agent_resolution": "@360916 That’s the opposite of our goals since we’re always aiming for on time departures. Thanks for your patience today, Kennedy.",
+    "coarse_intent": "Flight delay"
+  },
+  {
+    "conversation_id": "1018249",
+    "customer_query": ".... so still don't have my lost laptop back 😑 @AmericanAir",
+    "agent_resolution": "@331490 We still haven't located your laptop and when we do we'll contact you directly.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1018370",
+    "customer_query": ".@AmericanAir plane broke down before taking off. Two employees to reschedule hundreds of people. Great company",
+    "agent_resolution": "@360953 We can help as well! Please follow and DM your record locator or contact Reservations at 800-433-7300 for rebooking options.",
+    "coarse_intent": "Flight disruption"
+  },
+  {
+    "conversation_id": "1018374",
+    "customer_query": "@AmericanAir you are my favorite! I am even a sapphire member so I always pick to fly with you. This morning though 😤 doesn't cost be nice! https://t.co/2jqgz6qWAF",
+    "agent_resolution": "@360954 We don't like hearing that our most loyal customers feel this way. Please share more info about your experience via DM.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1018379",
+    "customer_query": "Internal #comms circa 1967: @920 employee newsletter on uniform changes found at my mom's house this weekend. She flew for 30+ years. #pr https://t.co/tKrqlzAQQL Tagged the wrong Twitter handle.  This for you @AmericanAir",
+    "agent_resolution": "@360955 Thanks for the small trip down memory lane, Frank. We sure do miss your mother being part of the team.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1018381",
+    "customer_query": "@AmericanAir - if F does not board full, will gate agents come back to economy to move me up if I am next on the UG list?",
+    "agent_resolution": "@360956 If time permits they certainly can, but they'll usually work the list up to 10 minutes prior to departure.",
+    "coarse_intent": "Booking fees"
+  },
+  {
+    "conversation_id": "1018383",
+    "customer_query": ".@360957 @AmericanAir \nLili needs your help asap!!!",
+    "agent_resolution": "@165859 We're here for our customers and working with her via DM. Thanks for your concern, Gary.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1018386",
+    "customer_query": "This Weekly traveler dedicated to @AmericanAir rudely treated at #HPN.  Would be nice if my dedication was returned in kindness.",
+    "agent_resolution": "@360958 We have a responsibility to handle every situation with professionalism and we're sorry that you experienced differently today.",
+    "coarse_intent": "Social thanks"
+  },
+  {
+    "conversation_id": "1018389",
+    "customer_query": "So excited to be on my last flight for this week w @AmericanAir #happylittleAussie",
+    "agent_resolution": "@191835 We see that you've pushed back from the gate and will be wheels up shortly. It's going to be a greAAt flight #homesweethome",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1018916",
+    "customer_query": "No #upgrade today from @AmericanAir but always getting me #home #safely great view from #coach #miami #clouds #737-800 https://t.co/0oFV61EOVn",
+    "agent_resolution": "@246163 That's a fantastic #AAmericanView! We always love having you in the air with us, Damian.",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1018918",
+    "customer_query": "@AmericanAir Effortless boarding (priority is nice).\nLots of leg room.\nthe hell is going on? Where’s the crappy airline I’ve come to loathe?",
+    "agent_resolution": "@361094 This is the true AA experience and we're glad to see we've made an impression on you today.",
+    "coarse_intent": "General dissatisfaction"
+  },
+  {
+    "conversation_id": "1019322",
+    "customer_query": "@AmericanAir can you make it any harder for a customer to do anything? #beyondfrustrated",
+    "agent_resolution": "@361190 We don't want you to be frustrated, Allison. How can we help you today?",
+    "coarse_intent": "Service complaint"
+  },
+  {
+    "conversation_id": "1019324",
+    "customer_query": "Thanks @AmericanAir for another flight with my knees jammed into the seat in front of mine... https://t.co/I7515CkzHJ",
+    "agent_resolution": "@361191 We always want you to be comfy, Mickey. For future, we offer seats with extra leg room. Here's more info: https://t.co/N9kHMrvr7b",
+    "coarse_intent": "Positive flight"
+  },
+  {
+    "conversation_id": "1019574",
+    "customer_query": "U can eat, go to the bathroom, make calls, and go home and back b4 bags arrive from @AmericanAir @133384.  #longestwaitinthecountry",
+    "agent_resolution": "@361243 We're sorry for the delay in getting your bags. We always strive to have preferred baggage out first.",
+    "coarse_intent": "Baggage issues"
+  },
+  {
+    "conversation_id": "1019576",
+    "customer_query": "Another beautiful day with @AmericanAir https://t.co/nnCR4Z7Ive",
+    "agent_resolution": "@307021 Great pic, Corey! It's a #beAAutiful day indeed.",
+    "coarse_intent": "Social thanks"
+  }
+]

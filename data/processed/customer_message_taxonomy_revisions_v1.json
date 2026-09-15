@@ -1,0 +1,217 @@
+[
+  {
+    "action": "KEEP",
+    "cluster_id": 2,
+    "labels": [
+      "Flight Delay",
+      "Delayed flight"
+    ],
+    "reason": "25 central all delay-dominant; boundary tarmac/gate still delay-framed; random confirms",
+    "evidence_uids": [
+      "2568639::cust0::2568639",
+      "890846::cust0::890846",
+      "2644447::cust0::2644447"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 10,
+    "labels": [
+      "Baggage",
+      "Lost, delayed or forced-checked baggage"
+    ],
+    "reason": "central uniformly baggage (forced gate-check + lost/delayed); random adds fee/policy questions but baggage-dominant",
+    "evidence_uids": [
+      "2395047::cust0::2395047",
+      "1906554::cust0::1906554",
+      "2371549::cust0::2371549"
+    ]
+  },
+  {
+    "action": "RENAME",
+    "cluster_id": 10,
+    "from": [
+      "Baggage",
+      "Lost baggage"
+    ],
+    "to": [
+      "Baggage",
+      "Lost, delayed or forced-checked baggage"
+    ],
+    "reason": "guide sub-intent too narrow: central shows forced gate-check as often as lost bags",
+    "evidence_uids": [
+      "902659::cust1::902658",
+      "1296923::cust7::2451826"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 6,
+    "labels": [
+      "Seating",
+      "Seat assignment / change"
+    ],
+    "reason": "central uniformly seat assignment/change/upgrade; boundary drifts to cabin topics but minority",
+    "evidence_uids": [
+      "257343::cust0::257343",
+      "766421::cust0::766421"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 7,
+    "labels": [
+      "Refunds and Charges",
+      "Refund / fee dispute"
+    ],
+    "reason": "central uniformly change fees/refund disputes ($200 pattern); random confirms",
+    "evidence_uids": [
+      "302409::cust1::302407",
+      "722238::cust1::722236"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 9,
+    "labels": [
+      "Customer Service",
+      "Agent responsiveness / support quality"
+    ],
+    "reason": "central uniformly customer-service complaints; boundary has app/policy specifics but service-framed",
+    "evidence_uids": [
+      "579540::cust1::579539",
+      "955768::cust0::955768"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 1,
+    "labels": [
+      "Negative Feedback",
+      "Complaint / Dissatisfaction"
+    ],
+    "reason": "central uniformly broad venting/never-again with no single ops issue; boundary specifics (AC, meals) still non-actionable venting",
+    "evidence_uids": [
+      "223198::cust0::223198",
+      "707019::cust5::706985"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 5,
+    "labels": [
+      "Positive Feedback",
+      "Appreciation / Praise"
+    ],
+    "reason": "central uniformly explicit flight/crew praise; random mostly praise with minor complaint drift at boundary",
+    "evidence_uids": [
+      "301666::cust0::301666",
+      "1623720::cust0::1623720"
+    ]
+  },
+  {
+    "action": "RENAME",
+    "cluster_id": 0,
+    "from": [
+      "General Query",
+      "Greeting / General chat"
+    ],
+    "to": [
+      "General Query",
+      "General chat / social engagement"
+    ],
+    "reason": "samples show broader social engagement (trip plans, loyalty talk, upgrade chatter) not just greetings; kept separate from C5 praise",
+    "evidence_uids": [
+      "987894::cust0::987894",
+      "1238364::cust0::1238364"
+    ]
+  },
+  {
+    "action": "KEEP",
+    "cluster_id": 3,
+    "labels": [
+      "No Feedback",
+      "(empty)"
+    ],
+    "reason": "central is mentions-only/Ok/emoji with no evaluative content and no request; random confirms; sub-intent left empty per guide",
+    "evidence_uids": [
+      "2773615::cust0::2773615",
+      "488967::cust3::488966"
+    ]
+  },
+  {
+    "action": "REHIERARCHIZE",
+    "cluster_id": 4,
+    "from": [
+      "No Feedback",
+      ""
+    ],
+    "to": [
+      "No Feedback",
+      "Photo / media share"
+    ],
+    "reason": "samples show coherent photo/URL media-share behavior, a meaningful inspectable sub-intent",
+    "evidence_uids": [
+      "254218::cust0::254218",
+      "789097::cust0::789097"
+    ]
+  },
+  {
+    "action": "REHIERARCHIZE",
+    "cluster_id": 8,
+    "from": [
+      "No Feedback",
+      ""
+    ],
+    "to": [
+      "No Feedback",
+      "Acknowledgement / thanks"
+    ],
+    "reason": "central is bare 'Thank you!' post-resolution acknowledgements; random confirms thanks-for-help pattern; distinct from empty C3",
+    "evidence_uids": [
+      "2234762::cust1::2234761",
+      "1479230::cust0::1479230"
+    ]
+  },
+  {
+    "action": "SPLIT",
+    "cluster_id": 11,
+    "into": {
+      "11-sub0": [
+        "Flight Information",
+        "Status / policy question"
+      ],
+      "11-sub1": [
+        "Flight Cancellation",
+        "Cancelled / missed flight & rebooking"
+      ],
+      "11-sub2": [
+        "Flight Cancellation",
+        "Cancelled / missed flight & rebooking"
+      ]
+    },
+    "reason": "C11 mixed info-questions + disruption reports; KMeans k=3 split: sub0 help/status questions, sub1 missed-flight/never-again, sub2 live-disruption status; sub1+sub2 merged (both disruption-dominant)",
+    "evidence_uids": [
+      "293023::cust0::293023",
+      "33535::cust0::33535",
+      "2258775::cust0::2258775"
+    ]
+  },
+  {
+    "action": "RENAME",
+    "cluster_id": "11-sub1/11-sub2",
+    "from": [
+      "Flight Cancellation",
+      "Cancelled flight"
+    ],
+    "to": [
+      "Flight Cancellation",
+      "Cancelled / missed flight & rebooking"
+    ],
+    "reason": "samples dominated by missed connections + rebooking help, not only cancellations",
+    "evidence_uids": [
+      "1004132::cust0::1004132",
+      "1634821::cust0::1634821"
+    ]
+  }
+]

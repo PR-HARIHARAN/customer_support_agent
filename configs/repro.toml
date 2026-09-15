@@ -1,0 +1,15 @@
+[paths]
+# Reproducible-pipeline data locations (relative to repo root).
+data_dir = "data"
+reports_dir = "reports"
+gold_set = "processed/experiments/gold_300.csv"
+
+[pilot]
+# Default embedding model for the small reproducible pilot.
+# Alternatives for the model comparison experiment (see PLAN.md):
+#   - "intfloat/e5-small-v2"
+#   - "BAAI/bge-base-en-v1.5"
+#   - "nomic-embed-text:latest" (via Ollama, used for the full 44k dataset in notebooks/004)
+embedding_model = "sentence-transformers/all-MiniLM-L6-v2"
+test_fraction = 0.2
+seed = 42

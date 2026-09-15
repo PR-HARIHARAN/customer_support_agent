@@ -1,0 +1,4754 @@
+[
+  {
+    "cluster_id": 0,
+    "coarse_intent": "General Query",
+    "proposed_sub_intents": [
+      {
+        "name": "thank_you",
+        "definition": "Expressing gratitude or appreciation to the airline.",
+        "prototypical_phrases": [
+          "thank you",
+          "thanks for",
+          "thank you for the upgrade"
+        ]
+      },
+      {
+        "name": "flight_confirmation",
+        "definition": "Confirming or checking the details of a flight.",
+        "prototypical_phrases": [
+          "flight tonight",
+          "flight next week",
+          "flight home"
+        ]
+      },
+      {
+        "name": "upgrade_confirmation",
+        "definition": "Acknowledging or confirming an upgrade received or expected.",
+        "prototypical_phrases": [
+          "upgrade message",
+          "upgrade for my trip",
+          "upgrade to first class"
+        ]
+      },
+      {
+        "name": "travel_satisfaction",
+        "definition": "Expressing satisfaction or happiness about a recent or upcoming travel experience.",
+        "prototypical_phrases": [
+          "looking forward to",
+          "smooth travel day",
+          "wishing you a great descent"
+        ]
+      },
+      {
+        "name": "social_engagement",
+        "definition": "Engaging in social media interactions, such as following or liking the airline’s posts.",
+        "prototypical_phrases": [
+          "following you",
+          "reading your tweets",
+          "good luck with"
+        ]
+      },
+      {
+        "name": "loyalty_program",
+        "definition": "Inquiring or expressing appreciation for loyalty program benefits or status.",
+        "prototypical_phrases": [
+          "AA club",
+          "loyalty program",
+          "executive platinum"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "987894",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "341074",
+        "assigned_intent": "upgrade_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "404231",
+        "assigned_intent": "flight_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "1644163",
+        "assigned_intent": "flight_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "2487507",
+        "assigned_intent": "social_engagement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "2114307",
+        "assigned_intent": "flight_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "485725",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "699775",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "818342",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "368419",
+        "assigned_intent": "social_engagement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "1238364",
+        "assigned_intent": "upgrade_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "335333",
+        "assigned_intent": "social_engagement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "388618",
+        "assigned_intent": "social_engagement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "609879",
+        "assigned_intent": "travel_satisfaction",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2606787",
+        "assigned_intent": "flight_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "720344",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish language, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "1460833",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish language, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "2786842",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish language, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "2595685",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish language, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "1582345",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish language, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "906726",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Complaint about food, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2692175",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish language, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1287152",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Complaint about food, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "178304",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Information about visa, not related to American Airlines support"
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "1440819",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Complaint about service, not related to American Airlines support"
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents are mutually exclusive and cover the representative queries effectively. The boundary queries are clearly out of distribution or not related to support queries."
+    },
+    "edge_cases": [
+      "flight_confirmation vs upgrade_confirmation",
+      "thank_you vs social_engagement",
+      "travel_satisfaction vs flight_confirmation"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "General chat / social engagement",
+      "cluster_size": 4158,
+      "keywords": [
+        "url",
+        "great",
+        "mention mention",
+        "home",
+        "club",
+        "today",
+        "happy",
+        "thanks",
+        "love",
+        "thank mention"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "987894::cust0::987894",
+          "customer_text": "[MENTION] : Back #onboard today to head to the [MENTION] #conference in #Detroit #thankyou for always taking me everywhere! #travel #loyalty",
+          "distance_to_centroid": 0.4885849143472627
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "341074::cust0::341074",
+          "customer_text": "[MENTION] Thanks! Just saw the upgradeS message for my trip next week, awesome! I am looking forward to a smooth travel day! #AATeam",
+          "distance_to_centroid": 0.5235607805935014
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "404231::cust0::404231",
+          "customer_text": "[MENTION] [MENTION] . Looking forward to my flight tonight.Thanks for the upgrade! #EP#EmeraldOneWorld. Working tomorrow w/ smile.",
+          "distance_to_centroid": 0.5251188310065747
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "1644163::cust1::1644162",
+          "customer_text": "[MENTION] You owe me a good portion of my life back! We were suppose to leave at 420pm it is now 7pm and still on the ground. Inefficiency! AA297!",
+          "distance_to_centroid": 0.5288329644248779
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "2487507::cust1::2487506",
+          "customer_text": "[MENTION] [MENTION] [MENTION] That would be amazing, Rachel. We're ready to welcome you and your passengers from [MENTION] , [MENTION] 😉✈️",
+          "distance_to_centroid": 0.5290308780835522
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "2114307::cust1::2114306",
+          "customer_text": "[MENTION] Ok, I'm on my way! #AA188 [MENTION] [URL] [MENTION] [MENTION] On my way home from Miami that is, just in time!",
+          "distance_to_centroid": 0.5359755193004183
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "485725::cust0::485725",
+          "customer_text": "[MENTION] 1) I saw an Instagram post today featuring the tail of N776AN so I looked it up! Here's to wishing Flgt 170 (a 777) a great descent into LAX this morning! 2) You'll be taking me home for Christmas!!",
+          "distance_to_centroid": 0.5364498612461561
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "699775::cust1::699774",
+          "customer_text": "[MENTION] [MENTION] I am good thanks! Happy thanksgiving to you all of those who have taken the time to help all travelers out today on the busiest travel day of the year!",
+          "distance_to_centroid": 0.5378242811596725
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "818342::cust1::818341",
+          "customer_text": "[MENTION] Thanks. Thanks for the smooth ride home. See you on Sunday. Got a bunch of my folks traveling then too. #Elzly",
+          "distance_to_centroid": 0.5395891299622959
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "368419::cust2::368418",
+          "customer_text": "[MENTION] , happy to follow you &amp; read your tweets about booking. Have a great day :)",
+          "distance_to_centroid": 0.54207575634645
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "1238364::cust0::1238364",
+          "customer_text": "[MENTION] does it again. Thanks for the upgrade!#executiveplatinum hoping for #conciergekey #travel #BusinessTravel #fAAmily",
+          "distance_to_centroid": 0.5444005405607082
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "335333::cust1::335332",
+          "customer_text": "[MENTION] Maybe you should have read my tweet before replying. I was praising your travel alert! 🙌",
+          "distance_to_centroid": 0.5464529114113481
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "388618::cust2::388620",
+          "customer_text": "[MENTION] Thanks AA, stay tuned to this Twitter account then. And feel free to sponsor my next trip, it's travel for a good cause :)",
+          "distance_to_centroid": 0.548096097940989
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "609879::cust0::609879",
+          "customer_text": "[MENTION] loved seeing you all on [MENTION] ! Good luck with #HolidayTravel and #HappyThanksgiving",
+          "distance_to_centroid": 0.5482054337107812
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2606787::cust5::2606777",
+          "customer_text": "[MENTION] [MENTION] You missed this a little ago! They are on [MENTION] today to Helsinki then Singapore! Thanks [MENTION] Flagship lounge at JFK [URL]",
+          "distance_to_centroid": 0.5483464684012825
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "720344::cust0::720344",
+          "customer_text": "No es el simple hecho de que \"se atrasa\" el vuelo, [MENTION] si no las complicaciones derivadas. Nos tratan con la punta del zapato!",
+          "distance_to_centroid": 0.9750216478982113
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "1460833::cust0::1460833",
+          "customer_text": "Yo que me sentía fina por que era la primera vez que no iba a volar en una lowcost... [MENTION] les odio",
+          "distance_to_centroid": 0.9732602709358523
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "2786842::cust0::2786842",
+          "customer_text": "Ayer tuve el peor vuelo que recuerdo...7 horas de turbulencia constante que para mí=infierno. Una señora del staff de [MENTION] lo notó,se acercó a terapearme, tranquilizarme, hasta me abrazó y me calmó un montón la ansiedad. Quién haya sido, gracias y la amo.",
+          "distance_to_centroid": 0.9649335028347392
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "2595685::cust0::2595685",
+          "customer_text": "El equipaje que despache (solo uno), tenía 10cm más que el manual de [MENTION] y por eso me cobraron US$200! Tremendamente abusivo. Buena forma de tratar a sus clientes!",
+          "distance_to_centroid": 0.9633794612377027
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "1582345::cust0::1582345",
+          "customer_text": "Imposible tramitar un reembolso con [MENTION] AARef#1-25638520381 Me deben mas de $300 US me cobraron un boleto, el cual nunca emitieron",
+          "distance_to_centroid": 0.9599169263713729
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "906726::cust0::906726",
+          "customer_text": "I was told this mint chip ice cream was chocolate chip. I don't like mint, and now must watch it slowly melt. Sad [MENTION] ! #fwp",
+          "distance_to_centroid": 0.9597689177991361
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2692175::cust0::2692175",
+          "customer_text": "Son una PORQUERIA, están haciendo todo exactamente igual ... En 4 horas van a decir que no hay forma ??? SON LOS PEORES ! [MENTION]",
+          "distance_to_centroid": 0.9580498508512829
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1287152::cust0::1287152",
+          "customer_text": "Y ahora para requintar [MENTION] parece que sacaron la comida de la nevera y se la dan a los pasajeros. Pero y porqué?",
+          "distance_to_centroid": 0.95152116787155
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "178304::cust0::178304",
+          "customer_text": "Si tienes visa vigente no necesitas el eTA [URL]",
+          "distance_to_centroid": 0.9508797624067752
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "1440819::cust0::1440819",
+          "customer_text": "Toda vez que ligo pra [MENTION] eu sou TÃO bem atendida que nem dá vontade de desligar. Excelência de atendimento, estão de parabéns",
+          "distance_to_centroid": 0.9449579330910473
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 1,
+    "coarse_intent": "Negative Feedback",
+    "proposed_sub_intents": [
+      {
+        "name": "rude_flight_attendants",
+        "definition": "Complaints about the behavior or attitude of flight attendants.",
+        "prototypical_phrases": [
+          "rude flight crew",
+          "rude attendants",
+          "poor customer service"
+        ]
+      },
+      {
+        "name": "long_delays",
+        "definition": "Complaints about delays that significantly impact the customer’s travel plans.",
+        "prototypical_phrases": [
+          "5 hours after scheduled arrival",
+          "missed connection",
+          "3.5 more hours wait"
+        ]
+      },
+      {
+        "name": "poor_customer_service",
+        "definition": "General dissatisfaction with the overall customer service provided by the airline.",
+        "prototypical_phrases": [
+          "horrible customer service",
+          "appalling customer service",
+          "non-existent customer service"
+        ]
+      },
+      {
+        "name": "flight_experience",
+        "definition": "Complaints about the overall flight experience, including issues with the plane, food, or service.",
+        "prototypical_phrases": [
+          "worst flight experience",
+          "horrible flight experience",
+          "wasted more than enough of my time and money"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "2633492",
+        "assigned_intent": "rude_flight_attendants",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "2873860",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "707019",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "223198",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "2394043",
+        "assigned_intent": "rude_flight_attendants",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "1141245",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "2268182",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "303689",
+        "assigned_intent": "rude_flight_attendants",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "306332",
+        "assigned_intent": "rude_flight_attendants",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "1827558",
+        "assigned_intent": "rude_flight_attendants",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "321469",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1186657",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "1178223",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "2846668",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2364986",
+        "assigned_intent": "poor_customer_service",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "725608",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "677783",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "1393608",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "1036878",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "368013",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1102489",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2901312",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1571202",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1180798",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "548816",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents cover the representative queries effectively and are mutually exclusive. The queries map clearly to these intents without overlap."
+    },
+    "edge_cases": [
+      "rude_flight_attendants vs poor_customer_service",
+      "long_delays vs flight_experience"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Complaint / Dissatisfaction",
+      "cluster_size": 4358,
+      "keywords": [
+        "worst",
+        "airline",
+        "service",
+        "flight",
+        "customer",
+        "fly",
+        "customer service",
+        "airlines",
+        "rude",
+        "experience"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "2633492::cust1::2633491",
+          "customer_text": "[MENTION] Horrible customer service onboard, rude flight crew, and now that we have landed 5 hours after our scheduled arrival, the gate we have to used is occupied and they won’t let us deplane. Horrible [MENTION] flight experience with [MENTION]",
+          "distance_to_centroid": 0.4190179243198408
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "2873860::cust1::2873859",
+          "customer_text": "[MENTION] Lost my patience hours ago. Your airline deliberately messed up my travel. You took our plane for another group of passengers. Have offered us nothing. Won’t get home to 2.30 am if lucky. Why fly your airline again",
+          "distance_to_centroid": 0.4244531674163908
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "707019::cust5::706985",
+          "customer_text": "[MENTION] [MENTION] This is just one reason I try and not fly at all - all airlines treat customers like shit!",
+          "distance_to_centroid": 0.4261591722205155
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "223198::cust0::223198",
+          "customer_text": "[MENTION] I should have listened to all the complaints before booking a flight with this airline. I will never fly with you guys again!!!",
+          "distance_to_centroid": 0.4395922673360913
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "2394043::cust0::2394043",
+          "customer_text": "[MENTION] your [MENTION] check in is ridiculous. Worst experience flying. No TSA Precheck line. Missed connection. Worst employees.",
+          "distance_to_centroid": 0.4413369722848579
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "1141245::cust0::1141245",
+          "customer_text": "[MENTION] the worst customer service. I don’t k ow why I still fly with you guys",
+          "distance_to_centroid": 0.4428961344788412
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "2268182::cust12::2268202",
+          "customer_text": "[MENTION] [MENTION] Interesting. Third time flying American, each experience worse than the last. Thought it was a fluke til this last one. Thanks for this.. I won't give this airline my business any longer. A little customer service goes a long way but is non-existent with this airline",
+          "distance_to_centroid": 0.44290268688777534
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "303689::cust5::303694",
+          "customer_text": "[MENTION] [MENTION] AA has the rudest and worst customer service. I will NEVER fly you again! Every other airline was willing to help during IRMA, not AA!!",
+          "distance_to_centroid": 0.44349435653980024
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "306332::cust15::325574",
+          "customer_text": "[MENTION] [MENTION] AA has the rudest and worst customer service. I will NEVER fly you again! Every other airline was willing to help during IRMA, not AA!!",
+          "distance_to_centroid": 0.44349435653980024
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "1827558::cust4::1827559",
+          "customer_text": "[MENTION] [MENTION] I had some issues with [MENTION] having poor customer service and VERY rude flight attendants! I am no longer a customer.",
+          "distance_to_centroid": 0.4441277481414955
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "321469::cust2::321471",
+          "customer_text": "[MENTION] Your customer service is as appalling as my flight was yesterday! Avoid [MENTION]",
+          "distance_to_centroid": 0.44515393852217616
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1186657::cust3::1186659",
+          "customer_text": "[MENTION] Make it right --- Free flight? Most frustrated w/ lack of communication from [MENTION] ! Rude attendants, no snacks, no communication!!!",
+          "distance_to_centroid": 0.44951694110369317
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "1178223::cust3::1178220",
+          "customer_text": "[MENTION] No thanks, your airline has wasted more than enough of my time and money. I'll just continue to tell anyone I can NOT to fly [MENTION]",
+          "distance_to_centroid": 0.4495871659586224
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "2846668::cust0::2846668",
+          "customer_text": "[MENTION] this is the worst flight experience we’ve ever had. It’s not thanksgiving. It’s your company. At every turn, you’ve chosen revenue over customers. I have no recourse but we won’t be traveling, work or family, again",
+          "distance_to_centroid": 0.4504006745461514
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2364986::cust0::2364986",
+          "customer_text": "[MENTION] let a flight leave DCA to BNA with empty seats, forcing me to wait 3.5 more hours. This is exactly why I left them for [MENTION] over a decade ago. Poor customer service. Said they'd switch me if I had \"status.\" [MENTION] [MENTION] It was a connecting flight an no reason not to be accommodated. Maybe it's time to fly [MENTION] again. I emailed [MENTION] - we'll see if they get back to me.",
+          "distance_to_centroid": 0.4525186717504708
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "725608::cust0::725608",
+          "customer_text": "The worst vegan meal iv ever hard with NO other meat free options. Pasta, plain bagel and pancakes receipt for a heart attack! [MENTION]",
+          "distance_to_centroid": 0.8917743037099717
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "677783::cust0::677783",
+          "customer_text": "Fresno is 3.5 hours away from Santa Rosa. And their dumb asses didn't even think to look at Oakland, San Francisco, or even fucking Sacramento. [MENTION] better refund everyone for this stunt",
+          "distance_to_centroid": 0.876077988294283
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "1393608::cust0::1393608",
+          "customer_text": "Criminal waste of fuel and time. Not smart at all [MENTION] [URL]",
+          "distance_to_centroid": 0.8558263753939931
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "1036878::cust0::1036878",
+          "customer_text": "Pretty sure there’s no real air conditioning on this [MENTION] plane that’s been sitting with the door open in 86 feels like 95 heat.",
+          "distance_to_centroid": 0.8442511064791111
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "368013::cust0::368013",
+          "customer_text": "The experience of Gate 35X at #DCA #airport is a special kind of ridiculous, [MENTION] . Any plans for a more 21st century experience?",
+          "distance_to_centroid": 0.8410151978783146
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1102489::cust0::1102489",
+          "customer_text": "Media hora volando y nos regresan al aeropuerto de miami para variar terrible servicio [MENTION]",
+          "distance_to_centroid": 0.8377420190293723
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2901312::cust0::2901312",
+          "customer_text": "I cannot stand [MENTION] their employees are racist, rude, and unprofessional.",
+          "distance_to_centroid": 0.8375549647784805
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1571202::cust0::1571202",
+          "customer_text": "Gate 35X at Reagan, again proving to be the worst!! [MENTION] [MENTION] [MENTION]",
+          "distance_to_centroid": 0.8346836259164017
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1180798::cust0::1180798",
+          "customer_text": "Daddies left Jacob's Monkey lovie blanket on the plane &amp; devastated. He's a mess &amp; we feel horrible. Been his lovie for 3 yrs. [MENTION]",
+          "distance_to_centroid": 0.834118043888437
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "548816::cust0::548816",
+          "customer_text": "Well [MENTION] this is a new one. \"We'll get fined by the FAA for hanging your tuxedo up.\" Never heard that one before.",
+          "distance_to_centroid": 0.8313008036496877
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 2,
+    "coarse_intent": "Flight Delay",
+    "proposed_sub_intents": [
+      {
+        "name": "flight_delay_announcement",
+        "definition": "Notification of a flight delay.",
+        "prototypical_phrases": [
+          "my flight is delayed",
+          "flight delayed"
+        ]
+      },
+      {
+        "name": "flight_delay_duration",
+        "definition": "Complaint or inquiry about the duration of a flight delay.",
+        "prototypical_phrases": [
+          "delayed for more than two hours",
+          "waiting for another hour"
+        ]
+      },
+      {
+        "name": "flight_delay_impact",
+        "definition": "Concern about the impact of a flight delay, such as missing a connecting flight.",
+        "prototypical_phrases": [
+          "missed my connecting flight",
+          "have to wait 6 hours"
+        ]
+      },
+      {
+        "name": "flight_delay_reason",
+        "definition": "Request for the reason behind a flight delay.",
+        "prototypical_phrases": [
+          "why is my flight getting delayed",
+          "delayed because of maintenance"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "2568639",
+        "assigned_intent": "flight_delay_duration",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "333727",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "2279125",
+        "assigned_intent": "flight_delay_impact",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "638090",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1468073",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "1185986",
+        "assigned_intent": "flight_delay_impact",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "890846",
+        "assigned_intent": "flight_delay_impact",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "597457",
+        "assigned_intent": "flight_delay_duration",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "299179",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "877945",
+        "assigned_intent": "flight_delay_duration",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "2644447",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1292286",
+        "assigned_intent": "flight_delay_duration",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "773759",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "893612",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2708056",
+        "assigned_intent": "flight_delay_reason",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "1028505",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "866805",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "892701",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "305972",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "892396",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1493871",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2681927",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1772044",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "2443447",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "2983876",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "SPLIT",
+      "justification": "The proposed sub-intents are mutually exclusive and cover the various aspects of flight delays, ensuring that each intent is specific and actionable."
+    },
+    "edge_cases": [
+      "flight_delay_reason vs flight_delay_announcement",
+      "flight_delay_duration vs flight_delay_impact",
+      "flight_delay_reason vs out_of_distribution_noise"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Delayed flight",
+      "cluster_size": 5752,
+      "keywords": [
+        "delayed",
+        "delay",
+        "flight",
+        "hours",
+        "hour",
+        "minutes",
+        "plane",
+        "waiting",
+        "late",
+        "flight delayed"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "2568639::cust0::2568639",
+          "customer_text": "[MENTION] hi. You should know my flight (AA 1910) has been delayed for more than two hours now and we prob won’t leave for another hour.",
+          "distance_to_centroid": 0.38957282913638125
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "333727::cust1::333726",
+          "customer_text": "[MENTION] [MENTION] Lol, ridiculous delay shouldnt be the norm friend. Try another airline and see if you ever come back. Have a good flight.",
+          "distance_to_centroid": 0.4029870317925705
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "2279125::cust0::2279125",
+          "customer_text": "[MENTION] takes off from gate 13 min ahead of departure. Have to get another flight. Now 30 min delayed and counting for maintenance 👍🏻",
+          "distance_to_centroid": 0.4126268066093245
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "638090::cust3::638083",
+          "customer_text": "[MENTION] What flight is the crew on? [MENTION] Another hour’s delay. How hard is it to be forthright about these delays? I would have gone home instead of waiting in an uncomfortable airport. [URL] [MENTION] Departure is now 4:45! AA5172. You’re finding a way to make me happy with a woefully delayed departure. Sneaky.",
+          "distance_to_centroid": 0.4169737095303803
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1468073::cust0::1468073",
+          "customer_text": "[MENTION] this is my 3rd delay on your airline today. Maybe you should fix your planes before you board them:",
+          "distance_to_centroid": 0.4180522606354449
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "1185986::cust0::1185986",
+          "customer_text": "[MENTION] our plane is stuck waiting at an occupied gate after a 2 hour flight delay. My connecting flight home board in 10 min. Sure [MENTION] Hope that I make it home tonight. [MENTION] Looks like I'm going to miss my flight. Thanks for all your help and for being so reliable. You have no idea how frustrating this is.",
+          "distance_to_centroid": 0.41823799015100316
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "890846::cust0::890846",
+          "customer_text": "[MENTION] thanks for delaying my flight by 2 hours, now I missed my connecting flight and I’ll have to wait 6 hours for the next one. 🙄",
+          "distance_to_centroid": 0.4198740906223541
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "597457::cust1::597456",
+          "customer_text": "[MENTION] Oh. My. God. 6:45pm? Sure glad I got up and went to #mco for a 9am departure. That’s a 7 hr delay?! Worst part is nobody will make a decision on the status of this flight so can’t even go to admirals club. Stuck at gate for 15 min intervals of no updates.",
+          "distance_to_centroid": 0.4218499250402471
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "299179::cust2::299181",
+          "customer_text": "[MENTION] Plane was over an hour late AND it was a maintenance delay once we boarded . Don’t lie. [URL]",
+          "distance_to_centroid": 0.42401261463939766
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "877945::cust0::877945",
+          "customer_text": "[MENTION] why is my flight getting delayed for over 1.5 hours? I have to be in D.C. before 8 est and y'all aren't helping #Flight4275",
+          "distance_to_centroid": 0.4246896958258127
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "2644447::cust0::2644447",
+          "customer_text": "[MENTION] A nearly 3 hour delay because you are missing a pilot? Better figure this out before Holiday Season! #Flight_AA0497",
+          "distance_to_centroid": 0.42628500436908945
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1292286::cust0::1292286",
+          "customer_text": "[MENTION] omg I been at the airport since 11 am since they told me to arrive 3 hours prior for int flight now my flight is delayed again! [URL]",
+          "distance_to_centroid": 0.42907671884724596
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "773759::cust0::773759",
+          "customer_text": "[MENTION] - Why do you continue to have delays on all your flights?! Another 2.5 hour delay...this time on a brand new 787-8 Intl flight",
+          "distance_to_centroid": 0.4292969304120858
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "893612::cust1::893610",
+          "customer_text": "[MENTION] No. This flight was to depart at 1:40. It’s been boarded. We’ve been sitting on the plane for about an hour. [MENTION] And to say your agents will be there, they were. 15 minutes before boarding and then scrambling to get everyone checked in and on the plane [MENTION] And what do you know...... it’s even more delayed [URL]",
+          "distance_to_centroid": 0.4304288770370754
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2708056::cust0::2708056",
+          "customer_text": "[MENTION] For the 2nd time in less than 3 months my flight it’s delayed with less than 3 hours notification.There is no consideration with passengers!1st it was an hour,then 2,now we are at a 6 hour delay!Unacceptable AA505",
+          "distance_to_centroid": 0.4322327582517141
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "1028505::cust0::1028505",
+          "customer_text": "At O’Hare and the line spans the entire terminal. Only one security gate open. How does this happen? [MENTION] [URL]",
+          "distance_to_centroid": 0.8719580087946843
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "866805::cust0::866805",
+          "customer_text": "Not [MENTION] fault that EWR is jammed. But parking us in 90 degree heat with no AC? For 30 min now. #NotCool. Literally.",
+          "distance_to_centroid": 0.857195766896099
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "892701::cust0::892701",
+          "customer_text": "Is it normal to for my gate to have changed 5 times in 45 min [MENTION] ?!",
+          "distance_to_centroid": 0.8449492013512483
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "305972::cust1::305970",
+          "customer_text": "[MENTION] An hour and a half is acceptable by any standard? Joke.",
+          "distance_to_centroid": 0.8381944351966238
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "892396::cust0::892396",
+          "customer_text": "My husband walked 500 miles on the Camino and [MENTION] wouldn't hold a gate open for 3 extra minutes? #getjohnhome",
+          "distance_to_centroid": 0.8361820159408453
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1493871::cust2::1493868",
+          "customer_text": "[MENTION] PHX to RNO A320 without power ports 9 hours today without power. Never again...",
+          "distance_to_centroid": 0.8247923257925387
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2681927::cust0::2681927",
+          "customer_text": "Not quite sure why [MENTION] decided to put their cabin at a crisp below zero because we all just spent two and a half hours freezing to death",
+          "distance_to_centroid": 0.8238216749585513
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1772044::cust0::1772044",
+          "customer_text": "CHI✈️CLE turn the damn air condition 3058 while we wait man [MENTION]",
+          "distance_to_centroid": 0.8219508966888652
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "2443447::cust0::2443447",
+          "customer_text": "Currently [MENTION] dealing with gate resource management. Never a good thing when the 2nd officer says as usual. Early arrival no gate",
+          "distance_to_centroid": 0.820589271420092
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "2983876::cust0::2983876",
+          "customer_text": "all i know is [MENTION] better have my husband home on the 22nd of december. The navy takes him for long enough. If we even miss one day with him because of this, your gonna have to answer to a very sad 2 year old daddys girl. #6monthstoolong",
+          "distance_to_centroid": 0.8194289732816117
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 3,
+    "coarse_intent": "No Feedback",
+    "proposed_sub_intents": [
+      {
+        "name": "mention_confirmation",
+        "definition": "Customer mentions a service or product without seeking specific assistance.",
+        "prototypical_phrases": [
+          "mention",
+          "mention mention",
+          "mention lol"
+        ]
+      },
+      {
+        "name": "mention_request",
+        "definition": "Customer mentions a service or product and requests further information or assistance.",
+        "prototypical_phrases": [
+          "mention did",
+          "mention dm",
+          "mention ok",
+          "mention yes"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "1237731",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "1391935",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "499432",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "716679",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1090026",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "2292981",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "50243",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "1880900",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1425841",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "2773615",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "1841796",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1655274",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "2551485",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "475765",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2560644",
+        "assigned_intent": "mention_confirmation",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "1290563",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Spanish mention, not English"
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "1664119",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Salad joke, not a support query"
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "1089018",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Celebrity speculation, not a support query"
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "809534",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Fashion complaint, not a support query"
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "1321794",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Racial discrimination question, not a support query"
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1753652",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Food complaint, not a support query"
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "391847",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Geography joke, not a support query"
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "638059",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Account name change request, but not a common support issue"
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1244019",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Food complaint, not a support query"
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "2301669",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Food complaint, not a support query"
+      }
+    ],
+    "recommendation": {
+      "action": "MERGE",
+      "justification": "The proposed sub-intents cover the representative queries effectively and are mutually exclusive. The boundary queries are clearly out of distribution or not related to customer support, so they can be handled separately."
+    },
+    "edge_cases": [
+      "mention_confirmation vs mention_request",
+      "confirmation of a service vs general mention",
+      "customer confusion vs genuine support request"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "",
+      "cluster_size": 4250,
+      "keywords": [
+        "mention",
+        "mention mention",
+        "mention lol",
+        "lol",
+        "mention don",
+        "mention did",
+        "mention dm",
+        "locator",
+        "mention ok",
+        "mention yes"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "1237731::cust0::1237731",
+          "customer_text": "[MENTION] &gt;&gt;",
+          "distance_to_centroid": 0.34653249426821636
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "1391935::cust2::1391929",
+          "customer_text": "[MENTION] [MENTION]",
+          "distance_to_centroid": 0.36449078759063425
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "499432::cust1::499431",
+          "customer_text": "[MENTION] [MENTION]",
+          "distance_to_centroid": 0.36449078759063425
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "716679::cust1::716678",
+          "customer_text": "[MENTION] [MENTION]",
+          "distance_to_centroid": 0.36449078759063425
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1090026::cust1::1090024",
+          "customer_text": "[MENTION] [MENTION] [MENTION]",
+          "distance_to_centroid": 0.3652118208580952
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "2292981::cust3::2292984",
+          "customer_text": "[MENTION] [MENTION] [MENTION]",
+          "distance_to_centroid": 0.3652118208580952
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "50243::cust4::50239",
+          "customer_text": "[MENTION] [MENTION] [MENTION]",
+          "distance_to_centroid": 0.3652118208580952
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "1880900::cust1::1880899",
+          "customer_text": "[MENTION] [MENTION] ?",
+          "distance_to_centroid": 0.3747062437144729
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1425841::cust0::1425841",
+          "customer_text": "[MENTION]",
+          "distance_to_centroid": 0.4149089703266979
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "2773615::cust0::2773615",
+          "customer_text": "[MENTION]",
+          "distance_to_centroid": 0.4149089703266979
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "1841796::cust1::1841797",
+          "customer_text": "[MENTION] [MENTION] Uh oh woah",
+          "distance_to_centroid": 0.4172281148728727
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1655274::cust0::1655274",
+          "customer_text": "[MENTION] ??????????",
+          "distance_to_centroid": 0.42128984816156506
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "2551485::cust2::2551483",
+          "customer_text": "[MENTION] [MENTION] so?",
+          "distance_to_centroid": 0.4258166881941539
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "475765::cust1::475764",
+          "customer_text": "[MENTION] Um...",
+          "distance_to_centroid": 0.4285190950802723
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2560644::cust1::2560643",
+          "customer_text": "[MENTION] :)",
+          "distance_to_centroid": 0.42874864216443204
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "1290563::cust0::1290563",
+          "customer_text": "Que extraño. [MENTION] no puede contestar en inglés pero entendieron lo que le escribbi en español. No se burlen que eso es malo.",
+          "distance_to_centroid": 0.9871222622301637
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "1664119::cust0::1664119",
+          "customer_text": "I'm no salad connoisseur infact I'm more of a salad dodger but [MENTION] I don't think this classes as a salad. [MENTION] thoughts? [URL]",
+          "distance_to_centroid": 0.9344712270713222
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "1089018::cust0::1089018",
+          "customer_text": "Is it me or is the [MENTION] safety video girl Emma Stone's sister/cousin?",
+          "distance_to_centroid": 0.9283612663814403
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "809534::cust0::809534",
+          "customer_text": "The hoodie if anything is more offensive because now it looks like I'm not wearing pants but to . [MENTION] that's ok, just no shorts",
+          "distance_to_centroid": 0.9276152590428383
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "1321794::cust0::1321794",
+          "customer_text": "Is it true [MENTION] discriminates against African American citizens ?",
+          "distance_to_centroid": 0.9250175995882608
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1753652::cust0::1753652",
+          "customer_text": "Is this a sandwich or a bad joke [MENTION] ? I've had veggie burgers with more meat on them. [URL]",
+          "distance_to_centroid": 0.9109453780491007
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "391847::cust0::391847",
+          "customer_text": "Hey, [MENTION] , Manchester is not Boston.",
+          "distance_to_centroid": 0.906802768175519
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "638059::cust0::638059",
+          "customer_text": "How do I change the name on my [MENTION] advantage account to match my new married name?",
+          "distance_to_centroid": 0.8979858480739553
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1244019::cust0::1244019",
+          "customer_text": "No hay peor comida que la de [MENTION] internacional. No me quiero imaginar el cabotaje",
+          "distance_to_centroid": 0.8919356473812371
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "2301669::cust0::2301669",
+          "customer_text": "The \"cold turkey bacon, cheese, and boiled egg with mustard croissant sandwich\" served by [MENTION] is a grotesque culinary experiment that must be stopped immediately #garbage",
+          "distance_to_centroid": 0.8816727861154974
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 4,
+    "coarse_intent": "No Feedback",
+    "proposed_sub_intents": [
+      {
+        "name": "mention_share",
+        "definition": "The customer mentions or shares a URL or mention without providing specific feedback or seeking assistance.",
+        "prototypical_phrases": [
+          "[MENTION] [MENTION] [URL]",
+          "[MENTION] [URL]"
+        ]
+      },
+      {
+        "name": "thank_share",
+        "definition": "The customer thanks someone or something without providing specific feedback or seeking assistance.",
+        "prototypical_phrases": [
+          "thank [MENTION] [URL]",
+          "thank [MENTION]"
+        ]
+      },
+      {
+        "name": "website_share",
+        "definition": "The customer shares a website or URL without providing specific feedback or seeking assistance.",
+        "prototypical_phrases": [
+          "[URL]",
+          "view [URL]"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "104342::cust3::2954868",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "1109666::cust1::1109665",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "1130782::cust1::1130781",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "1174919::cust2::1174917",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1236907::cust1::1236906",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "1236910::cust1::1236909",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "1236917::cust3::1236915",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "1236921::cust1::1236919",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1239157::cust3::1239161",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "1264844::cust0::1264844",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "1349666::cust3::1349668",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1498329::cust0::1498329",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "160676::cust7::160690",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "169855::cust0::169855",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "173758::cust0::173758",
+        "assigned_intent": "mention_share",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "868626::cust0::868626",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "1464888::cust0::1464888",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "1353896::cust0::1353896",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "2595731::cust0::2595731",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "521884::cust0::521884",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "2621440::cust0::2621440",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "1038616::cust0::1038616",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "954671::cust0::954671",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1203882::cust0::1203882",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "1347003::cust0::1347003",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Mentions and URL, but no clear intent"
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents cover the representative queries effectively and are mutually exclusive. The boundary queries are clearly noise or out of distribution, so no further splitting is necessary."
+    },
+    "edge_cases": [
+      "[MENTION] [MENTION] [URL] vs [MENTION] [URL]",
+      "thank [MENTION] [URL] vs [URL]",
+      "[URL] vs [MENTION] [URL]"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Photo / media share",
+      "cluster_size": 1353,
+      "keywords": [
+        "url",
+        "mention url",
+        "mention mention",
+        "mention",
+        "url mention",
+        "view",
+        "thank mention",
+        "website",
+        "right url",
+        "like url"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "104342::cust3::2954868",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "1109666::cust1::1109665",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "1130782::cust1::1130781",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "1174919::cust2::1174917",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1236907::cust1::1236906",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "1236910::cust1::1236909",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "1236917::cust3::1236915",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "1236921::cust1::1236919",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1239157::cust3::1239161",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "1264844::cust0::1264844",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "1349666::cust3::1349668",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1498329::cust0::1498329",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "160676::cust7::160690",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "169855::cust0::169855",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "173758::cust0::173758",
+          "customer_text": "[MENTION] [MENTION] [URL]",
+          "distance_to_centroid": 0.27842211753621854
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "868626::cust0::868626",
+          "customer_text": "Southwest rocks [MENTION] never again [URL]",
+          "distance_to_centroid": 0.8881708023974574
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "1464888::cust0::1464888",
+          "customer_text": "Hoy volamos por primera vez con [MENTION] Espero q sea una historia de amor a primera vista [URL]",
+          "distance_to_centroid": 0.8760425422692044
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "1353896::cust0::1353896",
+          "customer_text": "Mmmm not sure about this...it’s a bit grey [MENTION] and not very feminine [URL]",
+          "distance_to_centroid": 0.8676892767500247
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "2595731::cust0::2595731",
+          "customer_text": "We need to know what individuals are getting permits and publically shame the hell out of them. [URL]",
+          "distance_to_centroid": 0.8666545817710397
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "521884::cust0::521884",
+          "customer_text": "I hate gate 35x so so so much [MENTION] 👀 at u. [URL]",
+          "distance_to_centroid": 0.863589078768442
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "2621440::cust0::2621440",
+          "customer_text": "Is it still alleged when there is a picture? [URL]",
+          "distance_to_centroid": 0.8551075842935542
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "1038616::cust0::1038616",
+          "customer_text": "At least this is comforting though... pretty sure there used to be duct tape here. Neat. [MENTION] [URL]",
+          "distance_to_centroid": 0.8494574507407313
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "954671::cust0::954671",
+          "customer_text": "WTH 😩my sleeping table not operable [MENTION] [URL]",
+          "distance_to_centroid": 0.836808547235062
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1203882::cust0::1203882",
+          "customer_text": "Leyendo en LAX mientras mi vuelo de [MENTION] se retrasa una hora más. Llevamos 6. [URL]",
+          "distance_to_centroid": 0.8363995660847795
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "1347003::cust0::1347003",
+          "customer_text": "Apparently [MENTION] is unsafe for African Americans and also unwelcoming to parents and infants. [MENTION] #AmericanAirlines [URL]",
+          "distance_to_centroid": 0.8355827057050846
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 5,
+    "coarse_intent": "Positive Feedback",
+    "proposed_sub_intents": [
+      {
+        "name": "great_flight_experience",
+        "definition": "Expressing satisfaction with the overall flight experience.",
+        "prototypical_phrases": [
+          "great flight",
+          "great flying experience",
+          "smooth flight"
+        ]
+      },
+      {
+        "name": "crew_praise",
+        "definition": "Acknowledging the quality of the flight crew.",
+        "prototypical_phrases": [
+          "flight crew was awesome",
+          "attentive and polite crew",
+          "wonderful airline"
+        ]
+      },
+      {
+        "name": "service_recognition",
+        "definition": "Acknowledging the service provided during the flight.",
+        "prototypical_phrases": [
+          "service rocks",
+          "attentive and polite",
+          "best service as always"
+        ]
+      },
+      {
+        "name": "thank_you_message",
+        "definition": "Sending a simple thank you message without specific details.",
+        "prototypical_phrases": [
+          "thank you",
+          "thanks for the smooth flight",
+          "thank you for being the best"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "301666",
+        "assigned_intent": "great_flight_experience",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "1847014",
+        "assigned_intent": "thank_you_message",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "2803836",
+        "assigned_intent": "great_flight_experience",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "15775",
+        "assigned_intent": "great_flight_experience",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "2572581",
+        "assigned_intent": "service_recognition",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "2572581",
+        "assigned_intent": "service_recognition",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "2127749",
+        "assigned_intent": "great_flight_experience",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "251714",
+        "assigned_intent": "service_recognition",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1623720",
+        "assigned_intent": "crew_praise",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "1826407",
+        "assigned_intent": "service_recognition",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "1328822",
+        "assigned_intent": "service_recognition",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "2745130",
+        "assigned_intent": "great_flight_experience",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "1124069",
+        "assigned_intent": "service_recognition",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "2299786",
+        "assigned_intent": "crew_praise",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2856073",
+        "assigned_intent": "great_flight_experience",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "296510",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "1644138",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "2362058",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "653229",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "1295957",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1343135",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2133719",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1079331",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1038622",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "2589772",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents are mutually exclusive and cover the typical queries well. The boundary queries are clearly out of distribution and do not fit into the positive feedback category."
+    },
+    "edge_cases": [
+      "great flight vs. great flight experience",
+      "service recognition vs. crew praise",
+      "simple thank you vs. detailed thank you"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Appreciation / Praise",
+      "cluster_size": 4063,
+      "keywords": [
+        "flight",
+        "great",
+        "url",
+        "mention flight",
+        "flying",
+        "crew",
+        "thanks",
+        "best",
+        "thank",
+        "great flight"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "301666::cust0::301666",
+          "customer_text": "[MENTION] thank you for a great flight. The flight crew was awesome!",
+          "distance_to_centroid": 0.42882418541260675
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "1847014::cust1::1847013",
+          "customer_text": "[MENTION] Thanks so much! Happy to fly with y’all :)",
+          "distance_to_centroid": 0.43534648462803865
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "2803836::cust0::2803836",
+          "customer_text": "[MENTION] , thanks for getting me home early this afternoon re: flight #2548. A full 30mins!!! #ILoveItWhenWeLandEarly #travel #wingshot #planespotting #avgeek [URL]",
+          "distance_to_centroid": 0.43958976014787
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "15775::cust2::15778",
+          "customer_text": "[MENTION] Great thank you. I had a GREAT flight.",
+          "distance_to_centroid": 0.44121772138024734
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "2572581::cust124::2572425",
+          "customer_text": "[MENTION] [MENTION] Thank you. Rest assured that I'll remember this the next time I have to fly. 🙂",
+          "distance_to_centroid": 0.4426734620757979
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "2572581::cust62::2572382",
+          "customer_text": "[MENTION] [MENTION] [MENTION] thank you! I will fly your airline!",
+          "distance_to_centroid": 0.44441090033335784
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "2127749::cust0::2127749",
+          "customer_text": "[MENTION] thanks for the smooth flight! #AA2450",
+          "distance_to_centroid": 0.45483840247597424
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "251714::cust0::251714",
+          "customer_text": "[MENTION] : Back #onboard with you today! #thankyou for being the #best #airline around! #flights #travel #loyalty",
+          "distance_to_centroid": 0.45537183027132494
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1623720::cust0::1623720",
+          "customer_text": "[MENTION] Thank you for a great flying experience! Your crew was wonderful, very attentive and polite! #AA3358 #FirstClass #ORD #AA",
+          "distance_to_centroid": 0.4561467760588874
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "1826407::cust1::1826406",
+          "customer_text": "[MENTION] Thank you [MENTION] for helping and being such a wonderful airline! ✈️✈️",
+          "distance_to_centroid": 0.45748413599917787
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "1328822::cust0::1328822",
+          "customer_text": "[MENTION] Know why I ALWAYS fly with you all? Your service rocks! Was reminded of that this AM when I took a rare flight w/ [MENTION]",
+          "distance_to_centroid": 0.45978832754201543
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "2745130::cust1::2745129",
+          "customer_text": "[MENTION] I did! Thank you! Some of the smoothest flights I’ve ever been on. 🛫",
+          "distance_to_centroid": 0.46082252738749074
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "1124069::cust3::1124063",
+          "customer_text": "[MENTION] Thank you AA for getting me on a new flight!!!",
+          "distance_to_centroid": 0.4624398948727504
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "2299786::cust1::2299785",
+          "customer_text": "[MENTION] Thank you! Had a pleasure to fly AA91 yesterday, the best service as always! You do the riht thing by investing in customers!",
+          "distance_to_centroid": 0.46273785842655896
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2856073::cust0::2856073",
+          "customer_text": "[MENTION] me and my friend [MENTION] just enjoyed one of your great flights! Thank you American. Airlines!",
+          "distance_to_centroid": 0.4628237945131323
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "296510::cust0::296510",
+          "customer_text": "If anyone is looking for a great way to lose water weight fly [MENTION] . You will sweat the whole time.",
+          "distance_to_centroid": 0.861725644796712
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "1644138::cust0::1644138",
+          "customer_text": "Why are airports always so hot? You know we are all running around like mad people...#pumpthatac #Phoenix [MENTION]",
+          "distance_to_centroid": 0.8556715071262221
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "2362058::cust0::2362058",
+          "customer_text": "Aside from being old,filthy, cramped and dark the [MENTION] CL-65 is a great aircraft.",
+          "distance_to_centroid": 0.8509208510616191
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "653229::cust0::653229",
+          "customer_text": "Traveling with two elderly parents and a torn meniscus thank you [MENTION]",
+          "distance_to_centroid": 0.8496322330971643
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "1295957::cust0::1295957",
+          "customer_text": "Essa [MENTION] tem cada piloto lindo 😋",
+          "distance_to_centroid": 0.8480557050209685
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1343135::cust0::1343135",
+          "customer_text": "Gracias a [MENTION] llevo más de 2 horas atrapadas en un avión... definitivamente es la peor aerolínea por estos lados!",
+          "distance_to_centroid": 0.839105793254979
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2133719::cust0::2133719",
+          "customer_text": "CDG terminal 1 to JFK [MENTION] ?",
+          "distance_to_centroid": 0.8321132806381873
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1079331::cust0::1079331",
+          "customer_text": "3F on an Embraer 175 .... Thank You [MENTION] ....Going Going Back Back to Cali Cali",
+          "distance_to_centroid": 0.830446718295267
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1038622::cust0::1038622",
+          "customer_text": "Am I the only one who actually puts my #Smartphone on #Airplanemode? [MENTION]",
+          "distance_to_centroid": 0.8287544664641948
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "2589772::cust0::2589772",
+          "customer_text": "PHL to LAX flight without a charger or entertainment system... wow [MENTION] ...",
+          "distance_to_centroid": 0.82507315935832
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 6,
+    "coarse_intent": "Seating",
+    "proposed_sub_intents": [
+      {
+        "name": "seat_assignment_request",
+        "definition": "Request for a specific seat assignment or reassignment.",
+        "prototypical_phrases": [
+          "can you help with my seat assignment?",
+          "put me back in my seat"
+        ]
+      },
+      {
+        "name": "seat_upgrade_request",
+        "definition": "Request to upgrade to a better seat, often due to empty seats being available.",
+        "prototypical_phrases": [
+          "not sure why I'm not allowed to PAY to upgrade my seat",
+          "I was able to change my seat for my first flight, but not for my connecting flight?"
+        ]
+      },
+      {
+        "name": "seat_reassignment_request",
+        "definition": "Request for a seat reassignment, often due to seat issues or personal preferences.",
+        "prototypical_phrases": [
+          "The flight is later this evening. Any chance you can put me back in my seat",
+          "I didn’t like was that they all kept telling me “you can’t change seats”"
+        ]
+      },
+      {
+        "name": "seat_complaint",
+        "definition": "Complaint about the seat, including issues like seat class, seat location, or seat availability.",
+        "prototypical_phrases": [
+          "Barely made it. You guys cancelled our flight and we had to run from concourse E all the way to concourse B",
+          "There are none and in facg we just opened the door again to let another person on an already delayed flight"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "1068791",
+        "assigned_intent": "seat_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "2300836",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "1273746",
+        "assigned_intent": "seat_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "824204",
+        "assigned_intent": "seat_upgrade_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1309478",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "766421",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "1531567",
+        "assigned_intent": "seat_assignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "257343",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1839507",
+        "assigned_intent": "seat_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "1305328",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "1949121",
+        "assigned_intent": "seat_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "2768598",
+        "assigned_intent": "seat_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "1440822",
+        "assigned_intent": "seat_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "2911107",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2922065",
+        "assigned_intent": "seat_reassignment_request",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "2233756",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "2513508",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "1374768",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "2678601",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "368009",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1126269",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2968550",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "2494020",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "2312342",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "2128820",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents cover the representative queries effectively and are mutually exclusive. The cluster is coherent and does not require further splitting or merging."
+    },
+    "edge_cases": [
+      "seat_reassignment_request vs seat_complaint",
+      "seat_upgrade_request vs seat_reassignment_request",
+      "seat_complaint vs seat_reassignment_request"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Seat assignment / change",
+      "cluster_size": 2325,
+      "keywords": [
+        "seat",
+        "seats",
+        "class",
+        "row",
+        "window",
+        "middle",
+        "extra",
+        "paid",
+        "sit",
+        "room"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "1068791::cust0::1068791",
+          "customer_text": "[MENTION] made me check in my bag because we were one of the last ones to board... but there is empty seats &amp; MY overhead space is open 🤔 [URL]",
+          "distance_to_centroid": 0.480504762162542
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "2300836::cust0::2300836",
+          "customer_text": "[MENTION] . Was upgraded (not requested - love my econ class seat so I can work). Downgraded once on the plane to a middle in the back when another passengers seat broke - they moved me - no choice.Another passenger had to leave the plane to make room. Very bad experience.",
+          "distance_to_centroid": 0.4819329712178704
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "1273746::cust2::1273747",
+          "customer_text": "[MENTION] [MENTION] Barely made it. You guys cancelled our flight and we had to run from concourse E all the way to concourse B to find out. Upon boarding found out flight crew allowed people to move to any seat so our seats where occupied.. wonder what other problems will occur? [URL]",
+          "distance_to_centroid": 0.4822179910211662
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "824204::cust0::824204",
+          "customer_text": "[MENTION] not sure why I'm not allowed to PAY to upgrade my seat even though there is an empty first class seat available. #illkeepmy$ [MENTION] update the seat is still empty and I was willing to pay for it.Not sure i understand your business model😡 #airlinesimdoneflying",
+          "distance_to_centroid": 0.48227366033303026
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1309478::cust1::1309479",
+          "customer_text": "[MENTION] I didn’t fly yet but by your fault I don’t have seat. I calles to the call center twice and I didn’t get the solution as I expected.",
+          "distance_to_centroid": 0.482506009586073
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "766421::cust0::766421",
+          "customer_text": "[MENTION] I have to pay to pick my seats? This will be the only time I will fly with AA. Why do I ever venture away from [MENTION] ?",
+          "distance_to_centroid": 0.48719311234822466
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "1531567::cust1::1531564",
+          "customer_text": "[MENTION] [MENTION] The flight is later this evening. Any chance you can put me back in my seat or another premium seat? I checked-in to that seat",
+          "distance_to_centroid": 0.4902841093480906
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "257343::cust0::257343",
+          "customer_text": "[MENTION] can you help with my seat assignment? I was able to change my seat for my first flight, but not for my connecting flight?",
+          "distance_to_centroid": 0.492244942126677
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1839507::cust1::1839506",
+          "customer_text": "[MENTION] The seat will go unused and I’ve already paid a full fare. Wish you were as passenger-friendly as [MENTION] !",
+          "distance_to_centroid": 0.49673516306242504
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "1305328::cust1::1305327",
+          "customer_text": "[MENTION] 1) Thanks for checking in on me. We got it figured out. What I didn’t like was that they all kept telling me “you can’t change seats [MENTION] 2) after checking in.” I do that every flight so I knew it wasn’t that.",
+          "distance_to_centroid": 0.4976555495460096
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "1949121::cust1::1949119",
+          "customer_text": "[MENTION] With seats half empty around me when I boarded there's no reason they should have filled. Poor flight management on your end #unacceptable",
+          "distance_to_centroid": 0.4976991966424957
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "2768598::cust2::2768600",
+          "customer_text": "[MENTION] A good practice when changing 2 bad seats to 2 other bad seats, is to let the traveler know so they don’t spend all the time in the layover trying to figure out why boarding passes were revoked. I guess I’ll eat in the next airport since #AmericanAirlines doesn’t serve real food.",
+          "distance_to_centroid": 0.49932872493281
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "1440822::cust0::1440822",
+          "customer_text": "[MENTION] now only allowing a bag under our seat without paying extra? I guess I'll be flying [MENTION] more. #greed #disgust",
+          "distance_to_centroid": 0.4997643510648623
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "2911107::cust2::2911103",
+          "customer_text": "[MENTION] Are you kidding me? I'm not complaining about the seat not having a window. I'm complaining about having had to pay for he privilege of sitting in this seat, after I had to change flights because my earlier flight was delayed for... ¯\\_(ツ)_/¯",
+          "distance_to_centroid": 0.5002618049949991
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2922065::cust1::2922064",
+          "customer_text": "[MENTION] There are none and in facg we just opened the door again to let another person on an already delayed flight. Unnaceptable [MENTION] Plus i should not have to need a seat reassignment when i am a platitnum member and fit in the seat i bought",
+          "distance_to_centroid": 0.5004179694955884
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "2233756::cust0::2233756",
+          "customer_text": "also, [MENTION] it's disgusting that you would not value the safety of a ten month old baby. Unbelievable.",
+          "distance_to_centroid": 0.9570112226810014
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "2513508::cust0::2513508",
+          "customer_text": "\"Restrictions on overtime pay violated the groups contract\". [MENTION] is the contract open 2 the public?",
+          "distance_to_centroid": 0.9136355612776613
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "1374768::cust0::1374768",
+          "customer_text": "Disappointed there’s not one vegan meal option [MENTION] get with the program",
+          "distance_to_centroid": 0.906135102341805
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "2678601::cust0::2678601",
+          "customer_text": "I literally have no class. [URL] and plus [MENTION] , Group 5 is neither literally nor figuratively \"The New Group 1.\"",
+          "distance_to_centroid": 0.8938318025557487
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "368009::cust0::368009",
+          "customer_text": "Why be so awful, inhumane, &amp; abusive, [MENTION] ? A sleeping baby is more safe on mom than forcefully strapping them into their own seat!",
+          "distance_to_centroid": 0.8930313091464775
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1126269::cust0::1126269",
+          "customer_text": "I guess being a disabled vet isn't a protected class [MENTION] . They could care less. [MENTION] [MENTION]",
+          "distance_to_centroid": 0.8901148302962838
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2968550::cust0::2968550",
+          "customer_text": "I sure wish [MENTION] would swap out the embraer 145 with 170s or crj900s. No first class is horrible.",
+          "distance_to_centroid": 0.8832164612841332
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "2494020::cust0::2494020",
+          "customer_text": "Sitting in row 7 of a brand new [MENTION] A321. There are no power ports. It’s almost 2018. Seriously?",
+          "distance_to_centroid": 0.8686138183605555
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "2312342::cust0::2312342",
+          "customer_text": "AA flagship lounge at Chicago discriminates against Vegetarians. No vegetarian entrees at all #AASucks [MENTION]",
+          "distance_to_centroid": 0.8641598542065779
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "2128820::cust0::2128820",
+          "customer_text": "This is really rather an absurd amount of leg room [MENTION] [URL]",
+          "distance_to_centroid": 0.863492646593289
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 7,
+    "coarse_intent": "Refunds and Charges",
+    "proposed_sub_intents": [
+      {
+        "name": "refund_dispute",
+        "definition": "Customer disputes a refund or additional charge.",
+        "prototypical_phrases": [
+          "I should not be charged",
+          "Why am I being charged",
+          "Refund issue"
+        ]
+      },
+      {
+        "name": "fee_dispute",
+        "definition": "Customer disputes a specific fee or charge applied to their ticket.",
+        "prototypical_phrases": [
+          "Why is there a fee",
+          "Charge dispute",
+          "Extra fee"
+        ]
+      },
+      {
+        "name": "flight_change_fee",
+        "definition": "Customer questions or disputes the fee for changing their flight.",
+        "prototypical_phrases": [
+          "Change fee",
+          "Flight change cost",
+          "Rebooking fee"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "1533972",
+        "assigned_intent": "refund_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "2618696",
+        "assigned_intent": "fee_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "238229",
+        "assigned_intent": "refund_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "1638403",
+        "assigned_intent": "fee_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "2311233",
+        "assigned_intent": "refund_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "302409",
+        "assigned_intent": "flight_change_fee",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "1287145",
+        "assigned_intent": "flight_change_fee",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "1600794",
+        "assigned_intent": "refund_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1851577",
+        "assigned_intent": "refund_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "722236",
+        "assigned_intent": "flight_change_fee",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "875399",
+        "assigned_intent": "refund_dispute",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1138113",
+        "assigned_intent": "refund_dispute",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "1943648",
+        "assigned_intent": "fee_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "2946476",
+        "assigned_intent": "flight_change_fee",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "1845398",
+        "assigned_intent": "fee_dispute",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "341084",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "2518507",
+        "assigned_intent": "fee_dispute",
+        "confidence": "medium",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "904814",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "1093530",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "1102928",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1688843",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2522626",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "2922072",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1403105",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "2653778",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "SPLIT",
+      "justification": "The queries are distinctly focused on different aspects of fee and refund disputes, making it necessary to split the cluster into more specific intents for better classification accuracy."
+    },
+    "edge_cases": [
+      "refund_dispute vs fee_dispute",
+      "flight_change_fee vs refund_dispute",
+      "fee_dispute vs seat_upgrade_request"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Refund / fee dispute",
+      "cluster_size": 2889,
+      "keywords": [
+        "ticket",
+        "pay",
+        "fee",
+        "change",
+        "miles",
+        "charge",
+        "200",
+        "economy",
+        "paid",
+        "fees"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "1533972::cust1::1533970",
+          "customer_text": "[MENTION] [MENTION] [MENTION] logically think through this great service. It costs you less $ since I'm not flying yet I have to pay more. Let alone a refund",
+          "distance_to_centroid": 0.4307991736322844
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "2618696::cust0::2618696",
+          "customer_text": "[MENTION] missed my flight and you are going to charge me more than the flight costs to change it? I’m #platinum? Does that mean nothing. #poorservice #americanairlines #imayneedtoswitch",
+          "distance_to_centroid": 0.46802296303391694
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "178865::cust1::238229",
+          "customer_text": "[MENTION] [MENTION] That isn't true. I just booked a flight that is well over that price. Please explain",
+          "distance_to_centroid": 0.46830359667847077
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "1638403::cust0::1638403",
+          "customer_text": "[MENTION] are you kidding me with your Basic Economy fare? NO overhead bin access? $17 extra for a MIDDLE SEAT??? This is insanity. I refuse to fly [MENTION] for this same nonsense. Guess you're off the list now too.",
+          "distance_to_centroid": 0.4777696961886617
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "2311233::cust0::2311233",
+          "customer_text": "[MENTION] is a joke. First cancelling my reservation and then trying to charge me $319 for a flight change when the new flight only cost $240",
+          "distance_to_centroid": 0.4786839206193818
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "302409::cust1::302407",
+          "customer_text": "[MENTION] [MENTION] If you missed your flight, the only help will be to charge you $200 for a rebooking fee before you pay for the ticket. #CustomerServiceWeek",
+          "distance_to_centroid": 0.48025172035125513
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "1287146::cust1::1287145",
+          "customer_text": "[MENTION] Thanks [MENTION] 🤑🤑🤑! Next time I will pay an extra $200 for the ticket so I won’t get charged $200 to cancel OR just fly [MENTION]",
+          "distance_to_centroid": 0.4803626468554611
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "1600794::cust0::1600794",
+          "customer_text": "[MENTION] 🤦‍♂️ takes my money for a flight I had to cancel and wants to charge me 400 to use the 600 I gave them originally. #crooks",
+          "distance_to_centroid": 0.48654520029336834
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1851579::cust1::1851577",
+          "customer_text": "[MENTION] I did was told had to pay more for a more appropriate flight. We booked early to avoid problems like this. Your reservation line can call me",
+          "distance_to_centroid": 0.48675751228165626
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "722238::cust1::722236",
+          "customer_text": "[MENTION] If I change my flight you charge me $200. You changed my flight for no reason, So I'm gonna send an invoice for $200. That's fair.",
+          "distance_to_centroid": 0.4871319191818167
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "875401::cust2::875399",
+          "customer_text": "[MENTION] [MENTION] I wonder how much [MENTION] will charge me to change my flight to see this. Maybe they will waive it where they changed 2 of our flights",
+          "distance_to_centroid": 0.48729167633318177
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1138113::cust0::1138113",
+          "customer_text": "[MENTION] due 2 “class of ticket I couldnt standby earlier flight to same city; now this one is oversold. Consider empowering your people [MENTION] So, putting me on the earlier flight would have saved you $300? Right?",
+          "distance_to_centroid": 0.4873620267318929
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "1943648::cust0::1943648",
+          "customer_text": "[MENTION] just charged us $400 to change our flight tickets.... while [MENTION] does it for free!?",
+          "distance_to_centroid": 0.4874593631185611
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "2946479::cust1::2946476",
+          "customer_text": "[MENTION] Very convenient. So when a flight is delayed, or a different plane is used, can I charge you a change fee? [MENTION] Here is how it’s done. [MENTION] thank you for great customer service. [MENTION] doesn’t seem to get it. #youcouldlearnathingortwofromdelta #AmericanAirlines #CustomerService #notgoodenough #choosedelta [URL]",
+          "distance_to_centroid": 0.4899109592986073
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "1845398::cust0::1845398",
+          "customer_text": "[MENTION] You charged me $50 to check my carry on at the gate, since I was in group 9. Since when do you sell economy tickets that you have to pay for a carry on?!",
+          "distance_to_centroid": 0.49290341907974655
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "341084::cust0::341084",
+          "customer_text": "Hi, [MENTION] -- still no love for using Citi Aadvantage on Android Pay, but not a problem on Apple Pay? Can you explain?",
+          "distance_to_centroid": 0.9208493705082945
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "2518507::cust0::2518507",
+          "customer_text": "Basic Economy is another way to nickel and dime customers for greed. [MENTION] just as horrid as all the rest.",
+          "distance_to_centroid": 0.9041921917059292
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "904814::cust0::904814",
+          "customer_text": "Flying Level for the first time. I had no idea what to expect. So far, [MENTION] emerald has no impact on experience #EXP [MENTION]",
+          "distance_to_centroid": 0.8763938811623183
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "1093530::cust0::1093530",
+          "customer_text": "3 agents for a full business class service [MENTION] is that for real? [MENTION] so dissapointed",
+          "distance_to_centroid": 0.8711284487732989
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "1102928::cust0::1102928",
+          "customer_text": "Hello, I am currently in Cancun &amp; I am wondering if the Mexican departure tax is included with the cost of your ticket? [MENTION]",
+          "distance_to_centroid": 0.8678799561689261
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1688843::cust0::1688843",
+          "customer_text": "I’m trying to get my aadvantage pts but have no access to my ticket number. I️ have everything but that &amp; [MENTION] can’t do jack squat 😑",
+          "distance_to_centroid": 0.8646149478136957
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2522626::cust0::2522626",
+          "customer_text": "Oh, hey look [MENTION] there's plenty of empty overhead bin space, glad you forced those extra fees!",
+          "distance_to_centroid": 0.8601774080469605
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "2922072::cust0::2922072",
+          "customer_text": "I’ve met the requirements for Platinum, but have $3,035 EQD, [MENTION] wants another $3,035 to boost. Where’s the math, $6000? [URL]",
+          "distance_to_centroid": 0.852200827521311
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1403105::cust0::1403105",
+          "customer_text": "Once again [MENTION] allows a private Facebook group to give prizes 4 #SkyBall. Exclusionary &amp; needs oversight. [URL] [MENTION] How does a regular consumer enter the raffle since [MENTION] is endorsing a prize of value to an exclusive group? Legal?",
+          "distance_to_centroid": 0.8516215681833322
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "2653778::cust0::2653778",
+          "customer_text": "after reading about this lost and found service that [MENTION] uses, i've pretty much concluded that i'm likely not getting my nook back and if i do, it'll cost as much as the nook to ship it to me. ebay, here i come, i guess.",
+          "distance_to_centroid": 0.8492299639726067
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 8,
+    "coarse_intent": "No Feedback",
+    "proposed_sub_intents": [
+      {
+        "name": "thank_you",
+        "definition": "Expressing gratitude to the customer service team.",
+        "prototypical_phrases": [
+          "Thank you!",
+          "Thanks!"
+        ]
+      },
+      {
+        "name": "acknowledgment",
+        "definition": "Acknowledging a previous interaction or request without providing further details.",
+        "prototypical_phrases": [
+          "Mention thank",
+          "mention thanks"
+        ]
+      },
+      {
+        "name": "dm_request",
+        "definition": "Requesting a direct message for further communication.",
+        "prototypical_phrases": [
+          "DM me",
+          "send DM"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "1092474::cust4::1117434",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "1134396::cust2::1134398",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "1269737::cust2::1269739",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "128889::cust2::128885",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1410006::cust1::1410007",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "1455839::cust1::1455838",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "1535887::cust1::1535886",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "1558299::cust2::1558301",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1572526::cust3::1572521",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "1592206::cust1::1592205",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "1605212::cust1::1605210",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1629644::cust1::1629643",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "1707356::cust3::1707353",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "1732778::cust1::1732777",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "1848502::cust3::1848507",
+        "assigned_intent": "thank_you",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "2810867::cust1::2810871",
+        "assigned_intent": "acknowledgment",
+        "confidence": "medium",
+        "note": "Acknowledges response but adds additional context"
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "2313596::cust0::2313596",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Request for account update with thanks, not a simple thank you"
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "335806::cust0::335806",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Request for DM with multiple mentions and urgency"
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "607619::cust0::607619",
+        "assigned_intent": "thank_you",
+        "confidence": "medium",
+        "note": "Thanks for a specific action"
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "2277909::cust0::2277909",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Expresses regret for a past event"
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1102129::cust0::1102129",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Request for further action in a DM"
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "2279736::cust0::2279736",
+        "assigned_intent": "thank_you",
+        "confidence": "medium",
+        "note": "Thank you with additional context"
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1515549::cust1::1515547",
+        "assigned_intent": "thank_you",
+        "confidence": "medium",
+        "note": "Thank you with additional context"
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "2544131::cust0::2544131",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Request for someone to DM in another language"
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "1410059::cust0::1410059",
+        "assigned_intent": "thank_you",
+        "confidence": "medium",
+        "note": "Thank you with additional context"
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents cover the representative queries effectively and are mutually exclusive. The boundary queries are either noise or belong to other clusters, so no further splitting is necessary."
+    },
+    "edge_cases": [
+      "Thank you for the help vs. Thank you for the help with additional context",
+      "DM me vs. DM me for further communication",
+      "Simple thank you vs. Thank you with additional context"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Acknowledgement / thanks",
+      "cluster_size": 2021,
+      "keywords": [
+        "thank",
+        "mention thank",
+        "thanks",
+        "mention thanks",
+        "sent",
+        "mention",
+        "dm",
+        "mention sent",
+        "sent dm",
+        "mention dm"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "1092474::cust4::1117434",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "1134396::cust2::1134398",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "1269737::cust2::1269739",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "128889::cust2::128885",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1410006::cust1::1410007",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "1455839::cust1::1455838",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "1535887::cust1::1535886",
+          "customer_text": "[MENTION] thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "1558299::cust2::1558301",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1572526::cust3::1572521",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "1592206::cust1::1592205",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "1605212::cust1::1605210",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1629644::cust1::1629643",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "1707356::cust3::1707353",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "1732778::cust1::1732777",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "1848502::cust3::1848507",
+          "customer_text": "[MENTION] Thank you!",
+          "distance_to_centroid": 0.2776209301770502
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "2810867::cust1::2810871",
+          "customer_text": "Appreciate swift &amp; helpful response from [MENTION] social folks",
+          "distance_to_centroid": 0.7720774008808867
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "2313596::cust0::2313596",
+          "customer_text": "[MENTION] could you please help in updating my account to my current married name. Thanks.",
+          "distance_to_centroid": 0.7695361107158646
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "335806::cust0::335806",
+          "customer_text": "HELP ME PLEASE DM ME I NEED YOU MORE THAN EVER [MENTION]",
+          "distance_to_centroid": 0.7500720083287505
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "607619::cust0::607619",
+          "customer_text": "Much thanks to [MENTION] for looking out and extending the complimentary upgrade to Chicago.",
+          "distance_to_centroid": 0.7491963397723587
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "2277909::cust0::2277909",
+          "customer_text": "Thanks [MENTION] for making me miss my grandma's funeral.",
+          "distance_to_centroid": 0.736348662544047
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1102129::cust0::1102129",
+          "customer_text": "Please look again at DM [MENTION]",
+          "distance_to_centroid": 0.7344678416865215
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "2279736::cust0::2279736",
+          "customer_text": "Thank you [MENTION] for taking such good care of [MENTION] And his first ever guide dog PJ, [MENTION] . #AA #EEE",
+          "distance_to_centroid": 0.7334173191470185
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1515549::cust1::1515547",
+          "customer_text": "[MENTION] Thank you very much for the consideration. Her sister is participating in Spec Olympics and this is a last minute thing. THANKS!",
+          "distance_to_centroid": 0.7300618470487155
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "2544131::cust0::2544131",
+          "customer_text": "Buscando alguien que trabaje en [MENTION] . Favor escribirme al DM. ¡Gracias!",
+          "distance_to_centroid": 0.7247886047093534
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "1410059::cust0::1410059",
+          "customer_text": "What a partenza, thanks [MENTION] 👊🏼❤️",
+          "distance_to_centroid": 0.7212839371967694
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 9,
+    "coarse_intent": "Customer Service",
+    "proposed_sub_intents": [
+      {
+        "name": "poor_customer_service_complaint",
+        "definition": "Complaints about the quality of customer service provided by the airline.",
+        "prototypical_phrases": [
+          "poor customer service",
+          "terrible customer service",
+          "customer service bites"
+        ]
+      },
+      {
+        "name": "lack_of_response_complaint",
+        "definition": "Complaints about the lack of timely response to customer inquiries or issues.",
+        "prototypical_phrases": [
+          "no response",
+          "haven't received a response",
+          "response time is too long"
+        ]
+      },
+      {
+        "name": "customer_service_comparison",
+        "definition": "Comparisons of the airline's customer service with that of other airlines or companies.",
+        "prototypical_phrases": [
+          "better than",
+          "worse than",
+          "comparing customer service"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "579540",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "955768",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "2135881",
+        "assigned_intent": "lack_of_response_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "2164831",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1955135",
+        "assigned_intent": "customer_service_comparison",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "2977910",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "2245013",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "219731",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "2632894",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "2057548",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "2470282",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "594171",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "2373110",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "306332",
+        "assigned_intent": "lack_of_response_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "392344",
+        "assigned_intent": "poor_customer_service_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "390520",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "2472648",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "1858365",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "2520498",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "2714932",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "1804586",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "541746",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1214644",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1692783",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "1520578",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents are mutually exclusive and cover the representative queries effectively. The queries are clearly related to customer service issues and do not overlap significantly."
+    },
+    "edge_cases": [
+      "poor_customer_service_complaint vs lack_of_response_complaint",
+      "poor_customer_service_complaint vs customer_service_comparison"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Agent responsiveness / support quality",
+      "cluster_size": 4847,
+      "keywords": [
+        "customer",
+        "service",
+        "customer service",
+        "phone",
+        "customers",
+        "help",
+        "email",
+        "mention customer",
+        "number",
+        "response"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "579540::cust1::579539",
+          "customer_text": "[MENTION] Not sure how this response is supposed to help. There is no apology, or suggested way to make it up. Again lack of customer service [MENTION] . Switching to [MENTION] for good!",
+          "distance_to_centroid": 0.4366460029957039
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "955768::cust0::955768",
+          "customer_text": "[MENTION] your lack customer service is pathetic. Learn from [MENTION] and put your customers first. THAT is how you build loyalty.",
+          "distance_to_centroid": 0.4538845586521994
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "2135881::cust2::2135883",
+          "customer_text": "[MENTION] [MENTION] At least they responded. Delays and poor customer service are not just the norm at [MENTION] , they're the objective.",
+          "distance_to_centroid": 0.4679950478026131
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "2164831::cust0::2164831",
+          "customer_text": "[MENTION] is a shit show. Terrible customer service. Get it together.",
+          "distance_to_centroid": 0.46863685377722636
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1955135::cust3::1955133",
+          "customer_text": "[MENTION] [MENTION] Completely unacceptable. Try [MENTION] - they’ve got much better customer service.",
+          "distance_to_centroid": 0.47067951340609315
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "2977910::cust0::2977910",
+          "customer_text": "[MENTION] : just so you know, your customer service bites and I can't book via your app or online. Tried to get help for two days!",
+          "distance_to_centroid": 0.47097480628150856
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "2245013::cust1::2245012",
+          "customer_text": "[MENTION] Here’s the thing: You don’t provide exceptional customer service, especially when the issue is your fault. ✈️ + 💁🏻 = 💔",
+          "distance_to_centroid": 0.4711412425092928
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "219731::cust1::219728",
+          "customer_text": "[MENTION] still an extremely poor customer service policy, I mostly fly you because of your [MENTION] but guess I will have to look elsewhere",
+          "distance_to_centroid": 0.4756801982473534
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "2632894::cust0::2632894",
+          "customer_text": "[MENTION] y'all need to check your [MENTION] customer service. BEYOND RUDE.",
+          "distance_to_centroid": 0.47584943037926763
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "2057548::cust1::2057547",
+          "customer_text": "[MENTION] I just DM you. Please fix it, or you have lost a loyal customer",
+          "distance_to_centroid": 0.47634319804963315
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "2470282::cust3::2470286",
+          "customer_text": "[MENTION] I have that’s why I reached out this way hoping that your customer service was better than sorry go handle our mistakes yourself",
+          "distance_to_centroid": 0.48148731835597025
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "594171::cust0::594171",
+          "customer_text": "[MENTION] has the absolute worst customer service in LAX. The gate agent was incredibly rude when I inquired about upgrading my boarding position. I will keep my money with [MENTION]",
+          "distance_to_centroid": 0.482935208866583
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "2373110::cust0::2373110",
+          "customer_text": "[MENTION] you have the worst customer service. Worse than [MENTION] and [MENTION] put together. Emailing back must be a hard job",
+          "distance_to_centroid": 0.4832573323096486
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "306332::cust13::325581",
+          "customer_text": "[MENTION] When? It is now 7 days since I notified AA of this issue and I have yet to received a response. This is customer service at its worst.",
+          "distance_to_centroid": 0.48546711592815706
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "392344::cust0::392344",
+          "customer_text": "[MENTION] should be avoided at all costs. [MENTION] is right. They have ZERO customer service &amp; don't even give it a rudimentary try!",
+          "distance_to_centroid": 0.4858001288018104
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "390520::cust0::390520",
+          "customer_text": "I'm just saying, you can't expect an 8 year-old boy to keep a straight face when you offer him hot nuts [MENTION]",
+          "distance_to_centroid": 0.9317288080694718
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "2472648::cust0::2472648",
+          "customer_text": "How can I recover my AAdvantages program #? I don't remember user/pass or how I registered this years ago. Thanks [MENTION]",
+          "distance_to_centroid": 0.9221536185827535
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "1858365::cust0::1858365",
+          "customer_text": "How is a pixel not a supported device to stream movies? What the fuck [MENTION] , phone isn't even new anymore.",
+          "distance_to_centroid": 0.9221185524880141
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "2520498::cust0::2520498",
+          "customer_text": "Than when she continued to check me in she laughed at my daughters name [MENTION] im disgusted",
+          "distance_to_centroid": 0.9159740181070134
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "2714932::cust0::2714932",
+          "customer_text": "Does anyone know what steps to take after you’ve been sexually assaulted by a female [MENTION] officer?. [MENTION] [MENTION] #MeToo",
+          "distance_to_centroid": 0.9099277236522579
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "1804586::cust0::1804586",
+          "customer_text": "“Softball questions” are why the USMNT failed, huh",
+          "distance_to_centroid": 0.8988282557404916
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "541746::cust0::541746",
+          "customer_text": "Is the [MENTION] SDFC KTN issue still a thing?",
+          "distance_to_centroid": 0.8974023789300319
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1214644::cust0::1214644",
+          "customer_text": "I’ve walked st least 1.5 miles trying to reach gate due to poor signage. Step it up [MENTION] at LGA",
+          "distance_to_centroid": 0.8971082583310975
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1692783::cust0::1692783",
+          "customer_text": "Horrified to hear of my friends experience on [MENTION] Inner window popped out. Never even checked on him while in hospital!",
+          "distance_to_centroid": 0.8907088722880788
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "1520578::cust0::1520578",
+          "customer_text": "El servicio, precio y todo en estos vuelos de [MENTION] ha sido impecable. [MENTION] se quedó atrás hace tiempo.",
+          "distance_to_centroid": 0.890493262398722
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 10,
+    "coarse_intent": "Baggage",
+    "proposed_sub_intents": [
+      {
+        "name": "lost_baggage_claim",
+        "definition": "Customer reports that their baggage is missing or has not been found.",
+        "prototypical_phrases": [
+          "my bag is missing",
+          "haven't received my baggage"
+        ]
+      },
+      {
+        "name": "carry_on_gate_check_complaint",
+        "definition": "Customer complains about being forced to check their carry-on bag despite available overhead space.",
+        "prototypical_phrases": [
+          "forced to check my carry-on",
+          "no overhead space for my bag"
+        ]
+      },
+      {
+        "name": "damaged_baggage_report",
+        "definition": "Customer reports damage to their checked baggage.",
+        "prototypical_phrases": [
+          "my bag was damaged",
+          "baggage was torn"
+        ]
+      },
+      {
+        "name": "baggage_claim_dispute",
+        "definition": "Customer disputes the handling of their baggage, including issues with baggage claim or lost baggage.",
+        "prototypical_phrases": [
+          "dispute baggage claim",
+          "baggage claim issue"
+        ]
+      },
+      {
+        "name": "baggage_policy_question",
+        "definition": "Customer asks about baggage policies, such as weight limits or allowed items.",
+        "prototypical_phrases": [
+          "baggage policy",
+          "weight limit for baggage"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "2287172",
+        "assigned_intent": "carry_on_gate_check_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "902659",
+        "assigned_intent": "carry_on_gate_check_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "2395047",
+        "assigned_intent": "carry_on_gate_check_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "886087",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "1296923",
+        "assigned_intent": "carry_on_gate_check_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "390884",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "223223",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "2741079",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "No clear baggage issue"
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "1906554",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "1244031",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "2371549",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1536525",
+        "assigned_intent": "damaged_baggage_report",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "1109651",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "2837940",
+        "assigned_intent": "carry_on_gate_check_complaint",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "2044248",
+        "assigned_intent": "lost_baggage_claim",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "2306158",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Personal item issue"
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "255701",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Carry-on policy inquiry"
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "977455",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Casual complaint"
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "251703",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Gender equality complaint"
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "1848502",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Customer service inquiry"
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "795944",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Breast pump policy inquiry"
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "309631",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Product complaint"
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1582329",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Facility complaint"
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1499077",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Food quality complaint"
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "1816753",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": "Security policy complaint"
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents are mutually exclusive and cover the representative queries effectively. The cluster remains coherent and does not require further splitting or merging."
+    },
+    "edge_cases": [
+      "lost_baggage_claim vs damaged_baggage_report",
+      "carry_on_gate_check_complaint vs lost_baggage_claim",
+      "baggage_policy_question vs lost_baggage_claim"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Lost, delayed or forced-checked baggage",
+      "cluster_size": 2816,
+      "keywords": [
+        "bag",
+        "bags",
+        "luggage",
+        "check",
+        "baggage",
+        "carry",
+        "checked",
+        "check bag",
+        "lost",
+        "claim"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "2287172::cust0::2287172",
+          "customer_text": "[MENTION] just made me miss out on a free ride from the airport AND the opportunity to receive my award at the Dallas Co-sign awards!! I’ll just stick to [MENTION] from here on out [MENTION] [MENTION] There was at least room for about 10-12 more carry on bags YET I was forced to check my bag. I didn’t get my bag until 30min after we deplaned. A veteran behind me told me they tried to make him do the same but because he was a veteran they let him bring his bag on Once on the plane, I looked around to see if there were availability in the overhead bins and there was an abundance!! I called over ",
+          "distance_to_centroid": 0.4348867169648626
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "902659::cust1::902658",
+          "customer_text": "[MENTION] And now you force me to check my bag because other plane is full. Great experience [MENTION] - NOT!!! Some things never change",
+          "distance_to_centroid": 0.44902673326507325
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "2395047::cust0::2395047",
+          "customer_text": "[MENTION] This is at least the third time this year I have had to gate check a bag and get to my seat and see this. 😠 3 nearly empty overhead bins over my seat + more throughout the plane. Seems like you guys need some improvement to your process. [URL]",
+          "distance_to_centroid": 0.46693189489263
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "886087::cust0::886087",
+          "customer_text": "[MENTION] [MENTION] thank you for being no help at all in locating my luggage. I've had better luck dealing with [MENTION] . Disappointing.",
+          "distance_to_centroid": 0.46926199621585374
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "1296923::cust7::2451826",
+          "customer_text": "[MENTION] [MENTION] OMG! Yeah I had my carry on as well and they FORCED me to check my bag.",
+          "distance_to_centroid": 0.4726700686145646
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "390884::cust0::390884",
+          "customer_text": "[MENTION] hi I know I've tweeted you like 533 times and must be getting annoying but some clarity would be amazing. You said our bags [MENTION] Will be checked into our final destination but on the way here we HAD to pick them up on the layover which caused us to miss our connection [MENTION] We have even less time to make the connection tomorrow so would love to know for 100% what happens with our bags",
+          "distance_to_centroid": 0.47417020937918014
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "223223::cust0::223223",
+          "customer_text": "[MENTION] I can’t take an earlier flight w/o paying but you’ll send my bags ahead. Had to track them down in another terminal. #nothappy",
+          "distance_to_centroid": 0.4742177466784515
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "2741079::cust1::2741078",
+          "customer_text": "[MENTION] I couldn’t get to an agent during take off. It wasn’t my bag so not too worried but all bags should be treated the same. Enjoy your day",
+          "distance_to_centroid": 0.47447286043791514
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "1906554::cust0::1906554",
+          "customer_text": "[MENTION] airlines thanks for loosing my suitcase,48 hours later and you still have no clue where my bag is Costing me thousands of $$$$",
+          "distance_to_centroid": 0.47496359965488244
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "1244031::cust1::1244030",
+          "customer_text": "[MENTION] [MENTION] Hahaha. Such BS. Refuse! I did that today and they didn't get bag on next flight. Been waiting 7 hours to get bags.",
+          "distance_to_centroid": 0.4753091240222277
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "2371549::cust0::2371549",
+          "customer_text": "[MENTION] my bag just got taken from me as I boarded at SNA for flight 2548, please DM me, same bag I always fly with, it's not too big.",
+          "distance_to_centroid": 0.47569378069750173
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1536525::cust1::1536523",
+          "customer_text": "[MENTION] So my bag is on this flight. Can I get it somehow?",
+          "distance_to_centroid": 0.4766134314513858
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "1109651::cust3::1109641",
+          "customer_text": "[MENTION] Well [MENTION] you e done it again. My bag is on the wrong plane after I was assured last night it would follow my reservation. [URL]",
+          "distance_to_centroid": 0.47686045616685946
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "2837940::cust0::2837940",
+          "customer_text": "[MENTION] yet again you guys never cease to disappoint me! How does it take 30 mins to check 4 customers bag? Let’s hope I can gate check my bag, apparently it’s my fault that the priority club at LAX is understaffed.Guess it’s about time to switch to [MENTION] ✌🏼gold status!",
+          "distance_to_centroid": 0.47704440218731764
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "2044248::cust0::2044248",
+          "customer_text": "[MENTION] incredibly disappointed. I was forced to gate check a carry on (and there was overhead space open) and my bag was lost #LAX",
+          "distance_to_centroid": 0.47754750421574693
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "2306158::cust0::2306158",
+          "customer_text": "It’s just my wallet [MENTION] no big deal only my is social security card and cash and credit cards",
+          "distance_to_centroid": 0.903415496548099
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "255701::cust0::255701",
+          "customer_text": "[MENTION] what are the restrictions, if any, on carrying on an umbrella. Couldn't find the answer on your website. Thanks.",
+          "distance_to_centroid": 0.8708173602402778
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "977455::cust0::977455",
+          "customer_text": "Something tells me I shouldn’t have worn shorts, a t-shirt, and flip flops back from NYC. [URL]",
+          "distance_to_centroid": 0.869515190349664
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "251703::cust0::251703",
+          "customer_text": "Why is it so hard to hang up my suit jacket [MENTION] ? I'm 1 of few women up here but my jacket isn't less of a jacket than that man's",
+          "distance_to_centroid": 0.8678168699505932
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "1848502::cust0::1848502",
+          "customer_text": "How long should one stand at gate desk w/suitcase &amp; briefcase before 1 of 4 uniformed [MENTION] staff greets them? [MENTION]",
+          "distance_to_centroid": 0.8589331124224084
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "795944::cust0::795944",
+          "customer_text": "Prepping to travel postbaby &amp; getting mixed msgs from [MENTION] cust svc abt breast pumps &amp; milk. Can you pls clarify what I can bring?",
+          "distance_to_centroid": 0.8537763610848924
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "309631::cust0::309631",
+          "customer_text": "Ugh my hubby just came home, starting getting comfy, opened his bag... And found this. NOT cool [MENTION] #Disgusting [URL]",
+          "distance_to_centroid": 0.8520868153474866
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1582329::cust0::1582329",
+          "customer_text": "Dirty and broken. [MENTION] , inherit your fleet from the Soviet Union? Bathroom lock busted too. Had to use hand to keep the door closed. [URL]",
+          "distance_to_centroid": 0.8497994665527249
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1499077::cust0::1499077",
+          "customer_text": "What happened to the snacks on AA? Check out the bag of nuts with 3 nuts on the package. Weak AA! [MENTION] [URL]",
+          "distance_to_centroid": 0.8458815576403359
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "1816753::cust0::1816753",
+          "customer_text": "I bought H2O AFTER going through security, but had to throw it out before boarding? Can someone explain? [MENTION]",
+          "distance_to_centroid": 0.8446907036516158
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  },
+  {
+    "cluster_id": 11,
+    "coarse_intent": "Flight Cancellation",
+    "proposed_sub_intents": [
+      {
+        "name": "flight_cancellation_announcement",
+        "definition": "Customer is seeking information about a flight cancellation.",
+        "prototypical_phrases": [
+          "flight cancelled",
+          "my flight was cancelled"
+        ]
+      },
+      {
+        "name": "flight_cancellation_rebooking",
+        "definition": "Customer requests rebooking or rescheduling after a flight cancellation.",
+        "prototypical_phrases": [
+          "need to rebook my flight",
+          "reschedule my flight"
+        ]
+      },
+      {
+        "name": "flight_cancellation_updates",
+        "definition": "Customer is asking for updates on the status of a cancelled flight.",
+        "prototypical_phrases": [
+          "when will my flight be confirmed",
+          "status of my flight"
+        ]
+      }
+    ],
+    "query_mapping": [
+      {
+        "sample_id": "R1",
+        "message_uid": "2774883",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R2",
+        "message_uid": "2258775",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R3",
+        "message_uid": "33535",
+        "assigned_intent": "flight_cancellation_rebooking",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R4",
+        "message_uid": "2960856",
+        "assigned_intent": "flight_cancellation_rebooking",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R5",
+        "message_uid": "482590",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R6",
+        "message_uid": "2333700",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R7",
+        "message_uid": "1753607",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R8",
+        "message_uid": "2622942",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R9",
+        "message_uid": "293023",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R10",
+        "message_uid": "2086428",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R11",
+        "message_uid": "2455529",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R12",
+        "message_uid": "1102707",
+        "assigned_intent": "flight_cancellation_rebooking",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R13",
+        "message_uid": "2250304",
+        "assigned_intent": "flight_cancellation_rebooking",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R14",
+        "message_uid": "1458403",
+        "assigned_intent": "flight_cancellation_announcement",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "R15",
+        "message_uid": "1004132",
+        "assigned_intent": "flight_cancellation_rebooking",
+        "confidence": "high",
+        "note": ""
+      },
+      {
+        "sample_id": "B1",
+        "message_uid": "630138",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B2",
+        "message_uid": "1817853",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B3",
+        "message_uid": "2194741",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B4",
+        "message_uid": "1209981",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B5",
+        "message_uid": "1098025",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B6",
+        "message_uid": "891859",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B7",
+        "message_uid": "601990",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B8",
+        "message_uid": "1425826",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B9",
+        "message_uid": "1297597",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      },
+      {
+        "sample_id": "B10",
+        "message_uid": "2499523",
+        "assigned_intent": "out_of_distribution_noise",
+        "confidence": "low",
+        "note": ""
+      }
+    ],
+    "recommendation": {
+      "action": "KEEP",
+      "justification": "The proposed sub-intents are mutually exclusive and cover the representative queries effectively. The boundary queries do not fit into the cluster and are marked as noise."
+    },
+    "edge_cases": [
+      "flight_cancellation_announcement vs flight_cancellation_rebooking",
+      "flight_cancellation_rebooking vs flight_cancellation_updates"
+    ],
+    "_warnings": [],
+    "_meta": {
+      "coarse_sub_intent": "Cancelled / missed flight & rebooking",
+      "cluster_size": 5367,
+      "keywords": [
+        "flight",
+        "flights",
+        "fly",
+        "flying",
+        "plane",
+        "mention flight",
+        "cancelled",
+        "planes",
+        "need",
+        "know"
+      ],
+      "representative": [
+        {
+          "sample_id": "R1",
+          "message_uid": "2774883::cust1::2774882",
+          "customer_text": "[MENTION] Really? Cause it does!! This is not my first time flying, but it will be the first and last time with you all. Piss poor customer service.",
+          "distance_to_centroid": 0.4279360375725891
+        },
+        {
+          "sample_id": "R2",
+          "message_uid": "2258775::cust0::2258775",
+          "customer_text": "[MENTION] : Are flights delayed due to the issue at [MENTION] ?",
+          "distance_to_centroid": 0.4540058384339805
+        },
+        {
+          "sample_id": "R3",
+          "message_uid": "33535::cust0::33535",
+          "customer_text": "[MENTION] is effectively making my 36 hour trip moot. Missing connecting flight. Likely missing next flight out after that. Booooooooo.",
+          "distance_to_centroid": 0.45654667046847947
+        },
+        {
+          "sample_id": "R4",
+          "message_uid": "2960856::cust3::2963623",
+          "customer_text": "[MENTION] [MENTION] No. [MENTION] 's answer is not especially helpful. I need dates by which my American flights will be confirmed as having pilots. I am chaperoning my mother on the Swiss flight (she cannot fly on her own). If I don't get there, then neither of us can board that plane.",
+          "distance_to_centroid": 0.4583358650589126
+        },
+        {
+          "sample_id": "R5",
+          "message_uid": "482590::cust2::482592",
+          "customer_text": "[MENTION] Ahhh. Now I remember why I haven’t flown [MENTION] in over a year.... another delayed flight (AA 19 now - AA1036 this morning) I’ll be back on [MENTION] in a few weeks.",
+          "distance_to_centroid": 0.4636884207555735
+        },
+        {
+          "sample_id": "R6",
+          "message_uid": "2333700::cust0::2333700",
+          "customer_text": "[MENTION] I can go back for flying only on [MENTION] as they have US based customer service",
+          "distance_to_centroid": 0.46371846106125925
+        },
+        {
+          "sample_id": "R7",
+          "message_uid": "1753607::cust1::1753606",
+          "customer_text": "[MENTION] I dont want to be updated I want to leave. Thx. The flight that flew in had no issues getting here. Now there's an issue",
+          "distance_to_centroid": 0.46756200368507084
+        },
+        {
+          "sample_id": "R8",
+          "message_uid": "2622942::cust0::2622942",
+          "customer_text": "[MENTION] I need help with my flight.",
+          "distance_to_centroid": 0.4681144982799
+        },
+        {
+          "sample_id": "R9",
+          "message_uid": "293023::cust0::293023",
+          "customer_text": "[MENTION] i tried to check my flight but i couldn’t, can you fix it? [URL]",
+          "distance_to_centroid": 0.4681887698538844
+        },
+        {
+          "sample_id": "R10",
+          "message_uid": "2086428::cust0::2086428",
+          "customer_text": "[MENTION] please tell me you guys know which flights have a possibility of being cancelled.... I can't afford to find out the day we need to leave that our flight is one of the ones that's cancelled 😞",
+          "distance_to_centroid": 0.4703923062903183
+        },
+        {
+          "sample_id": "R11",
+          "message_uid": "2455529::cust1::2455527",
+          "customer_text": "[MENTION] We will get [MENTION] taken off preferred airline for our company and will not be flying with your company again. Too many delays and NO air??? You need to repair planes",
+          "distance_to_centroid": 0.470404729961319
+        },
+        {
+          "sample_id": "R12",
+          "message_uid": "1102707::cust0::1102707",
+          "customer_text": "[MENTION] can somebody help me so I don't miss the next flight",
+          "distance_to_centroid": 0.4712283714001535
+        },
+        {
+          "sample_id": "R13",
+          "message_uid": "2250304::cust0::2250304",
+          "customer_text": "[MENTION] never flying you again. 20 min late taking off and now just sitting on the tarmac and i’m going to miss my connecting flight. I’m trying to get to a wedding",
+          "distance_to_centroid": 0.47281649132361353
+        },
+        {
+          "sample_id": "R14",
+          "message_uid": "1458403::cust0::1458403",
+          "customer_text": "[MENTION] i have a question about my flight",
+          "distance_to_centroid": 0.4749745448516426
+        },
+        {
+          "sample_id": "R15",
+          "message_uid": "1004132::cust0::1004132",
+          "customer_text": "[MENTION] hi I need some help I’m missing my flight",
+          "distance_to_centroid": 0.4751380660880302
+        }
+      ],
+      "boundary": [
+        {
+          "sample_id": "B1",
+          "message_uid": "630138::cust0::630138",
+          "customer_text": "Muy mal [MENTION] dos horas de retazo en el avión por fallas técnicas ... Y aún no salimos ...",
+          "distance_to_centroid": 0.9279589520805827
+        },
+        {
+          "sample_id": "B2",
+          "message_uid": "1817853::cust0::1817853",
+          "customer_text": "OK [MENTION] I'll pick up a shift.... Is an A321 a manual or an automatic?",
+          "distance_to_centroid": 0.9121677217802964
+        },
+        {
+          "sample_id": "B3",
+          "message_uid": "2194741::cust0::2194741",
+          "customer_text": "No siempre son quejas de las aerolíneas muy agradecida con [MENTION] por ayudarme a regresar a mi País en cuestión de horas por un tema personal",
+          "distance_to_centroid": 0.9025224347168663
+        },
+        {
+          "sample_id": "B4",
+          "message_uid": "1209981::cust0::1209981",
+          "customer_text": "Hi [MENTION] travelling soon &amp; wishing to use my own personal earphones; are all connection points onboard universal? Thanks, Andrew",
+          "distance_to_centroid": 0.8794558443867587
+        },
+        {
+          "sample_id": "B5",
+          "message_uid": "1098025::cust0::1098025",
+          "customer_text": "Hey [MENTION] flying to MIA next month, wondering what food options are available, specifically something vegetarian friendly. Thanks!",
+          "distance_to_centroid": 0.8732740894996697
+        },
+        {
+          "sample_id": "B6",
+          "message_uid": "891859::cust0::891859",
+          "customer_text": "Dear [MENTION] , I have a question on passport requirements I was hoping you could help me with. You have a DM. Thank you very much!",
+          "distance_to_centroid": 0.8627458319532687
+        },
+        {
+          "sample_id": "B7",
+          "message_uid": "601990::cust0::601990",
+          "customer_text": "Dear [MENTION] I know it's illegal to smoke in an airplane bathroom... But is it illegal to light a match? Asking for my wife.",
+          "distance_to_centroid": 0.8570612583621247
+        },
+        {
+          "sample_id": "B8",
+          "message_uid": "1425826::cust0::1425826",
+          "customer_text": "now I'm no expert [MENTION] , but I'm pretty sure no personal IFE on a 7.5 hr EDI-JFK flight constitutes a war crime",
+          "distance_to_centroid": 0.853655010410335
+        },
+        {
+          "sample_id": "B9",
+          "message_uid": "1297597::cust0::1297597",
+          "customer_text": "STILL [MENTION] No power ports to keep our own entertainment devices going even when that is our only option? #modernize coast2coast trip",
+          "distance_to_centroid": 0.8483851400614427
+        },
+        {
+          "sample_id": "B10",
+          "message_uid": "2499523::cust0::2499523",
+          "customer_text": "[MENTION] are EQM's calculated based on actual miles flown on the flight or pre-determined miles for the route flown?",
+          "distance_to_centroid": 0.8467136129353892
+        }
+      ],
+      "provider": "ollama",
+      "model": "qwen2.5:7b"
+    }
+  }
+]

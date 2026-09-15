@@ -1,0 +1,15 @@
+intent,sub_intent,cluster_id,cluster_split,cluster_size,cluster_share_pct,model,distinctive_terms,status
+Flight Delay,Delayed flight,2,,5752,13.01,cust_kmeans,"['mention', 'flight', 'delayed', 'hours', 'delay', 'hour', 'time', 'plane', 'gate', 'minutes']",candidate_requires_human_validation_in_005
+Customer Service,Agent responsiveness / support quality,9,,4847,10.97,cust_kmeans,"['mention', 'customer', 'service', 'customer service', 'mention mention', 'just', 'help', 'aa', 'url', 'don']",candidate_requires_human_validation_in_005
+Negative Feedback,Complaint / Dissatisfaction,1,,4358,9.86,cust_kmeans,"['mention', 'flight', 'service', 'airline', 'fly', 'worst', 'customer', 'aa', 'mention mention', 'plane']",candidate_requires_human_validation_in_005
+No Feedback,,3,,4250,9.62,cust_kmeans,"['mention', 'mention mention', 'just', 'don', 'like', 'time', 'know', 'good', 'did', 'dm']",candidate_requires_human_validation_in_005
+General Query,General chat / social engagement,0,,4158,9.41,cust_kmeans,"['mention', 'url', 'mention mention', 'thanks', 'thank', 'great', 'today', 'just', 'mention url', 'home']",candidate_requires_human_validation_in_005
+Positive Feedback,Appreciation / Praise,5,,4063,9.19,cust_kmeans,"['mention', 'flight', 'url', 'thanks', 'thank', 'great', 'mention flight', 'mention mention', 'flying', 'crew']",candidate_requires_human_validation_in_005
+Refunds and Charges,Refund / fee dispute,7,,2889,6.54,cust_kmeans,"['mention', 'flight', 'ticket', 'pay', 'just', 'mention mention', 'change', 'fee', 'miles', 'url']",candidate_requires_human_validation_in_005
+Baggage,"Lost, delayed or forced-checked baggage",10,,2816,6.37,cust_kmeans,"['mention', 'bag', 'bags', 'check', 'luggage', 'flight', 'baggage', 'url', 'carry', 'checked']",candidate_requires_human_validation_in_005
+Seating,Seat assignment / change,6,,2325,5.26,cust_kmeans,"['mention', 'seat', 'seats', 'flight', 'url', 'class', 'mention mention', 'just', 'plane', 'row']",candidate_requires_human_validation_in_005
+No Feedback,Acknowledgement / thanks,8,,2021,4.57,cust_kmeans,"['mention', 'thank', 'thanks', 'mention thank', 'mention thanks', 'dm', 'sent', 'mention mention', 'just', 'mention sent']",candidate_requires_human_validation_in_005
+Flight Cancellation,Cancelled / missed flight & rebooking,11,11-sub2,1889,4.27,cust_kmeans,"['mention', 'flight', 'plane', 'mention mention', 'flights', 'url', 'mention flight', 'just', 'flying', 'planes']",candidate_requires_human_validation_in_005
+Flight Information,Status / policy question,11,11-sub0,1766,4.0,cust_kmeans,"['mention', 'flight', 'flights', 'help', 'just', 'need', 'check', 'know', 'url', 'boarding']",candidate_requires_human_validation_in_005
+Flight Cancellation,Cancelled / missed flight & rebooking,11,11-sub1,1712,3.87,cust_kmeans,"['mention', 'flight', 'fly', 'mention mention', 'flying', 'plane', 'time', 'just', 'flights', 'don']",candidate_requires_human_validation_in_005
+No Feedback,Photo / media share,4,,1353,3.06,cust_kmeans,"['mention', 'url', 'mention url', 'mention mention', 'thanks', 'thank', 'just', 'like', 'great', 'hey']",candidate_requires_human_validation_in_005

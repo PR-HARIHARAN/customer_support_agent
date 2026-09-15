@@ -1,0 +1,39 @@
+model,parameters,cluster_count,noise_percent,largest_cluster_percent,silhouette,stability,note
+cust_kmeans,"k=6, n_init=20",6,0.0,18.09,0.0481,0.9936,
+cust_bisect_kmeans,"k=6, n_init=10",6,0.0,21.43,0.0389,0.8825,
+cust_kmeans,"k=7, n_init=20",7,0.0,17.51,0.0512,0.9867,
+cust_bisect_kmeans,"k=7, n_init=10",7,0.0,21.43,0.0393,0.8788,
+cust_kmeans,"k=8, n_init=20",8,0.0,15.4,0.0497,0.9877,
+cust_bisect_kmeans,"k=8, n_init=10",8,0.0,19.07,0.0371,0.8632,
+cust_kmeans,"k=9, n_init=20",9,0.0,15.39,0.0278,0.9923,
+cust_bisect_kmeans,"k=9, n_init=10",9,0.0,15.47,0.032,0.8541,
+cust_kmeans,"k=10, n_init=20",10,0.0,13.52,0.0275,0.9451,
+cust_bisect_kmeans,"k=10, n_init=10",10,0.0,15.47,0.0324,0.7658,
+cust_kmeans,"k=11, n_init=20",11,0.0,13.01,0.0288,0.6718,
+cust_bisect_kmeans,"k=11, n_init=10",11,0.0,15.47,0.0337,0.7448,
+cust_kmeans,"k=12, n_init=20",12,0.0,13.01,0.0306,0.7804,
+cust_bisect_kmeans,"k=12, n_init=10",12,0.0,11.05,0.02,0.7806,
+cust_kmeans,"k=13, n_init=20",13,0.0,11.9,0.0329,0.8396,
+cust_bisect_kmeans,"k=13, n_init=10",13,0.0,10.39,0.0203,0.7759,
+cust_kmeans,"k=14, n_init=20",14,0.0,10.63,0.0279,0.8877,
+cust_bisect_kmeans,"k=14, n_init=10",14,0.0,10.39,0.0209,0.767,
+cust_kmeans,"k=15, n_init=20",15,0.0,11.17,0.0335,0.607,
+cust_bisect_kmeans,"k=15, n_init=10",15,0.0,10.39,0.0209,0.7061,
+cust_kmeans,"k=16, n_init=20",16,0.0,10.38,0.0281,0.7885,
+cust_bisect_kmeans,"k=16, n_init=10",16,0.0,9.35,0.0185,0.7297,
+cust_kmeans,"k=17, n_init=20",17,0.0,9.46,0.0252,0.705,
+cust_bisect_kmeans,"k=17, n_init=10",17,0.0,9.35,0.0184,0.7038,
+cust_kmeans,"k=18, n_init=20",18,0.0,9.31,0.0277,0.8845,
+cust_bisect_kmeans,"k=18, n_init=10",18,0.0,9.35,0.0108,0.702,
+cust_kmeans,"k=19, n_init=20",19,0.0,8.4,0.0254,0.5864,
+cust_bisect_kmeans,"k=19, n_init=10",19,0.0,7.57,-0.0054,0.6856,
+cust_kmeans,"k=20, n_init=20",20,0.0,8.31,0.0241,0.6664,
+cust_bisect_kmeans,"k=20, n_init=10",20,0.0,7.11,-0.0048,0.6866,
+cust_agglomerative_sampled,"k=10, average cosine, sampled n=10000",10,0.0,99.87,,,degenerate: one cluster holds 99.87% of sample
+cust_hdbscan,"min_cluster_size=100, min_samples=10",4,97.0,1.8,,,structure only after UMAP; raw-vector HDBSCAN degenerates
+cust_hdbscan,"min_cluster_size=250, min_samples=25",0,100.0,0.0,,,structure only after UMAP; raw-vector HDBSCAN degenerates
+cust_hdbscan,"min_cluster_size=500, min_samples=50",0,100.0,0.0,,,structure only after UMAP; raw-vector HDBSCAN degenerates
+cust_umap_hdbscan,"n_components=15, min_cluster_size=100, min_samples=10",47,60.44,7.26,,,validated shapes/counts from interrupted run; not primary (high noise or trivial)
+cust_umap_hdbscan,"n_components=15, min_cluster_size=250, min_samples=25",2,0.07,99.16,,,validated shapes/counts from interrupted run; not primary (high noise or trivial)
+cust_umap_hdbscan,"n_components=15, min_cluster_size=500, min_samples=50",6,41.11,18.38,,,validated shapes/counts from interrupted run; not primary (high noise or trivial)
+selected,cust_kmeans k=12 + KMeans k=3 split of cluster 11,14,0.0,13.01,0.0306,0.7804,"analyst-selected after 65-msg/cluster inspection; k=7 best sil but too coarse, k=15 unstable (0.61)"

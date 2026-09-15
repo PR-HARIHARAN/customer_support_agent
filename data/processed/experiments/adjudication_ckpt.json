@@ -1,0 +1,1306 @@
+[
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer expresses frustration about their overall travel experience without specifying a particular disruption (e.g., delay, cancellation, or rebooking). The venting nature of the message ('most certainly not a pleasant experience', 'lost sense of time') aligns with general dissatisfaction rather than a specific operational issue.",
+  "taxonomy_issue": "No explicit mention of delay, cancellation, or rebooking triggers higher-priority intents.",
+  "confidence": "high",
+  "message_id": "1029067::cust1::1029065"
+ },
+ {
+  "adjudicated_intent": "flight_cancellation",
+  "winner": "A",
+  "reason": "The customer's primary concern is about flight cancellation policies (flights being canceled up to boarding), which directly aligns with the flight_cancellation intent. The mention of the pilot is a secondary status inquiry but does not override the core cancellation policy question.",
+  "taxonomy_issue": "Ambiguity in status inquiry vs cancellation policy",
+  "confidence": "high",
+  "message_id": "104342::cust23::2959672"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer is disputing the perceived unfairness of status-based upgrades, which directly relates to fee disputes over change/rebook policies. The agent's responses focus on apologizing for errors rather than addressing the upgrade policy dispute.",
+  "taxonomy_issue": "Ambiguity between fee disputes and status inquiries",
+  "confidence": "high",
+  "message_id": "1059042::cust0::1059042"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "A",
+  "reason": "The customer explicitly requests seating arrangements for family members, seeking to change seat assignments despite codeshare complexities. While charges are mentioned, the primary focus is on seat assignment, not a status inquiry.",
+  "taxonomy_issue": "Ambiguity between seat assignment requests and status inquiries",
+  "confidence": "high",
+  "message_id": "1061749::cust1::1061746"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about being forced to gate-check their bag despite available overhead space, which directly matches the forced_gate_check_complaint label. The agent's neutral response does not negate the complaint's validity.",
+  "taxonomy_issue": "No conflicting intent labels apply",
+  "confidence": "high",
+  "message_id": "1068791::cust0::1068791"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about the hotel's poor service quality (filthy conditions, hairs in sheets) provided through the airline's third-party service, which directly matches the service_failure_complaint intent. The specific operational failure of the hotel service outweighs general venting.",
+  "taxonomy_issue": "Clear service failure with specific details",
+  "confidence": "high",
+  "message_id": "1072410::cust0::1072410"
+ },
+ {
+  "adjudicated_intent": "flight_cancellation",
+  "winner": "A",
+  "reason": "The customer explicitly mentions a 13.5hr delay followed by a cancellation, which is the primary issue. While baggage issues are mentioned, the cancellation is the core disruption. The agent's response focuses on rescheduling, aligning with cancellation handling.",
+  "taxonomy_issue": "Conflicting delay/cancellation cues",
+  "confidence": "high",
+  "message_id": "1077591::cust4::1077590"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer is discussing personal status benefits and loyalty program details without requesting specific action, falling under social chatter about airline perks.",
+  "taxonomy_issue": "No specific disruption or actionable request identified",
+  "confidence": "high",
+  "message_id": "1080625::cust9::1898956"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about staff (counter team) not acknowledging them, with the agent apologizing for their rudeness, directly aligning with staff conduct issues.",
+  "taxonomy_issue": "flight_status_inquiry incorrectly assumes neutral inquiry when the customer is specifically addressing staff behavior",
+  "confidence": "high",
+  "message_id": "1083113::cust2::1083114"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about being forced to gate-check their bag despite available space, with specific mention of agent deception and repeated occurrence. This directly matches the forced_gate_check_complaint label.",
+  "taxonomy_issue": "No competing labels fully capture the specific complaint about forced gate checks",
+  "confidence": "high",
+  "message_id": "1083494::cust2::1083489"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "A",
+  "reason": "The customer explicitly complains about delays caused by broken planes and crew unavailability, not cancellation. The agent's apology for 'affected travel' supports delay context over cancellation.",
+  "taxonomy_issue": "Confusion between delay and cancellation when delay is explicitly described with 'delaying until crew can't fly'",
+  "confidence": "high",
+  "message_id": "1084574::cust1::1084573"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "A",
+  "reason": "The message is a bare thank you for enabling a donation feature, with no specific praise or request. The gratitude is directed at the airline's policy, not a service/flight aspect.",
+  "taxonomy_issue": "Distinguishing between general thanks and praise when no specific service/flight content is mentioned",
+  "confidence": "high",
+  "message_id": "1103764::cust2::1160337"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "Customer explicitly states they will miss their flight and references potential rebooking costs, aligning with the need for rebooking/reroute/confirm priority over delay inquiry.",
+  "taxonomy_issue": "Ambiguity between delay and missed connection",
+  "confidence": "high",
+  "message_id": "1126899::cust2::1126898"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "B",
+  "reason": "The customer's final message is a bare thank you with no request or actionable content, fitting 'other_acknowledgement_thanks' as per priority rules.",
+  "taxonomy_issue": "Distinguishing between social chatter (non-actionable) and pure gratitude (acknowledgement).",
+  "confidence": "high",
+  "message_id": "1134396::cust2::1134398"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "Customer explicitly requests rebooking to another flight, which directly aligns with missed_connection_rebooking priority over delay inquiries.",
+  "taxonomy_issue": "Confusion between delay and rebooking request",
+  "confidence": "high",
+  "message_id": "1149123::cust3::1149127"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "B",
+  "reason": "The customer's complaint about in-flight food safety and odor constitutes an operational failure in service delivery, aligning with service_failure_complaint. The agent's superficial apology without addressing root causes matches this category.",
+  "taxonomy_issue": "No direct 'food safety' label exists, but service_failure_complaint best captures the operational failure aspect",
+  "confidence": "high",
+  "message_id": "1164159::cust0::1164159"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer explicitly disputes the $25 checked bag fee and expresses frustration with policy limitations, aligning with the change_fee_dispute intent. While venting occurs, the specific fee dispute takes priority per taxonomy rules.",
+  "taxonomy_issue": "Confusion between fee dispute and venting due to multiple complaints",
+  "confidence": "high",
+  "message_id": "1187832::cust1::1187831"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "A",
+  "reason": "The customer's message is a bare thank you with no explicit request or content, matching 'other_acknowledgement_thanks'. The agent's response is a standard acknowledgment, not a refund offer.",
+  "taxonomy_issue": "Annotator B incorrectly interprets 'I Appreciate It' as a refund request, but the phrase is a generic thank you without actionable intent.",
+  "confidence": "high",
+  "message_id": "1198578::cust0::1198578"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer comments on downed systems (service failure) and agent workarounds, fitting service_failure_complaint despite neutral tone. Flight_status_inquiry requires explicit status questions, which aren't present.",
+  "taxonomy_issue": "Ambiguity between service_failure_complaint (system outage) and flight_status_inquiry (status check).",
+  "confidence": "medium",
+  "message_id": "1230473::cust0::1230473"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about being forced to gate-check luggage despite available overhead space, which directly matches the forced_gate_check_complaint intent. While baggage delays are mentioned, the core issue is the protest against the gate-check policy.",
+  "taxonomy_issue": "Confusion between forced gate check (policy protest) vs baggage delay (logistics issue)",
+  "confidence": "high",
+  "message_id": "1244031::cust1::1244030"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly requests rebooking assistance for a codeshare flight, which directly aligns with missed_connection_rebooking. The agent's response about Iberia handling rebooking does not negate the customer's primary ask for AA's involvement.",
+  "taxonomy_issue": "Confusion between rebooking requests and status inquiries",
+  "confidence": "high",
+  "message_id": "1271353::cust0::1271353"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly mentions changing planes and requests a voucher as compensation, indicating a missed connection requiring rebooking. This aligns with the priority hierarchy where missed_connection_rebooking outranks flight_delay.",
+  "taxonomy_issue": "Ambiguity between delay and rebooking compensation",
+  "confidence": "high",
+  "message_id": "1277359::cust1::1277360"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "B",
+  "reason": "The customer's message is a non-actionable mention of a DM, and the agent's response is a brief acknowledgment without addressing the question. The interaction lacks a specific request or actionable issue.",
+  "taxonomy_issue": "No specific issue or request is addressed, fitting 'other_non_actionable' for social chatter without problem context.",
+  "confidence": "high",
+  "message_id": "1287141::cust0::1287141"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer's query is a neutral question about a reservation process requirement, not a flight status or service issue. The agent's response is a standard support referral without addressing any disruption or request.",
+  "taxonomy_issue": "The question pertains to reservation process details rather than flight status or service failure",
+  "confidence": "high",
+  "message_id": "1289187::cust1::1289186"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about being forced to check carry-on baggage at the gate, which directly matches the 'forced_gate_check_complaint' label. While refund request exists, it's secondary to the core complaint about forced gate check. The agent's response about Basic Economy terms is context but doesn't override the primary issue.",
+  "taxonomy_issue": "No conflicting label with higher priority",
+  "confidence": "high",
+  "message_id": "1296923::cust7::2451826"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about a flight attendant's microaggressive behavior (English lesson to a US citizen) and demands accountability for staff training, which directly matches the staff_conduct_complaint label. While website issues are mentioned, the primary complaint centers on staff conduct.",
+  "taxonomy_issue": "No conflicting intent dominates the message",
+  "confidence": "high",
+  "message_id": "13304::cust1::13302"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly threatens cancellation due to forced gate-check of fragile carry-on, matching the forced_gate_check_complaint intent. The agent's reassurance doesn't address the core complaint about luggage handling procedures.",
+  "taxonomy_issue": "Confusion between luggage handling complaints and flight status inquiries",
+  "confidence": "high",
+  "message_id": "1341081::cust0::1341081"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "BOTH_WRONG",
+  "reason": "The customer's complaint about seat size and refusal to upgrade does not explicitly request a seat change or upgrade, while the agent's response about seat options lacks specific reassignment cues. Neither intent fully captures the context.",
+  "taxonomy_issue": "Ambiguity between seat size complaints and explicit seat reassignment requests",
+  "confidence": "medium",
+  "message_id": "1349666::cust3::1349668"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "A",
+  "reason": "The customer explicitly references flight delays, deplaning, reboarding delays, and uses #flightdelay, aligning with flight_delay. While venting occurs, the primary focus remains on the operational disruption caused by the delay.",
+  "taxonomy_issue": "No conflicting intent dominates the context",
+  "confidence": "high",
+  "message_id": "1354819::cust1::1354815"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer's message expresses frustration about baggage check processes without a specific actionable issue, using emojis and exaggerated language, fitting the venting category. The agent's polite response does not address the complaint, reinforcing the venting tone.",
+  "taxonomy_issue": "The complaint lacks specific disruption or actionable request, aligning with venting rather than service failure.",
+  "confidence": "high",
+  "message_id": "1384752::cust3::1384755"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "A",
+  "reason": "The message primarily consists of specific praise for the airline's customer service, with the seat assignment discussion serving as contextual background rather than a direct request or complaint.",
+  "taxonomy_issue": "Ambiguity between praise and seat assignment context",
+  "confidence": "high",
+  "message_id": "1388241::cust2::1388239"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "B",
+  "reason": "The customer explicitly describes a situation where the flight had to turn around due to luggage issues, which constitutes a delay in the itinerary. The agent's response acknowledges the delay and apologizes for extra travel time, confirming the delay intent over cancellation.",
+  "taxonomy_issue": "Confusion between delay and cancellation due to ambiguous 'turn around' phrasing",
+  "confidence": "high",
+  "message_id": "1438719::cust0::1438719"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer explicitly disputes the $50 carry-on fee under Basic Economy, which directly matches the change_fee_dispute label for fare-difference/Basic-Economy charge disputes.",
+  "taxonomy_issue": "Confusion between fee disputes and flight status inquiries",
+  "confidence": "high",
+  "message_id": "144587::cust0::144587"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer's primary query is about accessing DM, which is a general inquiry unrelated to flight operations, service issues, or actionable requests. The subsequent praise is a minor positive note but does not shift the intent from a non-actionable question.",
+  "taxonomy_issue": "The conversation involves a DM access question and general appreciation, but no specific flight-related disruption or request.",
+  "confidence": "high",
+  "message_id": "1469620::cust1::1469616"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "A",
+  "reason": "The primary focus is the 5-hour delay, which directly matches the flight_delay label. The metaphorical venting is contextual to the delay, not a separate issue.",
+  "taxonomy_issue": "Venting secondary to delay",
+  "confidence": "high",
+  "message_id": "1469656::cust0::1469656"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer expresses frustration about terminal conditions without specifying a particular disruption or request, fitting broad venting. The agent's generic acknowledgment supports this intent.",
+  "taxonomy_issue": "No specific disruption or actionable request identified",
+  "confidence": "high",
+  "message_id": "1478500::cust0::1478500"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "A",
+  "reason": "The customer's frustration stems from the lack of announcements and delayed arrival, directly aligning with flight_delay. The agent's acknowledgment of the wait does not resolve the core issue of disrupted flight status.",
+  "taxonomy_issue": "Confusion between delay and venting due to ambiguous phrasing",
+  "confidence": "high",
+  "message_id": "1481607::cust0::1481607"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer is asking for a baggage claim phone number, which is a neutral policy question, not related to a specific baggage issue. The agent's response provides standard contact info, aligning with flight_status_inquiry.",
+  "taxonomy_issue": "Confusion between general policy inquiries and baggage-specific issues",
+  "confidence": "high",
+  "message_id": "1520082::cust0::1520082"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer's explicit complaints about poor service quality, cramped seats, and lack of in-flight amenities outweigh the initial praise, which appears to be a rhetorical contrast rather than genuine satisfaction. The priority rules prioritize specific service failure complaints over praise.",
+  "taxonomy_issue": "Ambiguous initial praise vs. explicit service complaints",
+  "confidence": "high",
+  "message_id": "1520578::cust0::1520578"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly mentions rebooking and being stuck in the airport due to a missed connection, which aligns with the priority of rebooking needs over delay reporting.",
+  "taxonomy_issue": "Confusion between cause (delay) and consequence (missed connection requiring rebooking)",
+  "confidence": "high",
+  "message_id": "1521435::cust0::1521435"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer is seeking guidance on check-in procedures due to being late, which is a neutral inquiry about next steps, not a flight delay or cancellation. The agent's response confirms this is a procedural check-in issue.",
+  "taxonomy_issue": "Confusing check-in timing with flight delay; check-in is a process step, not flight status.",
+  "confidence": "high",
+  "message_id": "1524483::cust0::1524483"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer explicitly disputes the change fee policy, focusing on the financial discrepancy for a partial flight. While refund is mentioned, the core issue is the fee structure, not an explicit refund request.",
+  "taxonomy_issue": "Refund_request vs change_fee_dispute",
+  "confidence": "high",
+  "message_id": "1533972::cust2::1533969"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly asks about rebooking due to a missed connection, which directly matches the missed_connection_rebooking intent. The agent's confirmation of rebooking reinforces this as the primary issue.",
+  "taxonomy_issue": "No conflicting intent with higher priority",
+  "confidence": "high",
+  "message_id": "1536525::cust0::1536525"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly mentions being rerouted multiple times to an oversold flight and being stranded, indicating a need for rebooking/rerouting. This aligns with missed_connection_rebooking priority over flight_delay.",
+  "taxonomy_issue": "Confusion between delay vs rebooking need",
+  "confidence": "high",
+  "message_id": "1562722::cust1::1562717"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly states they have to switch flights and seek boarding group info, indicating a missed connection requiring rebooking. The agent's response about boarding support reinforces this intent.",
+  "taxonomy_issue": "Confusion between flight status inquiry and rebooking need",
+  "confidence": "high",
+  "message_id": "1579897::cust0::1579897"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer's frustration stems from the airline's operational limitation in handling standby list requests, not direct staff misconduct. The agent's response was procedurally correct, making this a systemic service failure rather than a staff conduct issue.",
+  "taxonomy_issue": "Distinguishing between systemic service failures and individual staff behavior",
+  "confidence": "high",
+  "message_id": "1585599::cust1::1585598"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly asks about rebooking options after a potential missed connection, which is a clear request for rebooking/reroute/confirm. While delay is mentioned, the primary intent is the missed connection and need for rebooking.",
+  "taxonomy_issue": "Confusion between delay and rebooking intent",
+  "confidence": "high",
+  "message_id": "1596850::cust0::1596850"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "B",
+  "reason": "The customer explicitly expresses frustration with service failure (call disconnected) and seeks resolution, aligning with service_failure_complaint. The agent's response acknowledges the issue but does not resolve it, reinforcing the complaint about operational support failure.",
+  "taxonomy_issue": "The core issue is the failed service interaction, not general venting.",
+  "confidence": "high",
+  "message_id": "1599360::cust0::1599360"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about a lack of assistance and accommodation from the agent, which constitutes an operational failure in service delivery. The frustration stems from the agent's inability to resolve the situation, aligning with service_failure_complaint over general venting.",
+  "taxonomy_issue": "Ambiguity between service_failure_complaint and general_dissatisfaction_venting",
+  "confidence": "high",
+  "message_id": "1611995::cust1::1611994"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer expresses frustration about pricing disparities and airport selection without requesting specific action, fitting the broad venting category.",
+  "taxonomy_issue": "No actionable request or specific disruption asserted",
+  "confidence": "high",
+  "message_id": "1614894::cust0::1614894"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer's inquiry about AA Advantage program usability is a general question without specific disruption, request, or actionable intent. It aligns with non-actionable topics like loyalty program clarification.",
+  "taxonomy_issue": "No direct label matches the program usage comparison query",
+  "confidence": "high",
+  "message_id": "1630672::cust6::1630661"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer's message is a general comment about wireless entertainment without a specific actionable request, fitting 'other_non_actionable' as it lacks disruption or intent labels.",
+  "taxonomy_issue": "No direct intent match for service updates without actionable request",
+  "confidence": "high",
+  "message_id": "1644143::cust0::1644143"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "A|B",
+  "reason": "The customer expresses frustration with airline service ('lo peor en aerolínea', 'no nos ayudaron') and references a refund request, but the primary focus is venting about poor service handling rather than a specific actionable request. The refund mention is contextual, not a direct refund ask.",
+  "taxonomy_issue": "Ambiguous between refund_request and general_dissatisfaction_venting",
+  "confidence": "high",
+  "message_id": "1656282::cust1::1656281"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "B",
+  "reason": "The customer explicitly attributes the missed connection and hotel expense to the airline's lack of communication, which constitutes an operational failure in service delivery.",
+  "taxonomy_issue": "The complaint centers on communication failure causing a missed connection and financial burden, fitting service_failure_complaint over general venting.",
+  "confidence": "high",
+  "message_id": "1664944::cust2::1664946"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer is providing information about prior communication rather than requesting action or inquiring about flight status. No specific disruption or actionable request is present.",
+  "taxonomy_issue": "Ambiguous between status inquiry and non-actionable, but no disruption/assertion exists",
+  "confidence": "medium",
+  "message_id": "1701232::cust2::1701229"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer's primary inquiry centers on flight availability and operational changes (limited service, direct flight options), which aligns with flight_status_inquiry. The final 'Thank you' is a closing remark, not the main intent.",
+  "taxonomy_issue": "Confusion between closing remarks and substantive inquiries",
+  "confidence": "high",
+  "message_id": "1707356::cust3::1707353"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly protests being forced to gate-check a bag despite available overhead space, directly matching the forced_gate_check_complaint intent. The mention of crew/front desk misalignment reinforces the complaint about inconsistent handling rather than bag status.",
+  "taxonomy_issue": "Confusion between forced gate check and baggage status issues",
+  "confidence": "high",
+  "message_id": "1790711::cust0::1790711"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "BOTH_WRONG",
+  "reason": "The customer's message consists of hashtags and vague expressions of frustration without any specific actionable request or disruption claim, aligning with venting rather than flight delay or non-actionable content.",
+  "taxonomy_issue": "Confusion between venting (last resort) and non-actionable/social chatter",
+  "confidence": "high",
+  "message_id": "1841796::cust1::1841797"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer expresses frustration about recurring bad experiences and unresolved customer service issues, fitting the broad venting category without specific actionable requests.",
+  "taxonomy_issue": "No specific disruption or request identified, aligning with venting over non-actionable chatter",
+  "confidence": "high",
+  "message_id": "1932508::cust0::1932508"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "B",
+  "reason": "The customer's complaint about being placed in the wrong boarding group (Group 6 instead of Gold Group 4) directly impacts their seat assignment (last row), which is a specific and actionable seat-related issue. The agent's response to correct the reservation confirms this is a seat assignment error requiring resolution.",
+  "taxonomy_issue": "Boarding group misassignment indirectly affects seat assignment, which falls under seat_assignment_change as it involves correcting an involuntary seat placement.",
+  "confidence": "high",
+  "message_id": "1966469::cust0::1966469"
+ },
+ {
+  "adjudicated_intent": "baggage_delayed_lost",
+  "winner": "A",
+  "reason": "The customer explicitly states they don't have luggage, directly aligning with baggage_delayed_lost. While flight_delay could be considered, the core issue is missing luggage, not flight timing.",
+  "taxonomy_issue": "No conflicting intent with clear priority",
+  "confidence": "high",
+  "message_id": "1967372::cust2::1967374"
+ },
+ {
+  "message_id": "1970270::cust4::1970273",
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "adjudication parse failed",
+  "taxonomy_issue": "",
+  "confidence": "low"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "A",
+  "reason": "The customer explicitly requests to change their boarding group, which directly aligns with seat assignment change. The agent's response confirms this as a priority boarding option at check-in.",
+  "taxonomy_issue": "No conflicting intent labels",
+  "confidence": "high",
+  "message_id": "2048688::cust0::2048688"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly states they missed a connection, directly aligning with the missed_connection_rebooking intent. The gratitude for the agent's efforts implies acknowledgment of the disruption, not a neutral status inquiry.",
+  "taxonomy_issue": "Confusion between disruption-related rebooking and neutral status checks",
+  "confidence": "high",
+  "message_id": "2105174::cust1::2105173"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "B",
+  "reason": "The customer references the seat's 'window offset' configuration, indicating a specific seat assignment issue. The app's failure to communicate this detail relates to seat assignment information, not a general app suggestion.",
+  "taxonomy_issue": "The customer's message indirectly addresses seat assignment details rather than a standalone app feature request.",
+  "confidence": "high",
+  "message_id": "2122747::cust1::2122746"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The message contains a lighthearted joke about a personal relationship between two entities, with no actionable request or specific issue. The praise about the delay handling is contextual but not the primary intent.",
+  "taxonomy_issue": "Blurs between praise and non-actionable content",
+  "confidence": "high",
+  "message_id": "2123361::cust0::2123361"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "B",
+  "reason": "The message is a social media hashtag reference with no service request or complaint, matching 'other_non_actionable' for avgeek chatter without actionable intent.",
+  "taxonomy_issue": "No specific praise or problem reported",
+  "confidence": "high",
+  "message_id": "2139159::cust1::2139158"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "B",
+  "reason": "The message contains specific praise with positive adjectives ('rockstar', 'super helpful', 'knowledgeable', 'great attitude') directed at Nina's service, fitting the 'positive_feedback_praise' label. The agent's response is an acknowledgment, not a request.",
+  "taxonomy_issue": "Distinguishing between praise (specific content) and bare thanks (no request).",
+  "confidence": "high",
+  "message_id": "2148629::cust0::2148629"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "A",
+  "reason": "The customer's primary complaint centers on the involuntary seat assignment change and resulting inconvenience, not flight delay. While waiting times are mentioned, they stem from the seat change issue rather than a flight delay itself.",
+  "taxonomy_issue": "Confusion between seat assignment change (specific action) and flight delay (schedule disruption).",
+  "confidence": "high",
+  "message_id": "2164794::cust0::2164794"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer's primary focus is disputing the charge for an involuntary seat change, not flight delay. They explicitly mention being charged more for a basic service and frustration with the process, which aligns with change_fee_dispute.",
+  "taxonomy_issue": "Ambiguity between seat change and delay, but fee dispute is explicitly mentioned",
+  "confidence": "high",
+  "message_id": "2164794::cust3::2164801"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "B",
+  "reason": "The customer explicitly praises the boarding program's changes and the agent's response, with positive sentiment toward the airline's efforts. The mention of 'Here’s to my last 20,000 miles' reinforces appreciation rather than a generic thank you.",
+  "taxonomy_issue": "The message contains specific praise for operational changes, aligning with positive_feedback_praise over general thanks.",
+  "confidence": "high",
+  "message_id": "2174393::cust0::2174393"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "B",
+  "reason": "The customer explicitly requests to 'hold that plane' to make a connection, indicating a delay concern. While missed_connection_rebooking is higher priority, the customer hasn't explicitly requested rebooking, focusing instead on delaying the flight to meet the connection time.",
+  "taxonomy_issue": "Ambiguity between delay and missed connection rebooking when rebooking isn't explicitly requested",
+  "confidence": "high",
+  "message_id": "2210178::cust1::2210177"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly states they will miss their connecting flight due to the delay, with a clear request for rebooking assistance (implied by the agent's prompt for a record locator). This aligns with missed_connection_rebooking's priority over flight_delay.",
+  "taxonomy_issue": "Confusion between delay impact vs. rebooking need",
+  "confidence": "high",
+  "message_id": "2250304::cust0::2250304"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly criticizes staff for unhelpfulness and dismissive behavior, which aligns with staff_conduct_complaint. While general dissatisfaction is present, the specific complaints about staff actions take precedence per priority rules.",
+  "taxonomy_issue": "Ambiguity between staff conduct and general venting",
+  "confidence": "high",
+  "message_id": "2250364::cust1::2250363"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "B",
+  "reason": "The customer explicitly praises the ice cream sundae with positive language and hashtags, fitting the 'positive_feedback_praise' category. While gratitude is present, the specific praise for a service element takes precedence over general thanks.",
+  "taxonomy_issue": "Ambiguity between gratitude and praise, but specific service praise overrides generic thanks",
+  "confidence": "high",
+  "message_id": "2273750::cust3::2273746"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "B",
+  "reason": "The customer explicitly criticizes the airline's service for deaf travelers at ORD, indicating dissatisfaction with operational processes or staff behavior. The agent's response seeking a locator to address the issue aligns with resolving a service complaint.",
+  "taxonomy_issue": "Ambiguity between staff conduct and service failure, but the specific mention of 'step up your game' implies a complaint about service quality rather than a general vent.",
+  "confidence": "high",
+  "message_id": "228036::cust0::228036"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "B",
+  "reason": "The customer's final message 'Thank you!' is a bare acknowledgment of the agent's previous response, indicating closure without any further requests or specific issues.",
+  "taxonomy_issue": "The initial inquiry about personal TVs could be considered a flight_status_inquiry, but the final message overrides this as a closing acknowledgment.",
+  "confidence": "high",
+  "message_id": "2284593::cust2::2284595"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about being forced to check their bag despite available overhead space, with the airline's justification being bag size. This directly matches the forced_gate_check_complaint label. While baggage delay is mentioned, the primary frustration centers on the gate-check policy violation.",
+  "taxonomy_issue": "Confusion between baggage handling issues and flight delay",
+  "confidence": "high",
+  "message_id": "2287172::cust0::2287172"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "The customer is explicitly complaining about unprofessional staff behavior (flight attendant hitting the seat repeatedly), which falls under staff_conduct_complaint. While seat-related issues are mentioned, the primary complaint centers on the staff's actions, not a seat assignment change.",
+  "taxonomy_issue": "Ambiguity between staff conduct and seat-related issues",
+  "confidence": "high",
+  "message_id": "2301108::cust1::2301107"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer is explicitly asking about the status of their rebooked flight, email confirmation, and record locator issues, which aligns with a neutral inquiry about itinerary status rather than a disruption claim.",
+  "taxonomy_issue": "No disruption asserted, focused on confirmation details",
+  "confidence": "high",
+  "message_id": "230681::cust1::230677"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "B",
+  "reason": "The customer explicitly disputes the $319 change fee compared to the $240 new flight cost, which directly matches the change_fee_dispute intent. The mention of being charged after cancellation is contextual to the fee dispute, not the cancellation itself.",
+  "taxonomy_issue": "Confusion between cancellation and fee dispute",
+  "confidence": "high",
+  "message_id": "2311233::cust0::2311233"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer is stating their decision to discontinue a card due to mile credit issues, not requesting action or expressing dissatisfaction with a specific service disruption.",
+  "taxonomy_issue": "No explicit refund request or actionable complaint",
+  "confidence": "high",
+  "message_id": "2333700::cust0::2333700"
+ },
+ {
+  "adjudicated_intent": "other_out_of_domain",
+  "winner": "A",
+  "reason": "The message pertains to event involvement and is entirely unrelated to airline operations or customer support requests.",
+  "taxonomy_issue": "Unrelated to airline support topics",
+  "confidence": "high",
+  "message_id": "2362053::cust0::2362053"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "B",
+  "reason": "The customer's message consists of holiday humor, social media references, and emojis without any specific complaint or actionable request. The tone is lighthearted and does not align with genuine dissatisfaction or praise.",
+  "taxonomy_issue": "The message falls under social chatter without a specific issue, making it non-actionable.",
+  "confidence": "high",
+  "message_id": "2368377::cust4::2368381"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer's message expresses frustration about limited seating options without requesting specific action, fitting the venting category as no actionable issue or disruption is asserted.",
+  "taxonomy_issue": "Ambiguity between seat-related comments and venting",
+  "confidence": "high",
+  "message_id": "2401291::cust1::2401290"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer shares a personal anecdote and general comment about a policy interaction, without requesting specific action or inquiring about flight status.",
+  "taxonomy_issue": "The interaction involves policy discussion and social commentary rather than a specific actionable request.",
+  "confidence": "high",
+  "message_id": "2442163::cust0::2442163"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "BOTH_WRONG",
+  "reason": "The message primarily expresses personal grief and frustration over a family tragedy, not a specific airline service issue. While the customer mentions closing accounts, there's no actionable complaint or disruption to airline operations.",
+  "taxonomy_issue": "Last resort category for broad venting without specific actionable issues",
+  "confidence": "low",
+  "message_id": "2445440::cust0::2445440"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "A",
+  "reason": "The customer is disputing a specific seat assignment change due to a plane configuration update, providing evidence (URL) to confirm their original booking. This directly aligns with seat_assignment_change, not a general status inquiry.",
+  "taxonomy_issue": "Confusion between seat assignment disputes and flight status questions",
+  "confidence": "high",
+  "message_id": "2456429::cust2::2456432"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "A",
+  "reason": "The customer's message expresses clear positive sentiment about their flight experience without requesting action, aligning with positive_feedback_praise. No explicit inquiry or disruption is asserted.",
+  "taxonomy_issue": "flight_status_inquiry incorrectly assumes an implicit status check when the message contains no actionable question",
+  "confidence": "high",
+  "message_id": "2476481::cust0::2476481"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer's message contains a request for a flight arrangement but lacks explicit disruption or actionable request cues. The context focuses on event planning, not flight status disruption. The agent's response confirms the flight is being arranged, aligning with a neutral inquiry about flight status.",
+  "taxonomy_issue": "Ambiguity in distinguishing between flight request and status inquiry",
+  "confidence": "medium",
+  "message_id": "2487507::cust1::2487506"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "A",
+  "reason": "The message is a simple expression of gratitude with no request or complaint, matching 'other_acknowledgement_thanks' as a bare thank you.",
+  "taxonomy_issue": "Ambiguity between thanks and praise; however, no specific service praise is present.",
+  "confidence": "high",
+  "message_id": "2496151::cust1::2496150"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "B",
+  "reason": "The customer's message is a bare thank you with no specific praise or request, aligning with 'other_acknowledgement_thanks' as it lacks content or actionable intent.",
+  "taxonomy_issue": "Ambiguity between gratitude and praise, but no specific service/flight praise is present",
+  "confidence": "high",
+  "message_id": "2508419::cust3::2508415"
+ },
+ {
+  "adjudicated_intent": "refund_request",
+  "winner": "A",
+  "reason": "The customer explicitly requests compensation for a missed family dinner, which directly aligns with refund_request. While venting is present, the specific financial demand overrides general dissatisfaction per priority rules.",
+  "taxonomy_issue": "Ambiguity between refund_request and general_dissatisfaction_venting",
+  "confidence": "high",
+  "message_id": "2517344::cust0::2517344"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer's message primarily expresses extreme frustration and disappointment without explicitly requesting a specific resolution, despite mentioning flight delays and missed connections. The tone and language ('never again', 'worst experience') align with venting rather than a targeted complaint.",
+  "taxonomy_issue": "Confusion between specific disruption details and broad dissatisfaction",
+  "confidence": "high",
+  "message_id": "2518504::cust0::2518504"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer is reporting a service failure regarding drink availability, which the agent acknowledges as an issue requiring escalation to the Food and Beverage team.",
+  "taxonomy_issue": "The query involves an operational service failure (drink service discrepancy) rather than a neutral inquiry.",
+  "confidence": "high",
+  "message_id": "2524731::cust0::2524731"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer's confusion about the airline's awareness of their inbound flight constitutes a neutral inquiry into flight status, despite frustration.",
+  "taxonomy_issue": "Venting could be argued, but the specific mention of flight status takes precedence over general dissatisfaction.",
+  "confidence": "high",
+  "message_id": "2532664::cust1::2532663"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly criticizes flight attendant behavior and staff unhelpfulness, which directly matches staff_conduct_complaint. The mention of specific flight attendant actions and negative descriptors ('Nurse Ratchet') clearly indicate a complaint about staff conduct.",
+  "taxonomy_issue": "Annotation B incorrectly frames this as a flight status inquiry, but the core issue is staff behavior, not flight status.",
+  "confidence": "high",
+  "message_id": "2551889::cust1::2551887"
+ },
+ {
+  "adjudicated_intent": "other_out_of_domain",
+  "winner": "A",
+  "reason": "The message discusses a social issue regarding animal trophy transportation policies, not a specific airline service disruption or request. It lacks actionable intent related to flight operations, baggage, or customer service.",
+  "taxonomy_issue": "The content relates to advocacy for policy change rather than airline support, falling outside the defined domains.",
+  "confidence": "high",
+  "message_id": "2555638::cust38::2555786"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "B",
+  "reason": "The customer's message 'Thank you!' is a bare expression of gratitude without any actionable request or specific content, aligning with the definition of an acknowledgment.",
+  "taxonomy_issue": "Distinguishing between bare thanks (acknowledgement) and non-actionable social chatter",
+  "confidence": "high",
+  "message_id": "2558932::cust1::2558931"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly requests rebooking for a missed connection (accepting the agent's rebooking option), which is the primary action sought despite initial mention of delay. Priority rules place rebooking for missed connections above general delay concerns.",
+  "taxonomy_issue": "Confusion between delay symptoms and rebooking action",
+  "confidence": "high",
+  "message_id": "2565951::cust0::2565951"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "B",
+  "reason": "The customer's message focuses on a political/environmental issue unrelated to their travel experience, with praise for a corporate policy rather than specific service/flight aspects.",
+  "taxonomy_issue": "Praise for policy vs. service feedback",
+  "confidence": "high",
+  "message_id": "2572581::cust62::2572382"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The conversation revolves around policy advocacy regarding animal trophy imports, not airline service disruptions or requests. The customer's comments are unrelated to flight operations, baggage, seating, or service failures.",
+  "taxonomy_issue": "The discussion is about political/policy advocacy, not airline support issues",
+  "confidence": "high",
+  "message_id": "2572581::cust175::2572477"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer highlights specific operational shortcomings (seat comfort, lack of amenities, unpleasant odor) which constitute service failures, not general venting. The agent's response acknowledges the issue by offering a solution (extra seats), aligning with service_failure_complaint's focus on operational/system failures.",
+  "taxonomy_issue": "Ambiguity between service_failure_complaint and general_dissatisfaction_venting",
+  "confidence": "high",
+  "message_id": "2584594::cust0::2584594"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "A",
+  "reason": "The customer's message is a generic thank you with no specific issue or request, fitting 'other_acknowledgement_thanks'. The URL and '[MENTION]' formatting suggest a social media-style acknowledgment rather than venting.",
+  "taxonomy_issue": "Confusion between generic thanks and frustration venting",
+  "confidence": "high",
+  "message_id": "2588787::cust1::2588786"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer's message is a general observation about flight amenities, not a specific inquiry or request. The agent's response addresses fleet updates, which does not resolve the customer's stated issue.",
+  "taxonomy_issue": "The lack of charger/entertainment system is an amenity observation, not a service failure or status inquiry.",
+  "confidence": "high",
+  "message_id": "2589772::cust0::2589772"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "A",
+  "reason": "Customer expresses gratitude without requesting action or providing specific praise about flight/crew/service quality. The thanks are standalone acknowledgments of policy stance, not directed at operational service aspects.",
+  "taxonomy_issue": "Ambiguity between thanks and praise when policy statements are involved",
+  "confidence": "high",
+  "message_id": "2591102::cust6::2592378"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "B",
+  "reason": "The customer explicitly praises specific aircraft models (mainline fleet, CRJs) with positive adjectives ('great', 'solid'), aligning with the positive_feedback_praise label despite mixed sentiment.",
+  "taxonomy_issue": "Mixed sentiment does not negate specific praise; the presence of actionable praise overrides general venting.",
+  "confidence": "high",
+  "message_id": "261892::cust1::261888"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "A",
+  "reason": "The message is a bare thank you with no content or request for action, matching 'other_acknowledgement_thanks' criteria.",
+  "taxonomy_issue": "Ambiguity between gratitude and praise",
+  "confidence": "high",
+  "message_id": "2641145::cust1::2641144"
+ },
+ {
+  "adjudicated_intent": "flight_cancellation",
+  "winner": "A",
+  "reason": "The customer explicitly states the issue is a cancellation, not a delay, and emphasizes the impact of the cancellation (missing a critical event). The agent's response focuses on delays, but the customer's assertion of cancellation takes precedence.",
+  "taxonomy_issue": "Confusion between delay and cancellation when customer explicitly reclassifies the issue",
+  "confidence": "high",
+  "message_id": "2653940::cust0::2653940"
+ },
+ {
+  "adjudicated_intent": "baggage_delayed_lost",
+  "winner": "A",
+  "reason": "The primary complaint centers on the loss of the customer's luggage (Ferragamo suit) and the airline's failure to take responsibility, which directly aligns with baggage_delayed_lost. While the customer criticizes customer service, this is secondary to the core issue of lost baggage.",
+  "taxonomy_issue": "Confusion between primary baggage loss and secondary service complaint",
+  "confidence": "high",
+  "message_id": "2699529::cust3::2699527"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer explicitly disputes the $400 change fee for using half their round-trip ticket, focusing on the fee structure rather than requesting a refund. The agent's response does not address this fee dispute directly.",
+  "taxonomy_issue": "Confusion between fee disputes and refund requests",
+  "confidence": "high",
+  "message_id": "2704435::cust0::2704435"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer explicitly expresses strong negative emotion ('so disappointed', '😡') and frustration with the airline's previous handling of their ticket, without a specific actionable request or disruption. The context clarifies the customer is venting about unresolved issues rather than reporting a concrete problem.",
+  "taxonomy_issue": "The message lacks specific disruption details (e.g., flight delay/cancellation) but centers on emotional dissatisfaction with service handling.",
+  "confidence": "high",
+  "message_id": "2707128::cust0::2707128"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The message is a social media mention with a URL, expressing general affection for the airline without any specific actionable request or issue.",
+  "taxonomy_issue": "The praise is too vague and lacks specific content about flight/crew/service to qualify as positive_feedback_praise",
+  "confidence": "high",
+  "message_id": "2707242::cust0::2707242"
+ },
+ {
+  "adjudicated_intent": "flight_cancellation",
+  "winner": "A",
+  "reason": "The customer explicitly mentions their ticket was cancelled, which directly aligns with the flight_cancellation intent. While venting occurs, the specific cancellation event takes priority per taxonomy rules.",
+  "taxonomy_issue": "Ambiguity between cancellation event and service complaint",
+  "confidence": "high",
+  "message_id": "2708081::cust0::2708081"
+ },
+ {
+  "adjudicated_intent": "baggage_delayed_lost",
+  "winner": "B",
+  "reason": "The customer explicitly states their luggage was 'loose' (lost) and the agent's response focuses on the delayed/lost bag process, including a claim form for damaged baggage. While damage is mentioned, the primary issue remains the loss of luggage, which is the core of the baggage_delayed_lost intent.",
+  "taxonomy_issue": "Ambiguity between delayed/lost and damaged baggage",
+  "confidence": "high",
+  "message_id": "2712890::cust0::2712890"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer's primary complaint centers on being forced to gate-check carry-on luggage due to misjudged overhead space, which directly aligns with forced_gate_check_complaint. While communication breakdown is mentioned, the core issue is the forced gate check, not a systemic service failure.",
+  "taxonomy_issue": "Service_failure_complaint (B) is less precise as the issue is not about operational systems (kiosks, apps) but staff communication. Forced_gate_check_complaint (A) is the specific label for this scenario.",
+  "confidence": "high",
+  "message_id": "2744447::cust1::2744446"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "A",
+  "reason": "The customer explicitly reports maintenance delays for two flights, which directly aligns with flight_delay (operating flight late/holding). The agent's response confirms the delays and prioritizes safety, reinforcing the operational disruption without indicating a status inquiry.",
+  "taxonomy_issue": "Annotation B misclassifies as status inquiry, but the customer is reporting delays, not asking for status updates.",
+  "confidence": "high",
+  "message_id": "274649::cust0::274649"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "BOTH_WRONG",
+  "reason": "The customer is venting about first-class amenities (no TVs, no charging ports) without requesting specific action, but the complaint is about service quality, not operational failure or disruption. No clear taxonomy match for this specific service quality critique.",
+  "taxonomy_issue": "No direct label for service quality complaints in premium cabins",
+  "confidence": "low",
+  "message_id": "2763820::cust0::2763820"
+ },
+ {
+  "adjudicated_intent": "other_acknowledgement_thanks",
+  "winner": "B",
+  "reason": "The customer's message 'Done, thanks !' is a bare expression of gratitude without any specific request or issue, indicating satisfaction with the previous resolution.",
+  "taxonomy_issue": "Distinguishing between pure acknowledgment and non-actionable content based on explicit closure language",
+  "confidence": "high",
+  "message_id": "2785372::cust2::2785368"
+ },
+ {
+  "adjudicated_intent": "baggage_delayed_lost",
+  "winner": "A",
+  "reason": "The customer explicitly details a baggage issue (sent to wrong city, 5-day delay) with clear disruption, aligning with baggage_delayed_lost. While emotive language is present, the specific complaint about lost luggage takes priority over general venting.",
+  "taxonomy_issue": "Ambiguity between venting and specific baggage issues",
+  "confidence": "high",
+  "message_id": "2789559::cust1::2789558"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer's inquiry about an adjustment to their reservation does not explicitly request a refund or action, and the context involves a specific policy question about mileage awards rather than a direct refund request.",
+  "taxonomy_issue": "The adjustment request could be interpreted as a refund, but the lack of explicit refund verbs and the focus on policy details aligns more with non-actionable chatter.",
+  "confidence": "high",
+  "message_id": "2807942::cust2::2807944"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer's question about flight discounts pertains to pricing policies, which falls under neutral policy inquiries. The agent's response about fare availability aligns with this intent.",
+  "taxonomy_issue": "Discounts may overlap with other_non_actionable, but policy-related questions are explicitly covered under flight_status_inquiry.",
+  "confidence": "high",
+  "message_id": "2862904::cust1::2862903"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The customer is sharing travel plans and promotional content without requesting action or expressing a specific issue.",
+  "taxonomy_issue": "No actionable request or disruption indicated",
+  "confidence": "high",
+  "message_id": "2866731::cust0::2866731"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer is disputing the $75 fee for changing to an earlier flight, which is the primary conflict. The agent's response about standby options addresses the fee dispute rather than a general status inquiry.",
+  "taxonomy_issue": "The mention of seat availability is secondary to the fee dispute, which is a named ask in the taxonomy.",
+  "confidence": "high",
+  "message_id": "2912683::cust0::2912683"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly mentions missing a connecting flight and receiving boarding passes for the next flight, indicating a need for rebooking despite the initial praise.",
+  "taxonomy_issue": "Positive feedback is secondary to the rebooking need per priority rules",
+  "confidence": "high",
+  "message_id": "2927434::cust0::2927434"
+ },
+ {
+  "adjudicated_intent": "refund_request",
+  "winner": "A",
+  "reason": "The customer explicitly requests a refund due to the airline's error (no pilots scheduled), which directly matches the refund_request intent. The mention of the airline's mistake is a justification for the refund, not a change fee dispute.",
+  "taxonomy_issue": "The core request is for a refund, not a fee dispute.",
+  "confidence": "high",
+  "message_id": "2959650::cust3::2959654"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer's primary request is to confirm flight status (when cancellations will be known) and inquire about pilot confirmation, which aligns with seeking status updates rather than directly requesting cancellation details. The agent's response about notifications does not resolve the uncertainty, reinforcing the status inquiry intent.",
+  "taxonomy_issue": "Ambiguity between flight_cancellation and flight_status_inquiry when cancellations are not yet confirmed",
+  "confidence": "high",
+  "message_id": "2960856::cust0::2960856"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The message is a joke about losing water weight through sweating during a flight, not a support request. The agent's response is a polite acknowledgment of the temperature, confirming it's a non-actionable social comment.",
+  "taxonomy_issue": "Confusion between humor/jokes and neutral inquiries",
+  "confidence": "high",
+  "message_id": "296510::cust0::296510"
+ },
+ {
+  "adjudicated_intent": "staff_conduct_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about employee attitude and uses derogatory hashtags, which directly aligns with staff_conduct_complaint. The gate charge explanation is a policy inquiry but secondary to the overt staff behavior complaint.",
+  "taxonomy_issue": "Confusion between policy inquiry and conduct complaint",
+  "confidence": "high",
+  "message_id": "2968265::cust0::2968265"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "B",
+  "reason": "The customer's sarcastic gratitude for being stranded and frustration with their status not preventing disruption clearly expresses broad dissatisfaction without specific actionable requests.",
+  "taxonomy_issue": "Ambiguity between cancellation and venting due to sarcastic phrasing",
+  "confidence": "high",
+  "message_id": "2976923::cust0::2976923"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly states they missed their flight and requires immediate assistance (agent contact), which directly aligns with missed_connection_rebooking. While the status inquiry element exists, the primary disruption (missed flight) and rebooking need take precedence per priority rules.",
+  "taxonomy_issue": "Ambiguous location inquiry vs disruption need",
+  "confidence": "high",
+  "message_id": "302409::cust0::302409"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly mentions missing their flight and discusses rebooking fees, which directly aligns with missed_connection_rebooking. The agent's response about rebooking fees reinforces this intent.",
+  "taxonomy_issue": "Confusion between cancellation and rebooking fees for missed flights",
+  "confidence": "high",
+  "message_id": "302409::cust1::302407"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The message is a social observation with no actionable request or complaint, matching 'other_non_actionable' for mentions/URLs without problem context.",
+  "taxonomy_issue": "Ambiguity between status inquiry and non-actionable",
+  "confidence": "high",
+  "message_id": "307042::cust0::307042"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer's primary focus is on the status of change waivers for their flight, which falls under policy-related inquiry. While the thumbs-up emoji suggests positive sentiment, the core message centers on seeking information about a specific policy action (waivers) rather than venting or praise.",
+  "taxonomy_issue": "Ambiguity between positive feedback and status inquiry due to mixed messaging",
+  "confidence": "high",
+  "message_id": "335333::cust0::335333"
+ },
+ {
+  "adjudicated_intent": "baggage_delayed_lost",
+  "winner": "A",
+  "reason": "The customer's primary concern is the delayed baggage, explicitly mentioned and central to their frustration, outweighing general flight delay references.",
+  "taxonomy_issue": "Distinguishing between baggage delay (specific item) vs flight delay (itinerary disruption)",
+  "confidence": "high",
+  "message_id": "347984::cust0::347984"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "A",
+  "reason": "The customer explicitly thanks AA and shares enthusiasm for the airline's engagement, aligning with specific praise for the brand's actions.",
+  "taxonomy_issue": "No actionable request or disruption, but clear positive sentiment toward the airline's social media interaction.",
+  "confidence": "high",
+  "message_id": "388618::cust2::388620"
+ },
+ {
+  "adjudicated_intent": "baggage_delayed_lost",
+  "winner": "A",
+  "reason": "The customer's primary focus is on the status of their bags after a layover, explicitly asking for clarity on what happens with them, which aligns with baggage_delayed_lost. While missed_connection_rebooking is mentioned, the core inquiry is about bag handling, not rebooking.",
+  "taxonomy_issue": "Confusion between baggage status and connection rebooking",
+  "confidence": "high",
+  "message_id": "390884::cust0::390884"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "Customer explicitly protests forced gate-checking despite available bin space, using strong language ('aggravating', 'shame on you') and ties frustration to policy enforcement, not baggage status or rebooking needs.",
+  "taxonomy_issue": "Confusion between gate-check policy protest and baggage delay consequences",
+  "confidence": "high",
+  "message_id": "431709::cust1::431708"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "A",
+  "reason": "The customer's message expresses frustration about premium service expectations not being met, with no specific actionable request. The URL and mention of price/view suggest venting rather than a direct inquiry or complaint about a service failure.",
+  "taxonomy_issue": "The venting nature of the message competes with potential service failure claims but lacks specific disruption indicators required for service_failure_complaint.",
+  "confidence": "high",
+  "message_id": "458145::cust0::458145"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer's primary message is a direct inquiry about their flight's status (SD to NYC Dec 26th) without asserting disruption. While the conversation includes playful exchanges, the flight status inquiry remains the dominant intent per priority rules.",
+  "taxonomy_issue": "Ambiguity between flight_status_inquiry and positive_feedback_praise due to conversational tone",
+  "confidence": "high",
+  "message_id": "462796::cust30::2956467"
+ },
+ {
+  "adjudicated_intent": "seat_upgrade_request",
+  "winner": "B",
+  "reason": "The customer explicitly requests information about their upgrade list status, which is directly related to seat upgrade eligibility. The mention of EP desk and app support ties into the upgrade process.",
+  "taxonomy_issue": "The query is about upgrade list status rather than a direct upgrade request, but the context of the upgrade list makes it a seat_upgrade_request",
+  "confidence": "high",
+  "message_id": "475771::cust1::475768"
+ },
+ {
+  "adjudicated_intent": "refund_request",
+  "winner": "A",
+  "reason": "The customer explicitly requests a refund for an unnecessary checked bag and cites misleading information as the basis for the dispute, aligning with refund_request and change_fee_dispute. The venting tone is secondary to the specific refund request.",
+  "taxonomy_issue": "Forced gate check complaint is a secondary issue, but refund request is primary.",
+  "confidence": "high",
+  "message_id": "477308::cust3::477315"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "B",
+  "reason": "The customer explicitly praises the agent's promotional idea with positive language and emojis, fitting the 'specific praise with content' criteria.",
+  "taxonomy_issue": "Balancing playful social interaction vs. structured praise",
+  "confidence": "high",
+  "message_id": "49343::cust2::49344"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The message contains mentions and a URL but no specific request, complaint, or actionable issue. The customer's reference to pilots and the agent's response about resolving pilot-related issues do not constitute a flight status inquiry or actionable problem.",
+  "taxonomy_issue": "No specific disruption or request identified",
+  "confidence": "high",
+  "message_id": "499432::cust1::499431"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The message is a social media post with no actionable request or complaint, focusing on personal context rather than airline service/operation.",
+  "taxonomy_issue": "Ambiguity between social chatter and implicit praise",
+  "confidence": "high",
+  "message_id": "508996::cust0::508996"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer is complaining about staff misusing hangers, which is an operational/process/system failure. The issue centers on service execution, not seat assignment or baggage.",
+  "taxonomy_issue": "Confusing storage facilities with seat assignment changes",
+  "confidence": "high",
+  "message_id": "515559::cust0::515559"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer explicitly disputes the change fee for upgrading a ticket, emphasizing the cost of purchasing a new ticket at a higher rate. While service frustration is present, the primary actionable issue is the fee dispute over the upgrade process.",
+  "taxonomy_issue": "Confusion between service failure and fee dispute; however, the explicit mention of change fee and rebooking cost makes change_fee_dispute the priority.",
+  "confidence": "high",
+  "message_id": "520923::cust1::520919"
+ },
+ {
+  "adjudicated_intent": "forced_gate_check_complaint",
+  "winner": "A",
+  "reason": "The customer explicitly complains about being forced to gate-check a bag despite the plane being half full, directly aligning with forced_gate_check_complaint. The flight_delay rationale conflates gate-check policy with flight timing, which isn't asserted here.",
+  "taxonomy_issue": "Confusion between gate-check policy enforcement and flight delay causality",
+  "confidence": "high",
+  "message_id": "539297::cust1::539296"
+ },
+ {
+  "adjudicated_intent": "seat_assignment_change",
+  "winner": "A",
+  "reason": "The customer explicitly requests a better seat to catch a shuttle, which is a clear seat assignment change request. While refund and delay issues are mentioned, the primary intent is the seat change.",
+  "taxonomy_issue": "Confusion between refund_request and seat_assignment_change",
+  "confidence": "high",
+  "message_id": "554298::cust0::554298"
+ },
+ {
+  "adjudicated_intent": "seat_upgrade_request",
+  "winner": "B",
+  "reason": "The customer explicitly mentions upgrading their AAdvantage card, which is a loyalty program benefit, and expresses frustration with the airline's response. The agent's reference to Citibank suggests the airline cannot process the request, but the core intent remains a request for an upgrade. The mention of 'not available' and the frustration align with a seat_upgrade_request as the customer seeks a benefit tied to their status.",
+  "taxonomy_issue": "Card upgrade is a loyalty program benefit, not directly a seat upgrade, but the intent to obtain an upgrade aligns with the seat_upgrade_request label.",
+  "confidence": "high",
+  "message_id": "56181::cust0::56181"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer is explicitly complaining about a gate agent's refusal to comply with posted rules, which constitutes an operational failure in service delivery. The agent's response to escalate to a supervisor confirms this is a service process issue, not a policy inquiry.",
+  "taxonomy_issue": "Confusion between policy inquiry and service failure",
+  "confidence": "high",
+  "message_id": "638037::cust0::638037"
+ },
+ {
+  "adjudicated_intent": "flight_delay",
+  "winner": "A",
+  "reason": "The customer explicitly references flight delays as the primary issue, aligning with the flight_delay intent. While venting occurs, the focus remains on the disruption caused by delays, which takes priority over general dissatisfaction.",
+  "taxonomy_issue": "Venting about delays vs. general dissatisfaction",
+  "confidence": "high",
+  "message_id": "668807::cust2::668802"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly mentions needing to rebook a ticket due to a ticket mistake, which requires rebooking/confirming a new flight. This aligns with missed_connection_rebooking (rebook verb present) over flight_status_inquiry (neutral inquiry).",
+  "taxonomy_issue": "Confusion between ticket mistake (status inquiry) vs rebooking action",
+  "confidence": "high",
+  "message_id": "670648::cust0::670648"
+ },
+ {
+  "adjudicated_intent": "general_dissatisfaction_venting",
+  "winner": "BOTH_WRONG",
+  "reason": "The message expresses dissatisfaction with in-flight amenities and lighting but lacks specific actionable requests or disruption claims, making it a vent rather than a status inquiry. Annotator B incorrectly classified it as flight_status_inquiry, while Annotator A misclassified it as non-actionable.",
+  "taxonomy_issue": "Ambiguity in distinguishing between general venting and neutral inquiries about operational status",
+  "confidence": "medium",
+  "message_id": "687147::cust0::687147"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer's direct question 'Any news?' explicitly seeks information about the flight's current status, aligning with flight_status_inquiry. While initial frustration may hint at disruption, no explicit cancellation or rebooking request is made.",
+  "taxonomy_issue": "Ambiguity between status inquiry and cancellation due to vague phrasing",
+  "confidence": "high",
+  "message_id": "712987::cust0::712987"
+ },
+ {
+  "adjudicated_intent": "other_non_actionable",
+  "winner": "A",
+  "reason": "The complaint is about meal quality, which is not covered by any specific intent in the taxonomy. The customer does not request action or support beyond expressing dissatisfaction.",
+  "taxonomy_issue": "No label exists for food quality complaints",
+  "confidence": "high",
+  "message_id": "725608::cust0::725608"
+ },
+ {
+  "adjudicated_intent": "positive_feedback_praise",
+  "winner": "B",
+  "reason": "The customer's message primarily expresses gratitude and praise for the agent's rebooking action, despite the third-party cancellation context. The explicit appreciation and emojis align with positive_feedback_praise, which takes priority over flight_cancellation in this case.",
+  "taxonomy_issue": "flight_cancellation requires airline-initiated cancellations, not third-party causes",
+  "confidence": "high",
+  "message_id": "778516::cust0::778516"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer is seeking clarification on airline baggage fee policies for specific destinations (USVI vs. Puerto Rico), which aligns with policy-related status inquiry rather than a direct refund request or complaint.",
+  "taxonomy_issue": "Policy application question about fee waivers",
+  "confidence": "medium",
+  "message_id": "79653::cust4::79650"
+ },
+ {
+  "adjudicated_intent": "change_fee_dispute",
+  "winner": "A",
+  "reason": "The customer explicitly references the $50 gate-check fee tied to Basic Economy fare, which falls under change_fee_dispute. While venting occurs, the specific mention of a named fee dispute (Basic-Economy charge) takes priority over general dissatisfaction.",
+  "taxonomy_issue": "Ambiguity in whether the fee dispute is explicitly requested vs. vented",
+  "confidence": "high",
+  "message_id": "832411::cust1::832410"
+ },
+ {
+  "adjudicated_intent": "missed_connection_rebooking",
+  "winner": "A",
+  "reason": "The customer explicitly states they missed their connecting flight due to a delay, which directly aligns with missed_connection_rebooking. While flight_delay is mentioned, the primary issue is the missed connection requiring rebooking, which takes priority per taxonomy rules.",
+  "taxonomy_issue": "Competing intents require prioritization based on explicit rebooking need",
+  "confidence": "high",
+  "message_id": "890846::cust0::890846"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "A",
+  "reason": "The customer is seeking updates on flight schedules and discrepancies between system data and external sources (Google), which aligns with a neutral status inquiry without asserting disruption.",
+  "taxonomy_issue": "The delay intent requires explicit mention of late/holding or itinerary disruption, which is absent here.",
+  "confidence": "high",
+  "message_id": "922267::cust1::922266"
+ },
+ {
+  "adjudicated_intent": "service_failure_complaint",
+  "winner": "A",
+  "reason": "The customer's frustration stems from unresolved issues despite repeated outreach, indicating a systemic failure in customer service operations. The lack of resolution and agent's referral to specialists highlights operational inefficiencies.",
+  "taxonomy_issue": "Ambiguity between service_failure_complaint and general_dissatisfaction_venting",
+  "confidence": "high",
+  "message_id": "97819::cust1::97818"
+ },
+ {
+  "adjudicated_intent": "flight_status_inquiry",
+  "winner": "B",
+  "reason": "The customer is inquiring about lounge access and window seat availability, which are aspects of flight status and policy, without asserting disruption or requesting action.",
+  "taxonomy_issue": "The mention of lounge access and window seats falls under flight status inquiry rather than service failure or other categories.",
+  "confidence": "high",
+  "message_id": "983157::cust0::983157"
+ }
+]
