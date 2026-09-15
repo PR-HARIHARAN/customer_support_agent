@@ -3,7 +3,6 @@ from pathlib import Path
 
 import streamlit as st
 
-
 PROJECT_ROOT = Path(__file__).resolve().parent
 CONVERSATIONS_PATH = PROJECT_ROOT / "data" / "processed" / "conversations.jsonl"
 
@@ -18,9 +17,7 @@ def load_conversations(path: str) -> list[dict]:
             try:
                 conversations.append(json.loads(line))
             except json.JSONDecodeError as error:
-                raise ValueError(
-                    f"Invalid JSON on line {line_number} of {path}"
-                ) from error
+                raise ValueError(f"Invalid JSON on line {line_number} of {path}") from error
     return conversations
 
 
@@ -39,10 +36,7 @@ def matching_messages(conversation: dict, keywords: list[str]) -> list[dict]:
     return [
         message
         for message in conversation.get("messages", [])
-        if all(
-            keyword in str(message.get("text", "")).lower()
-            for keyword in keywords
-        )
+        if all(keyword in str(message.get("text", "")).lower() for keyword in keywords)
     ]
 
 
@@ -83,18 +77,21 @@ if not conversations:
     st.stop()
 
 conversation_by_id = {
-    str(conversation["conversation_id"]): conversation
-    for conversation in conversations
+    str(conversation["conversation_id"]): conversation for conversation in conversations
 }
 conversation_ids = list(conversation_by_id)
 
 with st.sidebar:
     st.header("Find a conversation")
-    search_text = st.text_input(
-        "Search keywords",
-        placeholder="Try: flight delay refund",
-        help="Enter one or more keywords. Every keyword must appear in the conversation.",
-    ).strip().lower()
+    search_text = (
+        st.text_input(
+            "Search keywords",
+            placeholder="Try: flight delay refund",
+            help="Enter one or more keywords. Every keyword must appear in the conversation.",
+        )
+        .strip()
+        .lower()
+    )
     keywords = [keyword for keyword in search_text.split() if keyword]
 
     matching_conversations = [
