@@ -1,0 +1,692 @@
+[
+  {
+    "conversation_id": "2614494",
+    "customer_query": "@AmericanAir Exec Platinum status and I get bumped to row 20 due to equip change. Ridiculous.",
+    "true_intent": "Seats and fares",
+    "predicted_intent": "Seats and fares",
+    "draft_reply": "We'd be glad to look into your seating and reservation details. Please DM us your record locator so we can review your cabin options.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.26); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 5,
+      "overall": 4.25,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.5775,
+      "faithfulness": 0.7075,
+      "semantic_agreement": 0.7075
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2513224",
+    "customer_query": "Cada vez es peor volar en @AmericanAir. En su m\u00ednimo espacio entre asientos ya es imposible abrir una laptop. Ya que es dif\u00edcil trabajar en esas condiciones uno puede pensar \u00abver\u00e9 una pel\u00edcula\u00bb, pero los aud\u00edfonos se les acaban. Adem\u00e1s los vuelos salen retrasados (casi) siempre\ud83d\ude11",
+    "true_intent": "Seats and fares",
+    "predicted_intent": "Flight information",
+    "draft_reply": "We still haven't located your laptop and when we do we'll contact you directly.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.33); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6399,
+      "faithfulness": 0.9512,
+      "semantic_agreement": 0.9512
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "293912",
+    "customer_query": "WTF @AmericanAir i have a 6 hour flight and you have no TV's wtf am i supposed to do? read a book? talk to people?",
+    "true_intent": "Flight information",
+    "predicted_intent": "Flight information",
+    "draft_reply": "We'd like to take a closer look. Please provide your 6 letter record locator.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.27); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.551,
+      "faithfulness": 0.9639,
+      "semantic_agreement": 0.9639
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "2062371",
+    "customer_query": "I hate that I'm up at this ungodly hour. Why did I ok this flight time?????? I know I've gotten a lil bigger but I feel like these airplane seats are a lot smaller than I remember. Like everyone looks so squished. I also don't normally fly American. I normally fly southwest. @AmericanAir is a shit show this morning. An undergrad traveling to a conference with me didn't bring a poster tube so I offered to have him @AmericanAir Put his poster in my tube.In the 30secs it took to re roll his poster an agent was hassling us about hurrying up so we the doors could close @AmericanAir Meanwhile they had the seat next to me double booked and had to delay the flight a few moments to get that situated. @AmericanAir But she was getting snippy with us for making sure his poster doesn't get messed up\ud83d\ude12\ud83d\ude12\ud83d\ude12",
+    "true_intent": "Service complaint",
+    "predicted_intent": "Seats and fares",
+    "draft_reply": "We'd be glad to look into your seating and reservation details. Please DM us your record locator so we can review your cabin options.",
+    "action": "ESCALATE",
+    "action_reason": "High customer agitation or profanity detected; escalating to senior customer relations agent.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 5,
+      "overall": 4.25,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6693,
+      "faithfulness": 0.7633,
+      "semantic_agreement": 0.7414
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "1624289",
+    "customer_query": "@AmericanAir #hungry So I'm on a 6 hr flight, and all I can get is a can of Apple juice? No food? New weight loss program? https://t.co/hVoDEd2wgv",
+    "true_intent": "Flight information",
+    "predicted_intent": "Flight information",
+    "draft_reply": "We serve Biscoff cookies and drinks for free, Jasen and then for a cost, you can purchase a wide variety of snacks: https://t.co/j9ZwUnZ7sY",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.24); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6763,
+      "faithfulness": 0.9593,
+      "semantic_agreement": 0.9593
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "1126533",
+    "customer_query": "@AmericanAir talking to your staff if like talking to a toad. Leaving people stranded with no room, no car and no way out",
+    "true_intent": "Service complaint",
+    "predicted_intent": "Social acknowledgement",
+    "draft_reply": "Thanks for connecting with us! Wishing you safe and pleasant travels. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.18); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.25,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6243,
+      "faithfulness": 0.6773,
+      "semantic_agreement": 0.6773
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "2518509",
+    "customer_query": "Stranded in Chicago last night but impressed with @AmericanAir and @97751 handling. Class act on all fronts in light of less than ideal circumstances.",
+    "true_intent": "Disruption recovery",
+    "predicted_intent": "Positive experience",
+    "draft_reply": "We truly appreciate the love and your loyalty! We'll pass your kind words along to our team. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.23); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.5,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6176,
+      "faithfulness": 0.7135,
+      "semantic_agreement": 0.6067
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "2307434",
+    "customer_query": "Let me tell y\u2019all about the wildest experience I\ufe0f just had a couple days ago. It all starts at JFK airport........ So I\ufe0f get to the airport about 2 hr before my flight cause you\u2019d think that\u2019d be plenty of time to get through security, ha no jokes on me. I\ufe0f sit in the line to hell for fucking ever and then when I finally get to the metal detector shit I\ufe0f get randomly selected along with A couple other poor souls. So I\u2019m waiting in another fucking lil ass line why the take everyone one by one get our hands swabbed or some shit and then then our bags looked through. This small process takes longer then I\u2019ve been alive I\ufe0f swear to fucking God y\u2019all. So then it\u2019s finally my turn and I\u2019m ready. I\ufe0f have my hands out infront of me to get swabbed and I\u2019m in and out like a pro. Well the bitch in front of me decided to pack her fucking house inside her suitcase and I\u2019m watching the TSA people and there as fucking confused as I\ufe0f I\ufe0f am. This lady has fucking grocery\u2019s, presents, all her clothes she\u2019s ever owned, books galore, and some other shit all stuffed into this tiny ass carry on; fucking Mary Poppins isn\u2019t too thrilled about these lady\u2019s goin through her case so she makes sure everyone knows it. So then it\u2019s finally my turn they quickly go through my bag (there laughin there asses off about that lady too) and I\u2019m outta there. I\ufe0f quickly get to my flight and I\ufe0f have a little bit of time so I\ufe0f grab a tea at Starbucks which is located RIGHT next to my terminal. Anyways I\ufe0f get my drink quick and I\ufe0f walk right back next door and everyone who was there a minute ago is fuckin gone. So I\u2019m freakin out my flight not supposed to leave for another 15 minutes, they didn\u2019t announce anything on the intercoms about my flight either. So there\u2019s a line for the #AmericanAirlines desk at my terminal so I\ufe0f wait in this line which also is being slow af so this one lady isn\u2019t doing shit so I\ufe0f quickly just walk up and ask wtf happened to my flight. Now this bitch doesn\u2019t even look up from her screen And I\u2019m the bitchest fuckin way tells me my flight has already left. I\ufe0f say that doesn\u2019t make sense see I\ufe0f can SEE my fucking plane and it\u2019s not supposed to leave for another like 10 minutes. So then she says they can\u2019t board after 10 minutes, which I\ufe0f get it, she has rules To follow. BUT she saw me standing in line for a couple minutes WAYYY before the 10 minutes where up (they had closed the door early and never announced anything) and as she tells me this I\ufe0f look down at my phone and it 9 FUCKING MINUTES before they leave. I\ufe0f was 1 FUcking min Late and I\ufe0f had been waiting in line and could had gotten on that fucking plane if I\ufe0f wasn\u2019t so nice and waited in line! Mind you the entire time this lady is talkin to me she\u2019s barely glanced at me, is being rude, and won\u2019t answer half the questions I\u2019m asking. So finally I\u2019m like fuck it she\u2019s being so fucking unhelpful so I\ufe0f go to the missed connections booth to reschedule my flight home. Apparently two other flights had been canceled so I\ufe0f waited in another line for an hour to be helped. Anyways it\u2019s almost my turn and I\ufe0f watch One of the #AmericanAirlines employees fuckin check his phone and ANSWER A CALL while he\u2019s helping a customer! So now I\ufe0f know why the fuck this line was taking so fucking long, the lady he\u2019s helpings mouth just kinda drops open cause she\u2019s as fuckin brain fucked as I\ufe0f am. Anyways it\u2019s my turn now and I\ufe0f go to Mr. phone guy and start explaining my situation which I\ufe0f don\u2019t even get to finish because he cuts me off a couple words in and demands my name. So I\ufe0f give it to him and he starts looking at flights for me. So the only flight that I\ufe0f could Get on was a flight to Phoenix with the connection to Seattle. Sassys telling me this the lady working next one decides to butt in and tell him something about that flight (can\u2019t remember that exactly). Well I\u2019m thinking these two don\u2019t like each other cause he responds \u201cI\ufe0f know how to do my job\u201d and she then says \u201cI\u2019m telling you something you obviously forgetting\u201d then he goes \u201cI\ufe0f don\u2019t need your help I can do my job without it\u201d anyways there bickering continues meanwhile I\u2019m still waiting for help and so is the girl the lady was helping. Anyways they stop and he prints me off a tickets for the flight which is fucking tomorrow at 10am. So now I\u2019m stuck in this airport for about 17 fucking hours. This airport has the most over priced nastiest food so because I\u2019m broke I\ufe0f decide to just starve. Now when I\ufe0f sleep I\ufe0f sleep hard so I\ufe0f knew if I\ufe0f passed out at the wrong time I\ufe0f could sleep through my flight so I\ufe0f try to get comfortable in there uncomfortable ass chairs and pass out but I\ufe0f can\u2019t so I\ufe0f end up not sleeping the entire time I\u2019m waiting for this god damn plane. Thank god for #StrangersThings2 for getting my through a couple hours of that hell. Okay so time for my plane comes and they had fucking OVERBOOKED THE FLIGHT!!! So I\u2019m waiting on layover with a couple other people and I\u2019m first on the list so if there\u2019s an opening I\u2019d get it. Ha will they tell all layover people to sit and wait till the end of boarding and then they\u2019ll let you know if there\u2019s seats available. Well I\ufe0f wait and I\ufe0f watch this chick go up and annoy them; there was one seat available on the flight and they give it to THE FUCKING chick Whose been fucking up there harassing them and she\u2019s at like the bottom of the fucking list. I\u2019m fucking pissed now cause I\ufe0f followed there stupid ass rules and they screwed me over fucking again. So anyways surprise, surprise, I\ufe0f don\u2019t get on this fucking flight. So the. They schedule me for ANOTHER flight at 6pm cause fuck me right? Well anyways this flight attendant is rude af too so I\ufe0f just take my damn ticket and go to another terminal to wait for this damn flight. Anyways thanks fucking Jesus I\u2019m able to get in this flight. Hahah you\u2019d think that\u2019s the end but nooooooooooo. First off I\ufe0f was gold to check in an hour before my flight to see if seats would be available. That\u2019s nice and all but it doesn\u2019t really work of the fucking desk lady doesn\u2019t show up until 20 minutes before the flights supposed to board! bunch of people jump in line to check seat availability and this nice old lady goes up to ask a simple question and the front desk lady snaps at her and says \u201cyou can see I\ufe0f just got here can you give me a second to settle down first\u201d and this nice old lady apologies and tells her to take her time. Well I\ufe0f don\u2019t know where this bitch went to school but apparently \u201ca second\u201d is 10 fucking minutes in her world. Finally other lady\u2019s show up and start helping us cause this bitch is still \u201cgetting settled\u201d.So anyways they make me check my carryon in becaus they don\u2019t have enough room so that\u2019s fucking awesome. So I\ufe0f finally get in my seat, by this point there like 30 minutes late boarding and guess what!I\ufe0f sit in my fucking seat for AN HOUR AND A HALF before the plane decided they should leave the fucking airport. I\ufe0f finally land back in Seattle hella late and go take the light rail home (I\ufe0f had a ride to pick me up but since I\ufe0f had to reschedule the pick up time 3fucking times I\ufe0f told them to forget it and I\u2019d get myself home). So because fuckin dealing with #AmericanAirlines wasn\u2019t #AmericanAirlines wasn\u2019t fuckin wild enough I\ufe0f also had the craziest light rail experience. Okay so I'm sitting on the light rail home right now and I walk on the same time as this guy (he's shorter than me but he's kinda cute). So he moves and sits in the seats across the aisle next to me. Anyway I pop some gum in my mouth and I'm chewing it and he goes \"excuse me could I have your gum\" (took me a couple times to figure out what he was saying cause he has a heavy accent) so because I'm an awesome person I was like \"yeah sure\" and I grab him a piece this is where shit gets fucking wild. He goes \"no can I have your gum\" and I was like \"yeah man like here's a piece\" and he goes no can I have the gum in your mouth\" I was da fuck hell no you can't have the gum in my mouth and then this guy litterly begs me for it and is like \"please, please can I have your piece\" and I straight up was like \"listen man I've seen enough sy-fi movies to know you can do some weird shit with me DNA\" and he laughed and went \"no I don't want a fresh piece I just want yours\" and this point I'm so fucking stunned that I just took my gum outta my mouth and this motherfucker without hesitation just pops it in his mouth and starts chewing \"I was like what if I have some kinda disease\" and he goes \"that's okay\" fuckin wild but the craziest fuckin part is im getting Ethiopian food with him in a couple days and this guy managed to still be smooth af and get my number and I\ufe0f don\u2019t even know how it happened. Now I\u2019ve been flying my whole like and I\ufe0f can hands down say this was the worst experience I\u2019ve ever had with an airline before. For those of you who stuck with this long ass story here\u2019s the moral of it. Avoid #AmericanAirlines cause it\u2019s shit and the people who work at the JFK one are rude af (oooo motherfuckin side note on the flight they never offered me a drink they skipped over me twice!) And be careful going on the light rail sleep deprived cause you might give your number to a weird ass guy and then have to avoid calls and creepy ass texts from said guy. Okay end of story. Let me know if y\u2019all want to see them weird ass texts @AmericanAir you best read this",
+    "true_intent": "Baggage issues",
+    "predicted_intent": "Baggage issues",
+    "draft_reply": "We're so sorry for the luggage issue. Please DM us your 6-character record locator and bag tag claim number so we can track this immediately.",
+    "action": "ESCALATE",
+    "action_reason": "High customer agitation or profanity detected; escalating to senior customer relations agent.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6334,
+      "faithfulness": 0.7917,
+      "semantic_agreement": 0.6851
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2305375",
+    "customer_query": "@AmericanAir It is like playing roulette, incoming flight and next flight scheduled at almost the same time. This is exactly how I wanted to spend my Sunday evening \ud83d\ude20\ud83d\ude20\ud83d\ude20 https://t.co/gYG8bMRIpb",
+    "true_intent": "Flight information",
+    "predicted_intent": "Flight information",
+    "draft_reply": "We'd like to take a closer look. Please provide your 6 letter record locator.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.20); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.5113,
+      "faithfulness": 0.9639,
+      "semantic_agreement": 0.9639
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "1628140",
+    "customer_query": "Dear @AmericanAir bring back cocktail #bars",
+    "true_intent": "Positive experience",
+    "predicted_intent": "Social acknowledgement",
+    "draft_reply": "Thanks for connecting with us! Wishing you safe and pleasant travels. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.23); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.25,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6489,
+      "faithfulness": 0.7219,
+      "semantic_agreement": 0.6696
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "848782",
+    "customer_query": "Appreciate the upgrade this morning @AmericanAir! Gold status pays off from time to time.",
+    "true_intent": "Seats and fares",
+    "predicted_intent": "Seats and fares",
+    "draft_reply": "We'd be glad to look into your seating and reservation details. Please DM us your record locator so we can review your cabin options.",
+    "action": "AUTO_HANDLE",
+    "action_reason": "General seating/cabin policy question; auto-handle with self-service change guidance.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 5,
+      "overall": 4.25,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6006,
+      "faithfulness": 0.8486,
+      "semantic_agreement": 0.8486
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2865638",
+    "customer_query": "@AmericanAir STOP with the in-flight credit card \"exclusive offer\" pitch, and CC hawking in general. It's dishonest, disruptive, and your frequent travelers know it's false. @1015",
+    "true_intent": "Seats and fares",
+    "predicted_intent": "Flight information",
+    "draft_reply": "AAdvantage award tickets are subject to availability when booking and making changes. We're sorry for your frustration.",
+    "action": "AUTO_HANDLE",
+    "action_reason": "Standard informational inquiry regarding schedule, flight status, or airline policy; safe to auto-handle.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.25,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6838,
+      "faithfulness": 0.9311,
+      "semantic_agreement": 0.9311
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "1036120",
+    "customer_query": "@AmericanAir how many flights have I missed or been delayed because of waiting on a crew member? TOO MANY!",
+    "true_intent": "Flight delay",
+    "predicted_intent": "Flight delay",
+    "draft_reply": "We sincerely apologize for the delay to your travels today. Please DM your record locator and we will check updated departure and gate information for you.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.37); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6698,
+      "faithfulness": 0.775,
+      "semantic_agreement": 0.775
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "890712",
+    "customer_query": "yup left my laptop on the plane.. was bound to happen sometime in all my years of touring.. halppp! @AmericanAir @AmericanAir This is my karma for winging bout my laptop the other day. I'm sorry! Come back to meee \ud83d\ude22",
+    "true_intent": "Baggage issues",
+    "predicted_intent": "Disruption recovery",
+    "draft_reply": "We understand how disruptive this is to your plans and sincerely apologize. Please DM your 6-character confirmation code so our rebooking team can review available options.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.20); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 4.75,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.5869,
+      "faithfulness": 0.7013,
+      "semantic_agreement": 0.6298
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "2162910",
+    "customer_query": "@AmericanAir just sent a private message",
+    "true_intent": "Social acknowledgement",
+    "predicted_intent": "Flight information",
+    "draft_reply": "Our apologies for the wait this morning. We'll have them out to you as soon as possible. Thanks for your patience.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.31); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6423,
+      "faithfulness": 0.9066,
+      "semantic_agreement": 0.9066
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "1054931",
+    "customer_query": "Have a flight to @2324 next week from MIA.Is @AmericanAir accepting brand new generators in checked baggage or is it prohibited?",
+    "true_intent": "Baggage issues",
+    "predicted_intent": "Baggage issues",
+    "draft_reply": "We're so sorry for the luggage issue. Please DM us your 6-character record locator and bag tag claim number so we can track this immediately.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.27); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6561,
+      "faithfulness": 0.5954,
+      "semantic_agreement": 0.5954
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2951813",
+    "customer_query": "Shoutout to @AmericanAir. The service has been a lil impeccable.",
+    "true_intent": "Social acknowledgement",
+    "predicted_intent": "Positive experience",
+    "draft_reply": "We truly appreciate the love and your loyalty! We'll pass your kind words along to our team. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.22); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.5,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.7053,
+      "faithfulness": 0.6354,
+      "semantic_agreement": 0.6354
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "1853310",
+    "customer_query": "@AmericanAir still hasn't found my baggage and Miami airport isn't that big. This is not how I was hoping to start these five days here.",
+    "true_intent": "Baggage issues",
+    "predicted_intent": "Baggage issues",
+    "draft_reply": "We're so sorry for the luggage issue. Please DM us your 6-character record locator and bag tag claim number so we can track this immediately.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.39); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.7149,
+      "faithfulness": 0.7409,
+      "semantic_agreement": 0.7409
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2833848",
+    "customer_query": "@AmericanAir these old USAir A321s are only masked with new vinyl seats in 1st. No outlets, no tech, seats too close. No breakfast served on flight 600!?! Always regret flying through #CLT. Old, overcrowded Admirals Clubs too.",
+    "true_intent": "Seats and fares",
+    "predicted_intent": "Seats and fares",
+    "draft_reply": "We'd be glad to look into your seating and reservation details. Please DM us your record locator so we can review your cabin options.",
+    "action": "AUTO_HANDLE",
+    "action_reason": "General seating/cabin policy question; auto-handle with self-service change guidance.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 5,
+      "overall": 4.25,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6929,
+      "faithfulness": 0.6879,
+      "semantic_agreement": 0.6879
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2400452",
+    "customer_query": "@AmericanAir if I am an Advantage Platinum status &amp; my bag is the right size why is the agent at FLL gate trying to take my bag?",
+    "true_intent": "Service complaint",
+    "predicted_intent": "Baggage issues",
+    "draft_reply": "We're so sorry for the luggage issue. Please DM us your 6-character record locator and bag tag claim number so we can track this immediately.",
+    "action": "AUTO_HANDLE",
+    "action_reason": "Standard customer interaction matching established brand resolution patterns.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.7125,
+      "faithfulness": 0.8376,
+      "semantic_agreement": 0.7875
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "2307149",
+    "customer_query": "@AmericanAir thank you so much for allowing the passengers of flight 2295 to sit in the airport in St. Lucia for 8+ hours , while your crew \"makes a decision.\" We appreciate the wonderful accommodations. The chips and warm water were delicious!\u00a0#sarcasm",
+    "true_intent": "Positive experience",
+    "predicted_intent": "Positive experience",
+    "draft_reply": "We truly appreciate the love and your loyalty! We'll pass your kind words along to our team. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.35); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.5,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.5989,
+      "faithfulness": 0.7332,
+      "semantic_agreement": 0.6219
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "1785403",
+    "customer_query": "Missed my check in by 2min so I got moved to another flight @AmericanAir why y\u2019all do ur man like this, let me get a free checked bag \ud83d\ude47\ud83c\udffb",
+    "true_intent": "Baggage issues",
+    "predicted_intent": "Baggage issues",
+    "draft_reply": "We're so sorry for the luggage issue. Please DM us your 6-character record locator and bag tag claim number so we can track this immediately.",
+    "action": "AUTO_HANDLE",
+    "action_reason": "Standard customer interaction matching established brand resolution patterns.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.7223,
+      "faithfulness": 0.7468,
+      "semantic_agreement": 0.7102
+    },
+    "human_rating": 4.5
+  },
+  {
+    "conversation_id": "2472632",
+    "customer_query": "4yo wants to cancel trip to MAD tomorrow because we're not flying @AmericanAir. Now trying to explain @135122 alliance to her but she's just concerned seats will be different.",
+    "true_intent": "Disruption recovery",
+    "predicted_intent": "Seats and fares",
+    "draft_reply": "We'd be glad to look into your seating and reservation details. Please DM us your record locator so we can review your cabin options.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.21); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 5,
+      "overall": 4.25,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6543,
+      "faithfulness": 0.72,
+      "semantic_agreement": 0.7128
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "1795957",
+    "customer_query": "@AmericanAir I'm hot. Everyone on the plane looked at me as if I was at fault and about to be removed from the plane. So disappointing.",
+    "true_intent": "Service complaint",
+    "predicted_intent": "Positive experience",
+    "draft_reply": "We truly appreciate the love and your loyalty! We'll pass your kind words along to our team. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.16); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.5,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6022,
+      "faithfulness": 0.6615,
+      "semantic_agreement": 0.6615
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "924398",
+    "customer_query": "@AmericanAir trying to modify my last name online, but option is greyed out! Any advise on how to do this?",
+    "true_intent": "Flight information",
+    "predicted_intent": "Flight information",
+    "draft_reply": "Oh my, what's going on and how can we help?",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.30); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.5674,
+      "faithfulness": 0.8246,
+      "semantic_agreement": 0.8246
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "654968",
+    "customer_query": ".@AmericanAir why are your employees questioning me about pre-boarding with my support dog? Went up to gate agent to request it with my paperwork and he questioned me. Not sure why but feeling very uncomfortable about it",
+    "true_intent": "Service complaint",
+    "predicted_intent": "Flight information",
+    "draft_reply": "We don't like to hear that you missed your flight. Please follow and share what happened with us via DM?",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.22); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 5,
+      "overall": 4.25,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6639,
+      "faithfulness": 0.9665,
+      "semantic_agreement": 0.9665
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "1309714",
+    "customer_query": "@AmericanAir pls fix your app before I travel again!",
+    "true_intent": "Service complaint",
+    "predicted_intent": "Flight information",
+    "draft_reply": "The earliest departure right now is 7a.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.30); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 3,
+      "actionability": 3,
+      "overall": 3.75,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.537,
+      "faithfulness": 0.9405,
+      "semantic_agreement": 0.9405
+    },
+    "human_rating": 2.5
+  },
+  {
+    "conversation_id": "452314",
+    "customer_query": "If you all need someone to fly any Airbuses during Christmas week, I got y'all. I have a few hours under my belt \ud83d\ude0a@AmericanAir",
+    "true_intent": "Positive experience",
+    "predicted_intent": "Positive experience",
+    "draft_reply": "We truly appreciate the love and your loyalty! We'll pass your kind words along to our team. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.21); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.5,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.608,
+      "faithfulness": 0.6186,
+      "semantic_agreement": 0.6186
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "1876039",
+    "customer_query": "Finally made it to Platinum status with @AmericanAir after 3+ years of travel. It's the little things in life. https://t.co/WhyFgx5qHq",
+    "true_intent": "Social acknowledgement",
+    "predicted_intent": "Social acknowledgement",
+    "draft_reply": "Thanks for connecting with us! Wishing you safe and pleasant travels. #AATeam",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.17); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 4,
+      "tone": 5,
+      "actionability": 3,
+      "overall": 4.25,
+      "critique": "No explicit DM redirection."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6414,
+      "faithfulness": 0.6602,
+      "semantic_agreement": 0.6602
+    },
+    "human_rating": 3.5
+  },
+  {
+    "conversation_id": "184005",
+    "customer_query": "Will never fly @AmericanAir ever again! Lose my bags to Seattle and now a \u201cfaulty\u201d plane delays for more than hour and a half. Awful Service",
+    "true_intent": "Baggage issues",
+    "predicted_intent": "Baggage issues",
+    "draft_reply": "We're so sorry for the luggage issue. Please DM us your 6-character record locator and bag tag claim number so we can track this immediately.",
+    "action": "ESCALATE",
+    "action_reason": "Ambiguous intent or low confidence (0.26); routing to human to avoid inaccurate automated reply.",
+    "judge_score": {
+      "grounding": 5,
+      "relevance": 5,
+      "tone": 5,
+      "actionability": 5,
+      "overall": 5.0,
+      "critique": "Properly directs sensitive identifiers to DM."
+    },
+    "ragas_metrics": {
+      "answer_relevancy": 0.6982,
+      "faithfulness": 0.7106,
+      "semantic_agreement": 0.7106
+    },
+    "human_rating": 4.5
+  }
+]

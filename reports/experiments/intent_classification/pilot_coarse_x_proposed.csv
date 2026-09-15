@@ -1,0 +1,13 @@
+coarse_cluster,baggage_damaged,baggage_delayed_lost,change_fee_dispute,flight_cancellation,flight_delay,flight_status_inquiry,forced_gate_check_complaint,general_dissatisfaction_venting,missed_connection_rebooking,other_acknowledgement_thanks,other_non_actionable,other_out_of_domain,positive_feedback_praise,refund_request,seat_assignment_change,seat_upgrade_request,service_failure_complaint,staff_conduct_complaint
+0,0,0,0,1,4,2,0,3,2,0,9,3,9,0,1,1,1,1
+1,0,1,2,1,4,2,0,5,1,0,2,0,0,0,1,0,1,4
+2,0,1,0,1,19,2,0,0,2,0,1,0,0,1,0,0,0,0
+3,0,1,0,0,4,0,0,2,0,1,10,2,3,1,0,0,2,0
+4,1,0,0,0,3,2,0,0,2,0,6,0,1,0,1,0,1,0
+5,0,0,0,0,0,2,0,0,2,0,5,0,6,0,1,1,0,0
+6,0,1,1,0,0,1,1,0,1,0,2,0,0,1,8,2,4,2
+7,0,0,5,2,0,2,0,0,3,0,2,0,1,3,0,1,0,1
+8,0,1,0,1,0,3,0,0,1,3,14,0,2,1,0,1,0,0
+9,0,0,2,0,3,1,0,1,1,0,0,0,4,0,0,1,8,5
+10,0,6,1,0,1,2,5,0,3,0,1,0,0,2,1,0,1,0
+11,0,1,0,0,6,7,1,1,4,0,8,1,0,2,0,0,1,0

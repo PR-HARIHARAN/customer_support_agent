@@ -1,0 +1,402 @@
+{
+  "task": "intent_classification",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "seed": 42,
+  "test_fraction": 0.2,
+  "sampling_group": "representative",
+  "n_total": 150,
+  "n_train": 120,
+  "n_test": 30,
+  "label_provenance": "Labels are human-annotated ground truth from the 250-conversation golden set (data/processed/golden_set.csv).",
+  "dataset": "data\\processed\\golden_set.csv",
+  "metrics": {
+    "majority_class": {
+      "accuracy": 0.06666666666666667,
+      "macro_f1": 0.015625,
+      "weighted_f1": 0.008333333333333333,
+      "n_test": 30,
+      "n_labels": 8,
+      "majority_class_share": 0.23333333333333334,
+      "per_class": [
+        {
+          "label": "Baggage issues",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        {
+          "label": "Disruption recovery",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "Flight delay",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "Flight information",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "label": "Positive experience",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "label": "Seats and fares",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        {
+          "label": "Service complaint",
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1": 0.125,
+          "support": 2
+        },
+        {
+          "label": "Social acknowledgement",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      ],
+      "report": {
+        "Baggage issues": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "Disruption recovery": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "Flight delay": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "Flight information": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "Positive experience": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6.0
+        },
+        "Seats and fares": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "Service complaint": {
+          "precision": 0.06666666666666667,
+          "recall": 1.0,
+          "f1-score": 0.125,
+          "support": 2.0
+        },
+        "Social acknowledgement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "accuracy": 0.06666666666666667,
+        "macro avg": {
+          "precision": 0.008333333333333333,
+          "recall": 0.125,
+          "f1-score": 0.015625,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.0044444444444444444,
+          "recall": 0.06666666666666667,
+          "f1-score": 0.008333333333333333,
+          "support": 30.0
+        }
+      }
+    },
+    "nearest_centroid": {
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5009157509157509,
+      "weighted_f1": 0.5334554334554334,
+      "n_test": 30,
+      "n_labels": 8,
+      "majority_class_share": 0.23333333333333334,
+      "per_class": [
+        {
+          "label": "Baggage issues",
+          "precision": 0.8333333333333334,
+          "recall": 0.7142857142857143,
+          "f1": 0.7692307692307693,
+          "support": 7
+        },
+        {
+          "label": "Disruption recovery",
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "support": 1
+        },
+        {
+          "label": "Flight delay",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 1
+        },
+        {
+          "label": "Flight information",
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1": 0.5,
+          "support": 5
+        },
+        {
+          "label": "Positive experience",
+          "precision": 0.5555555555555556,
+          "recall": 0.8333333333333334,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        {
+          "label": "Seats and fares",
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714,
+          "support": 4
+        },
+        {
+          "label": "Service complaint",
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1": 0.3333333333333333,
+          "support": 2
+        },
+        {
+          "label": "Social acknowledgement",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      ],
+      "report": {
+        "Baggage issues": {
+          "precision": 0.8333333333333334,
+          "recall": 0.7142857142857143,
+          "f1-score": 0.7692307692307693,
+          "support": 7.0
+        },
+        "Disruption recovery": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 1.0
+        },
+        "Flight delay": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 1.0
+        },
+        "Flight information": {
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1-score": 0.5,
+          "support": 5.0
+        },
+        "Positive experience": {
+          "precision": 0.5555555555555556,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.6666666666666666,
+          "support": 6.0
+        },
+        "Seats and fares": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.5714285714285714,
+          "support": 4.0
+        },
+        "Service complaint": {
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1-score": 0.3333333333333333,
+          "support": 2.0
+        },
+        "Social acknowledgement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "accuracy": 0.5666666666666667,
+        "macro avg": {
+          "precision": 0.4756944444444444,
+          "recall": 0.618452380952381,
+          "f1-score": 0.5009157509157509,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.55,
+          "recall": 0.5666666666666667,
+          "f1-score": 0.5334554334554334,
+          "support": 30.0
+        }
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.49107142857142855,
+      "weighted_f1": 0.5214285714285715,
+      "n_test": 30,
+      "n_labels": 8,
+      "majority_class_share": 0.23333333333333334,
+      "per_class": [
+        {
+          "label": "Baggage issues",
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333,
+          "support": 7
+        },
+        {
+          "label": "Disruption recovery",
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "support": 1
+        },
+        {
+          "label": "Flight delay",
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 1
+        },
+        {
+          "label": "Flight information",
+          "precision": 0.5,
+          "recall": 0.2,
+          "f1": 0.2857142857142857,
+          "support": 5
+        },
+        {
+          "label": "Positive experience",
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285714,
+          "support": 6
+        },
+        {
+          "label": "Seats and fares",
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714,
+          "support": 4
+        },
+        {
+          "label": "Service complaint",
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "support": 2
+        },
+        {
+          "label": "Social acknowledgement",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      ],
+      "report": {
+        "Baggage issues": {
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1-score": 0.9333333333333333,
+          "support": 7.0
+        },
+        "Disruption recovery": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 1.0
+        },
+        "Flight delay": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 1.0
+        },
+        "Flight information": {
+          "precision": 0.5,
+          "recall": 0.2,
+          "f1-score": 0.2857142857142857,
+          "support": 5.0
+        },
+        "Positive experience": {
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.5714285714285714,
+          "support": 6.0
+        },
+        "Seats and fares": {
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.5714285714285714,
+          "support": 4.0
+        },
+        "Service complaint": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1-score": 0.4,
+          "support": 2.0
+        },
+        "Social acknowledgement": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4.0
+        },
+        "accuracy": 0.5666666666666667,
+        "macro avg": {
+          "precision": 0.46354166666666663,
+          "recall": 0.6083333333333334,
+          "f1-score": 0.49107142857142855,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.5263888888888888,
+          "recall": 0.5666666666666667,
+          "f1-score": 0.5214285714285715,
+          "support": 30.0
+        }
+      }
+    }
+  }
+}

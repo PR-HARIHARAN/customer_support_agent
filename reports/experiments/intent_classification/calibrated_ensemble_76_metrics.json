@@ -1,0 +1,92 @@
+{
+  "task": "intent_classification",
+  "architecture": "Calibrated Dual-Backbone SOTA Ensemble (SetFit-MiniLM-GPU [0.40] + BAAI/bge-large-en-v1.5 [0.60] + Prior Calibration)",
+  "base_encoders": [
+    "sentence-transformers/all-MiniLM-L6-v2 (SetFit contrastive fine-tuned on RTX 4050 GPU)",
+    "BAAI/bge-large-en-v1.5 (1024-dim foundation embedding)"
+  ],
+  "classifier_heads": [
+    "LinearSVC(C=0.03, class_weight='balanced') with temp=2.0 softmax",
+    "LinearSVC(C=0.25, class_weight='balanced') with temp=3.0 softmax"
+  ],
+  "calibration": {
+    "social_acknowledgement_boost": 1.4,
+    "positive_experience_decay": 0.85
+  },
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU (CUDA 12.4)",
+  "n_total": 250,
+  "n_train": 200,
+  "n_test": 50,
+  "seed": 42,
+  "test_fraction": 0.2,
+  "dataset": "data/processed/golden_set.csv (100% human reviewed)",
+  "metrics": {
+    "accuracy": 0.76,
+    "macro_f1": 0.7178703649291884,
+    "weighted_f1": 0.7526606726606727,
+    "n_test": 50,
+    "report": {
+      "Baggage issues": {
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1-score": 0.9090909090909091,
+        "support": 10.0
+      },
+      "Disruption recovery": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6666666666666666,
+        "support": 3.0
+      },
+      "Flight delay": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1-score": 0.6666666666666666,
+        "support": 1.0
+      },
+      "Flight information": {
+        "precision": 0.7777777777777778,
+        "recall": 0.875,
+        "f1-score": 0.8235294117647058,
+        "support": 8.0
+      },
+      "Positive experience": {
+        "precision": 0.625,
+        "recall": 0.7142857142857143,
+        "f1-score": 0.6666666666666666,
+        "support": 7.0
+      },
+      "Seats and fares": {
+        "precision": 0.875,
+        "recall": 0.7777777777777778,
+        "f1-score": 0.8235294117647058,
+        "support": 9.0
+      },
+      "Service complaint": {
+        "precision": 0.8,
+        "recall": 0.5,
+        "f1-score": 0.6153846153846154,
+        "support": 8.0
+      },
+      "Social acknowledgement": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1-score": 0.5714285714285714,
+        "support": 4.0
+      },
+      "accuracy": 0.76,
+      "macro avg": {
+        "precision": 0.7180555555555556,
+        "recall": 0.7542162698412698,
+        "f1-score": 0.7178703649291884,
+        "support": 50.0
+      },
+      "weighted avg": {
+        "precision": 0.7674444444444444,
+        "recall": 0.76,
+        "f1-score": 0.7526606726606727,
+        "support": 50.0
+      }
+    }
+  }
+}

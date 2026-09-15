@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-15T06:34:32Z",
+  "target_brand": "@AmericanAir",
+  "dataset": "Customer Support on Twitter (thoughtvector/customer-support-on-twitter)",
+  "golden_set_size": 250,
+  "held_out_test_size": 50,
+  "device": "cuda",
+  "runtime_seconds": 70.75,
+  "intent_classification": {
+    "majority_baseline_accuracy": 0.16,
+    "nearest_centroid_accuracy": 0.6,
+    "logistic_regression_accuracy": 0.56,
+    "winning_sota_accuracy": 0.76,
+    "winning_sota_macro_f1": 0.7178703649291884,
+    "winning_sota_weighted_f1": 0.7526606726606727
+  },
+  "evaluation_rubric": {
+    "overall_score": 4.5,
+    "grounding_score": 5.0,
+    "intent_relevance_score": 4.44,
+    "brand_tone_score": 4.28,
+    "actionability_score": 4.28
+  },
+  "ragas_metrics": {
+    "faithfulness": 0.7512920000000001,
+    "answer_relevancy": 0.76704,
+    "semantic_agreement": 0.7512920000000001
+  },
+  "human_judge_agreement": {
+    "pearson_correlation": 0.6744149686059889,
+    "mean_absolute_difference": 0.26880000000000004
+  },
+  "policy_distribution": {
+    "auto_handle_count": 14,
+    "auto_handle_percent": 56.00000000000001,
+    "escalate_count": 11,
+    "escalate_percent": 44.0
+  }
+}

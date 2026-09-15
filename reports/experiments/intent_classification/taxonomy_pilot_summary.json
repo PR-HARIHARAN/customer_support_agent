@@ -1,0 +1,83 @@
+{
+ "dataset_size": 44199,
+ "pilot_size": 300,
+ "sampling_counts": {
+  "central": 108,
+  "boundary": 72,
+  "random": 43,
+  "cross_cluster": 24,
+  "known_error": 20,
+  "non_actionable": 16,
+  "spanish": 12,
+  "hard_negative_topup": 5
+ },
+ "class_counts": {
+  "other_non_actionable": 60,
+  "flight_delay": 44,
+  "positive_feedback_praise": 26,
+  "flight_status_inquiry": 26,
+  "missed_connection_rebooking": 22,
+  "service_failure_complaint": 19,
+  "seat_assignment_change": 13,
+  "staff_conduct_complaint": 13,
+  "general_dissatisfaction_venting": 12,
+  "baggage_delayed_lost": 12,
+  "refund_request": 11,
+  "change_fee_dispute": 11,
+  "seat_upgrade_request": 7,
+  "forced_gate_check_complaint": 7,
+  "flight_cancellation": 6,
+  "other_out_of_domain": 6,
+  "other_acknowledgement_thanks": 4,
+  "baggage_damaged": 1
+ },
+ "low_confidence_count": 7,
+ "ambiguous_count": 68,
+ "competing_present_count": 139,
+ "negative_margin_count": 108,
+ "needs_review_model_flag": 300,
+ "needs_review_note": "model flag over-triggered (300/300); ambiguity recomputed analytically",
+ "known_error_count": 20,
+ "spanish_topical": "22/25",
+ "proposed_taxonomy_changes": [
+  {
+   "label": "flight_cancellation",
+   "change": "NEEDS_MORE_DATA",
+   "evidence": "6/300, 0/32 from C11",
+   "confidence": "medium"
+  },
+  {
+   "label": "baggage_damaged",
+   "change": "NEEDS_MORE_DATA",
+   "evidence": "1/300",
+   "confidence": "high"
+  },
+  {
+   "label": "other_acknowledgement_thanks",
+   "change": "NEEDS_MORE_DATA",
+   "evidence": "4/300; C8 collapse 14->noise",
+   "confidence": "medium"
+  },
+  {
+   "label": "seat_upgrade_request",
+   "change": "NEEDS_MORE_DATA",
+   "evidence": "7/300 thin but clean",
+   "confidence": "medium"
+  },
+  {
+   "label": "forced_gate_check_complaint",
+   "change": "NEEDS_MORE_DATA",
+   "evidence": "7/300 + 1 model miss (1068791)",
+   "confidence": "medium"
+  },
+  {
+   "label": "flight_status_inquiry",
+   "change": "KEEP",
+   "evidence": "26 + magnet 56; add waiver/disruption sentences",
+   "confidence": "medium"
+  }
+ ],
+ "recommended_next_step": "Patch schema v0.1->v0.2 (4 guideline sentences) then 300-message double-human pilot on same UIDs; gates kappa>=0.65.",
+ "seed": 42,
+ "taxonomy_status": "NEEDS_TAXONOMY_REVISION"
+}

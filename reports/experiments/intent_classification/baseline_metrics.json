@@ -1,0 +1,14 @@
+{
+ "tfidf_logreg": {
+  "acc": 0.222,
+  "macroF1": 0.157
+ },
+ "embed_logreg": {
+  "acc": 0.333,
+  "macroF1": 0.276
+ },
+ "centroid": {
+  "acc": 0.4,
+  "macroF1": 0.326
+ }
+}

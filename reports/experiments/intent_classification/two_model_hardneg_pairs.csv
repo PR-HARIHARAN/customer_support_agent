@@ -1,0 +1,11 @@
+pair,disagreements,involved,rate
+positive_feedback_praise <-> other_acknowledgement_thanks,8,60,0.133
+flight_delay <-> missed_connection_rebooking,10,77,0.13
+refund_request <-> change_fee_dispute,3,30,0.1
+baggage_delayed_lost <-> forced_gate_check_complaint,2,23,0.087
+baggage_delayed_lost <-> baggage_damaged,1,16,0.062
+flight_delay <-> flight_cancellation,4,79,0.051
+flight_delay <-> flight_status_inquiry,5,124,0.04
+seat_assignment_change <-> seat_upgrade_request,1,26,0.038
+flight_cancellation <-> missed_connection_rebooking,1,31,0.032
+staff_conduct_complaint <-> service_failure_complaint,1,36,0.028

@@ -1,0 +1,9 @@
+True Intent,Baggage issues,Disruption recovery,Flight delay,Flight information,Positive experience,Seats and fares,Service complaint,Social acknowledgement
+Baggage issues,9,1,0,0,0,0,0,0
+Disruption recovery,0,2,0,0,1,0,0,0
+Flight delay,0,0,1,0,0,0,0,0
+Flight information,1,1,0,6,0,0,0,0
+Positive experience,0,1,0,1,4,0,0,1
+Seats and fares,0,0,0,2,0,6,1,0
+Service complaint,1,1,0,1,0,1,4,0
+Social acknowledgement,0,0,0,2,2,0,0,0

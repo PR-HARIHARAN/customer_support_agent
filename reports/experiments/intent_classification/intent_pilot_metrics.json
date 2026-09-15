@@ -1,0 +1,685 @@
+{
+  "task": "intent_classification",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "seed": 42,
+  "test_fraction": 0.2,
+  "sampling_group": "all",
+  "n_total": 300,
+  "n_train": 240,
+  "n_test": 60,
+  "label_provenance": "Labels are model-generated proxy labels (two LLMs + adjudicator), NOT human gold. Treat all metrics as taxonomy-consistency estimates, not human-ground-truth performance.",
+  "dataset": "E:\\01_Projects\\02_Main\\Hiver_2\\customer_support_agent\\data\\processed\\experiments\\gold_300.csv",
+  "metrics": {
+    "majority_class": {
+      "accuracy": 0.2,
+      "macro_f1": 0.02222222222222222,
+      "weighted_f1": 0.06666666666666667,
+      "n_test": 60,
+      "n_labels": 15,
+      "majority_class_share": 0.2,
+      "per_class": [
+        {
+          "label": "change_fee_dispute",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "flight_cancellation",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "flight_delay",
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.3333333333333333,
+          "support": 12
+        },
+        {
+          "label": "flight_status_inquiry",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "label": "forced_gate_check_complaint",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "general_dissatisfaction_venting",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "label": "missed_connection_rebooking",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "label": "other_acknowledgement_thanks",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        {
+          "label": "other_non_actionable",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        {
+          "label": "other_out_of_domain",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "positive_feedback_praise",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "refund_request",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        {
+          "label": "seat_assignment_change",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        {
+          "label": "service_failure_complaint",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "staff_conduct_complaint",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      ],
+      "report": {
+        "change_fee_dispute": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "flight_cancellation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "flight_delay": {
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1-score": 0.3333333333333333,
+          "support": 12.0
+        },
+        "flight_status_inquiry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "forced_gate_check_complaint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "general_dissatisfaction_venting": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6.0
+        },
+        "missed_connection_rebooking": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6.0
+        },
+        "other_acknowledgement_thanks": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 7.0
+        },
+        "other_non_actionable": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "other_out_of_domain": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "positive_feedback_praise": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "refund_request": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3.0
+        },
+        "seat_assignment_change": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3.0
+        },
+        "service_failure_complaint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "staff_conduct_complaint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3.0
+        },
+        "accuracy": 0.2,
+        "macro avg": {
+          "precision": 0.013333333333333334,
+          "recall": 0.06666666666666667,
+          "f1-score": 0.02222222222222222,
+          "support": 60.0
+        },
+        "weighted avg": {
+          "precision": 0.04000000000000001,
+          "recall": 0.2,
+          "f1-score": 0.06666666666666667,
+          "support": 60.0
+        }
+      }
+    },
+    "nearest_centroid": {
+      "accuracy": 0.31666666666666665,
+      "macro_f1": 0.22476118652589241,
+      "weighted_f1": 0.3129843304843305,
+      "n_test": 60,
+      "n_labels": 15,
+      "majority_class_share": 0.2,
+      "per_class": [
+        {
+          "label": "change_fee_dispute",
+          "precision": 0.14285714285714285,
+          "recall": 0.5,
+          "f1": 0.2222222222222222,
+          "support": 2
+        },
+        {
+          "label": "flight_cancellation",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "flight_delay",
+          "precision": 0.6666666666666666,
+          "recall": 0.16666666666666666,
+          "f1": 0.26666666666666666,
+          "support": 12
+        },
+        {
+          "label": "flight_status_inquiry",
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1": 0.2,
+          "support": 5
+        },
+        {
+          "label": "forced_gate_check_complaint",
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "support": 2
+        },
+        {
+          "label": "general_dissatisfaction_venting",
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1": 0.2,
+          "support": 6
+        },
+        {
+          "label": "missed_connection_rebooking",
+          "precision": 0.2857142857142857,
+          "recall": 0.3333333333333333,
+          "f1": 0.3076923076923077,
+          "support": 6
+        },
+        {
+          "label": "other_acknowledgement_thanks",
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "f1": 0.75,
+          "support": 7
+        },
+        {
+          "label": "other_non_actionable",
+          "precision": 0.25,
+          "recall": 0.4,
+          "f1": 0.3076923076923077,
+          "support": 5
+        },
+        {
+          "label": "other_out_of_domain",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "positive_feedback_praise",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "refund_request",
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5,
+          "support": 3
+        },
+        {
+          "label": "seat_assignment_change",
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "support": 3
+        },
+        {
+          "label": "service_failure_complaint",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "staff_conduct_complaint",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      ],
+      "report": {
+        "change_fee_dispute": {
+          "precision": 0.14285714285714285,
+          "recall": 0.5,
+          "f1-score": 0.2222222222222222,
+          "support": 2.0
+        },
+        "flight_cancellation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "flight_delay": {
+          "precision": 0.6666666666666666,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.26666666666666666,
+          "support": 12.0
+        },
+        "flight_status_inquiry": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1-score": 0.2,
+          "support": 5.0
+        },
+        "forced_gate_check_complaint": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1-score": 0.4,
+          "support": 2.0
+        },
+        "general_dissatisfaction_venting": {
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.2,
+          "support": 6.0
+        },
+        "missed_connection_rebooking": {
+          "precision": 0.2857142857142857,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.3076923076923077,
+          "support": 6.0
+        },
+        "other_acknowledgement_thanks": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.75,
+          "support": 7.0
+        },
+        "other_non_actionable": {
+          "precision": 0.25,
+          "recall": 0.4,
+          "f1-score": 0.3076923076923077,
+          "support": 5.0
+        },
+        "other_out_of_domain": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "positive_feedback_praise": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "refund_request": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.5,
+          "support": 3.0
+        },
+        "seat_assignment_change": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 3.0
+        },
+        "service_failure_complaint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "staff_conduct_complaint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 3.0
+        },
+        "micro avg": {
+          "precision": 0.34545454545454546,
+          "recall": 0.31666666666666665,
+          "f1-score": 0.33043478260869563,
+          "support": 60.0
+        },
+        "macro avg": {
+          "precision": 0.2974603174603175,
+          "recall": 0.27492063492063495,
+          "f1-score": 0.2547293447293447,
+          "support": 60.0
+        },
+        "weighted avg": {
+          "precision": 0.4013888888888889,
+          "recall": 0.31666666666666665,
+          "f1-score": 0.31298433048433055,
+          "support": 60.0
+        }
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.22791783380018674,
+      "weighted_f1": 0.31853174603174605,
+      "n_test": 60,
+      "n_labels": 15,
+      "majority_class_share": 0.2,
+      "per_class": [
+        {
+          "label": "change_fee_dispute",
+          "precision": 0.16666666666666666,
+          "recall": 0.5,
+          "f1": 0.25,
+          "support": 2
+        },
+        {
+          "label": "flight_cancellation",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "flight_delay",
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1": 0.2857142857142857,
+          "support": 12
+        },
+        {
+          "label": "flight_status_inquiry",
+          "precision": 0.3333333333333333,
+          "recall": 0.2,
+          "f1": 0.25,
+          "support": 5
+        },
+        {
+          "label": "forced_gate_check_complaint",
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1": 0.3333333333333333,
+          "support": 2
+        },
+        {
+          "label": "general_dissatisfaction_venting",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        {
+          "label": "missed_connection_rebooking",
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333,
+          "support": 6
+        },
+        {
+          "label": "other_acknowledgement_thanks",
+          "precision": 0.6363636363636364,
+          "recall": 1.0,
+          "f1": 0.7777777777777778,
+          "support": 7
+        },
+        {
+          "label": "other_non_actionable",
+          "precision": 0.5,
+          "recall": 0.4,
+          "f1": 0.4444444444444444,
+          "support": 5
+        },
+        {
+          "label": "other_out_of_domain",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "positive_feedback_praise",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        {
+          "label": "refund_request",
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4,
+          "support": 3
+        },
+        {
+          "label": "seat_assignment_change",
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666,
+          "f1": 0.4,
+          "support": 3
+        },
+        {
+          "label": "service_failure_complaint",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        },
+        {
+          "label": "staff_conduct_complaint",
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1": 0.4,
+          "support": 3
+        }
+      ],
+      "report": {
+        "change_fee_dispute": {
+          "precision": 0.16666666666666666,
+          "recall": 0.5,
+          "f1-score": 0.25,
+          "support": 2.0
+        },
+        "flight_cancellation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "flight_delay": {
+          "precision": 1.0,
+          "recall": 0.16666666666666666,
+          "f1-score": 0.2857142857142857,
+          "support": 12.0
+        },
+        "flight_status_inquiry": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2,
+          "f1-score": 0.25,
+          "support": 5.0
+        },
+        "forced_gate_check_complaint": {
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1-score": 0.3333333333333333,
+          "support": 2.0
+        },
+        "general_dissatisfaction_venting": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 6.0
+        },
+        "missed_connection_rebooking": {
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.3333333333333333,
+          "support": 6.0
+        },
+        "other_acknowledgement_thanks": {
+          "precision": 0.6363636363636364,
+          "recall": 1.0,
+          "f1-score": 0.7777777777777778,
+          "support": 7.0
+        },
+        "other_non_actionable": {
+          "precision": 0.5,
+          "recall": 0.4,
+          "f1-score": 0.4444444444444444,
+          "support": 5.0
+        },
+        "other_out_of_domain": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "positive_feedback_praise": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 2.0
+        },
+        "refund_request": {
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "seat_assignment_change": {
+          "precision": 0.2857142857142857,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "service_failure_complaint": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1.0
+        },
+        "staff_conduct_complaint": {
+          "precision": 0.5,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.4,
+          "support": 3.0
+        },
+        "micro avg": {
+          "precision": 0.36363636363636365,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.34782608695652173,
+          "support": 60.0
+        },
+        "macro avg": {
+          "precision": 0.30036075036075033,
+          "recall": 0.29555555555555557,
+          "f1-score": 0.2583068783068783,
+          "support": 60.0
+        },
+        "weighted avg": {
+          "precision": 0.4551948051948052,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.318531746031746,
+          "support": 60.0
+        }
+      }
+    }
+  }
+}

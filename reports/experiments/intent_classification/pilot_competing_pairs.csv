@@ -1,0 +1,61 @@
+proposed_intent,competing_label,n
+flight_delay,flight_status_inquiry,12
+other_non_actionable,flight_status_inquiry,11
+service_failure_complaint,flight_status_inquiry,8
+other_non_actionable,positive_feedback_praise,7
+missed_connection_rebooking,flight_delay,7
+flight_delay,flight_cancellation,6
+seat_assignment_change,flight_status_inquiry,5
+change_fee_dispute,flight_status_inquiry,4
+general_dissatisfaction_venting,other_non_actionable,3
+flight_status_inquiry,other_non_actionable,3
+flight_status_inquiry,flight_delay,3
+flight_cancellation,flight_status_inquiry,3
+other_non_actionable,other_acknowledgement_thanks,3
+missed_connection_rebooking,flight_status_inquiry,3
+positive_feedback_praise,other_non_actionable,3
+general_dissatisfaction_venting,flight_status_inquiry,3
+flight_status_inquiry,flight_cancellation,3
+service_failure_complaint,other_non_actionable,2
+seat_assignment_change,flight_delay,2
+staff_conduct_complaint,general_dissatisfaction_venting,2
+service_failure_complaint,general_dissatisfaction_venting,2
+flight_cancellation,flight_delay,2
+staff_conduct_complaint,service_failure_complaint,2
+refund_request,change_fee_dispute,2
+flight_status_inquiry,general_dissatisfaction_venting,2
+baggage_delayed_lost,flight_status_inquiry,2
+change_fee_dispute,"flight_delay: operating flight late/holding, itinerary intact (late, tarmac, gate wait, why/how-long)",1
+change_fee_dispute,flight_delay,1
+general_dissatisfaction_venting,seat_assignment_change,1
+forced_gate_check_complaint,service_failure_complaint,1
+forced_gate_check_complaint,change_fee_dispute,1
+forced_gate_check_complaint,flight_status_inquiry,1
+forced_gate_check_complaint,baggage_delayed_lost,1
+flight_status_inquiry,service_failure_complaint,1
+flight_status_inquiry,"flight_delay: operating flight late/holding, itinerary intact (late, tarmac, gate wait, why/how-long)",1
+flight_status_inquiry,refund_request,1
+flight_delay,service_failure_complaint,1
+flight_status_inquiry,"flight_cancellation: airline cancelled; report/waiver/next-steps, no rebook ask yet",1
+baggage_damaged,baggage_delayed_lost,1
+baggage_delayed_lost,service_failure_complaint,1
+change_fee_dispute,"flight_cancellation: airline cancelled; report/waiver/next-steps, no rebook ask yet",1
+change_fee_dispute,refund_request,1
+other_non_actionable,baggage_delayed_lost,1
+missed_connection_rebooking,refund_request,1
+positive_feedback_praise,other_acknowledgement_thanks,1
+positive_feedback_praise,flight_status_inquiry,1
+other_out_of_domain,staff_conduct_complaint,1
+other_out_of_domain,other_non_actionable,1
+other_out_of_domain,negative_feedback_praise,1
+other_out_of_domain,flight_status_inquiry,1
+other_non_actionable,staff_conduct_complaint,1
+other_acknowledgement_thanks,flight_status_inquiry,1
+missed_connection_rebooking,"flight_delay: operating flight late/holding, itinerary intact (late, tarmac, gate wait, why/how-long)",1
+seat_assignment_change,change_fee_dispute,1
+refund_request,flight_cancellation,1
+refund_request,baggage_delayed_lost,1
+refund_request,baggage_damaged,1
+refund_request,seat_upgrade_request,1
+seat_upgrade_request,flight_status_inquiry,1
+seat_assignment_change,service_failure_complaint,1
