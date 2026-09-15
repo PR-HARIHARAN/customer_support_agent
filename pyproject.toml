@@ -20,6 +20,7 @@ dependencies = [
     "langchain-ollama>=1.0.1",
     # Apps
     "streamlit>=1.45.0",
+    "rich>=13.0.0",
     # Notebooks
     "ipykernel>=7.3.0",
     "setfit>=1.2.0",

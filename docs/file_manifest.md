@@ -12,6 +12,7 @@ This document provides a comprehensive inventory of every directory and file in 
 | [`REPORT.md`](../REPORT.md) | **Authoritative Final Submission Report:** 5-part engineering report covering problem framing, 10-class taxonomy derivation, baseline comparisons, SOTA dual-backbone ensemble, Ragas evaluation, LLM-as-a-judge rubric, human agreement calibration ($r = 0.674$), failure modes, and the mandatory *"What is misleading about my headline number?"* critique. |
 | [`DECISION_LOG.md`](../DECISION_LOG.md) | **Engineering & Science Decision Log:** Documents 15 non-obvious engineering decisions (D1–D15) detailing technical context, decisions made, empirical evidence, and ruled-out alternatives (e.g., multi-turn BFS reconstruction, 100% human golden set, SetFit contrastive learning, dual-backbone calibration, and deterministic safety gating). |
 | [`run_submission.py`](../run_submission.py) | **Canonical Single-Command Runner:** Automated end-to-end evaluation harness script that executes intent baselines, the 76% SOTA dual-backbone ensemble on the held-out golden set, LangGraph agent routing, LLM judge, and Ragas metrics in ~70 seconds, serializing output to `reports/submission_summary.json`. |
+| [`chat_tui.py`](../chat_tui.py) | **Terminal IDE (TUI) Chatbot Entrypoint:** Interactive terminal workspace for live conversations with the support agent, featuring diagnostic telemetry, vectorstore candidate inspection, preset test scenarios, and session metrics. |
 | [`main.py`](../main.py) | **Multi-Command CLI Interface:** Command-line entrypoint for interactive agent testing (`python main.py agent "<tweet>"`), golden set data validation (`python main.py golden-report`), and pilot clustering. |
 | [`app.py`](../app.py) | **Streamlit Conversation Browser:** Interactive UI for inspecting and visualizing the 12,443 reconstructed multi-turn conversation threads between passengers and `@AmericanAir` agents. |
 | [`label_app.py`](../label_app.py) | **Streamlit Golden Set Annotation Application:** Custom auditing and annotation tool used to review, adjudicate, and validate the 250-row human golden set. |
@@ -104,6 +105,7 @@ The application logic is structured under the `customer_support` namespace:
 
 ## 6. Scripts & Notebooks (`scripts/` & `notebooks/`)
 
+* **`scripts/chat_tui.py`**: Implementation of the Rich Terminal IDE user interface, providing real-time chat, telemetry panels, preset benchmarks, and vectorstore candidate inspection.
 * **`scripts/run_eval_harness.py`**: Standalone command-line runner for the evaluation harness.
 * **`scripts/golden_set_report.py`**: Verification script reporting class balance, completion, and integrity for `golden_set.csv`.
 * **`scripts/discover_fine_grained_intents.py`**: Clustering script supporting local Ollama or cloud LLMs for unsupervised intent exploration.

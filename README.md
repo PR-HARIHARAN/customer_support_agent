@@ -65,6 +65,20 @@ uv run python main.py agent "Thank you so much to the gate crew at DFW today, am
 uv run python main.py agent "My flight AA102 was cancelled in Chicago. How do I get rebooked?"
 ```
 
+### 🖥️ Interactive Terminal IDE Workspace (TUI)
+For an interactive, terminal-native developer workspace with live telemetry, intent classification badges, vectorstore candidate inspection, and preset benchmark tweets:
+
+```bash
+uv run python chat_tui.py
+```
+
+* **Live Interactive Chat:** Type any customer tweet or query.
+* **Curated Test Presets:** Enter `:1` through `:6` to instantly run realistic flight delays, damaged baggage, sarcastic disruptions, or medical emergencies.
+* **Diagnostic Telemetry Pane:** Displays classified intent, confidence score, routing action (`AUTO_HANDLE` vs. `ESCALATE`), stated policy reason, and GPU latency on every turn.
+* **Vectorstore Grounding Pane:** Inspects top-3 historical `@AmericanAir` candidate matches from the FAISS index with cosine similarity scores.
+* **Session Analytics:** Enter `:stats` to view total queries, auto-handled vs. escalated distribution, and mean latency.
+* **Navigation:** `:clear` to refresh screen, `:examples` for preset list, `:exit` to quit.
+
 ---
 
 ## 📊 Executive Results Summary

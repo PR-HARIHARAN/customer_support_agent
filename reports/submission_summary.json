@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-15T09:26:32Z",
+  "timestamp": "2026-09-15T09:44:56Z",
   "target_brand": "@AmericanAir",
   "dataset": "Customer Support on Twitter (thoughtvector/customer-support-on-twitter)",
   "golden_set_size": 250,
   "held_out_test_size": 50,
   "device": "cuda",
-  "runtime_seconds": 36.73,
+  "runtime_seconds": 39.73,
   "intent_classification": {
     "majority_baseline_accuracy": 0.16,
     "nearest_centroid_accuracy": 0.6,
@@ -15,25 +15,25 @@
     "winning_sota_weighted_f1": 0.7526606726606727
   },
   "evaluation_rubric": {
-    "overall_score": 4.45,
+    "overall_score": 4.465,
     "grounding_score": 5.0,
-    "intent_relevance_score": 4.4,
-    "brand_tone_score": 4.2,
-    "actionability_score": 4.2
+    "intent_relevance_score": 4.42,
+    "brand_tone_score": 4.36,
+    "actionability_score": 4.08
   },
   "ragas_metrics": {
-    "faithfulness": 0.7484680000000001,
-    "answer_relevancy": 0.7458760000000001,
-    "semantic_agreement": 0.7484680000000001
+    "faithfulness": 0.7582800000000002,
+    "answer_relevancy": 0.7668639999999999,
+    "semantic_agreement": 0.7582800000000002
   },
   "human_judge_agreement": {
-    "pearson_correlation": 0.6281910218753846,
-    "mean_absolute_difference": 0.2988
+    "pearson_correlation": 0.6278858407877029,
+    "mean_absolute_difference": 0.25660000000000005
   },
   "policy_distribution": {
-    "auto_handle_count": 15,
-    "auto_handle_percent": 60.0,
-    "escalate_count": 10,
-    "escalate_percent": 40.0
+    "auto_handle_count": 33,
+    "auto_handle_percent": 66.0,
+    "escalate_count": 17,
+    "escalate_percent": 34.0
   }
 }
