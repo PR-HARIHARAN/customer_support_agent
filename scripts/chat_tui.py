@@ -84,11 +84,19 @@ class AgentTUI:
     """Rich Terminal IDE User Interface for live interaction with the AI Support Agent."""
 
     def __init__(self) -> None:
+        import platform
+
         self.console = Console(legacy_windows=False)
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.device_name = (
-            torch.cuda.get_device_name(0) if torch.cuda.is_available() else "Host CPU"
-        )
+        if torch.cuda.is_available():
+            self.device = "cuda"
+            try:
+                self.device_name = torch.cuda.get_device_name(0).strip()
+            except Exception:
+                self.device_name = "NVIDIA CUDA GPU"
+        else:
+            self.device = "cpu"
+            self.device_name = platform.processor() or "Host CPU"
+
         self.session_queries: list[dict[str, Any]] = []
         self.agent: Any = None
 
@@ -105,11 +113,11 @@ class AgentTUI:
             ("TERMINAL IDE WORKSPACE", "bold bright_white"),
         )
         telemetry = Text.assemble(
-            ("DEV: ", "dim"),
-            (f"{self.device.upper()} ", "bold green" if self.device == "cuda" else "yellow"),
-            ("│ MEM: ", "dim"),
+            ("HARDWARE: ", "dim"),
+            (f"{self.device_name} ", "bold green" if self.device == "cuda" else "bold yellow"),
+            ("│ STORE: ", "dim"),
             ("FAISS 1,500 TWEETS ", "bold magenta"),
-            ("│ CLF: ", "dim"),
+            ("│ MODEL: ", "dim"),
             ("SOTA ENSEMBLE (76%)", "bold bright_yellow"),
         )
         header_table.add_row(title, telemetry)
@@ -300,29 +308,62 @@ class AgentTUI:
                 border_style="magenta",
             )
 
-        # 4. Agent Drafted Response Panel
-        reply_style = "bright_green" if action == "AUTO_HANDLE" else "bright_yellow"
-        draft_content = Group(
-            Text(draft, style=f"bold {reply_style}"),
-            Text(""),
-            Text(
-                "✔ Grounded in AmericanAir official resolution patterns  │  Privacy guard: Directs sensitive data to DM",
-                style="dim bright_black",
-            ),
-        )
-        reply_panel = Panel(
-            draft_content,
-            title=f"[bold {reply_style}]🤖 AGENT DRAFTED RESPONSE ({action})[/bold {reply_style}]",
-            title_align="left",
-            box=box.DOUBLE,
-            border_style=reply_style,
-        )
-
-        # Print all in logical sequence
+        # Print header panels in logical sequence
         self.console.print(input_panel)
         self.console.print(diag_panel)
         self.console.print(vector_panel)
-        self.console.print(reply_panel)
+
+        # 4. Animated Agent Drafted Response Panel (Live Streaming Typewriter Effect)
+        reply_style = "bright_green" if action == "AUTO_HANDLE" else "bright_yellow"
+        words = draft.split()
+
+        from rich.live import Live
+
+        accumulated: list[str] = []
+        with Live(console=self.console, refresh_per_second=30, transient=False) as live:
+            for word in words:
+                accumulated.append(word)
+                cur_text = " ".join(accumulated)
+                panel_content = Group(
+                    Text.assemble(
+                        (cur_text, f"bold {reply_style}"),
+                        (" ▌", "bright_white blink"),
+                    ),
+                    Text(""),
+                    Text(
+                        "✔ Grounded in AmericanAir official resolution patterns  │  Privacy guard: Directs sensitive data to DM",
+                        style="dim bright_black",
+                    ),
+                )
+                live.update(
+                    Panel(
+                        panel_content,
+                        title=f"[bold {reply_style}]🤖 AGENT DRAFTED RESPONSE ({action}) [dim](streaming...)[/dim][/bold {reply_style}]",
+                        title_align="left",
+                        box=box.DOUBLE,
+                        border_style=reply_style,
+                    )
+                )
+                time.sleep(0.016)
+
+            # Final clean render without cursor
+            final_content = Group(
+                Text(draft, style=f"bold {reply_style}"),
+                Text(""),
+                Text(
+                    "✔ Grounded in AmericanAir official resolution patterns  │  Privacy guard: Directs sensitive data to DM",
+                    style="dim bright_black",
+                ),
+            )
+            live.update(
+                Panel(
+                    final_content,
+                    title=f"[bold {reply_style}]🤖 AGENT DRAFTED RESPONSE ({action})[/bold {reply_style}]",
+                    title_align="left",
+                    box=box.DOUBLE,
+                    border_style=reply_style,
+                )
+            )
         self.console.print()
 
     def run_loop(self) -> None:
