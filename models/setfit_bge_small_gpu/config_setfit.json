@@ -1,0 +1,14 @@
+{
+  "labels": [
+    "Baggage issues",
+    "Disruption recovery",
+    "Flight delay",
+    "Flight information",
+    "Positive experience",
+    "Seats and fares",
+    "Service complaint",
+    "Social acknowledgement",
+    "Unknown / insufficient context"
+  ],
+  "normalize_embeddings": false
+}
