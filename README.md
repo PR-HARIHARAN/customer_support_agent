@@ -227,9 +227,11 @@ All 35 tests pass cleanly in under 25 seconds. Zero lint or formatting errors.
 
 ```
 customer_support_agent/
-├── DECISION_LOG.md                # 15 non-obvious engineering & science decisions
+├── DECISION_LOG.md                # 15 non-obvious engineering & science decisions (Markdown)
+├── DECISION_LOG.pdf               # Executive 4-page Decision Log PDF (Deliverable #5)
 ├── README.md                      # Canonical project documentation & architecture
 ├── REPORT.md                      # Comprehensive 5-part final submission report
+├── chat_tui.py                    # Interactive Terminal IDE (TUI) workspace
 ├── main.py                        # Multi-command CLI entrypoint
 ├── run_submission.py              # Single-command evaluation harness runner
 ├── label_app.py                   # Streamlit golden-set labeling application

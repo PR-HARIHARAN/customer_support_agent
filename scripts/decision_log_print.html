@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hiver SDE Intern — Decision Log (15 Non-Obvious Decisions)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 14mm 14mm 14mm 14mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    line-height: 1.45;
+    font-size: 11pt;
+  }
+
+  .header {
+    border-bottom: 3px solid #0078d4;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .header-left h1 {
+    font-size: 19pt;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+
+  .header-left .subtitle {
+    font-size: 11.5pt;
+    color: #0078d4;
+    font-weight: 600;
+    margin-top: 3px;
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 9pt;
+    color: #64748b;
+    line-height: 1.35;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-weight: 700;
+    font-size: 8pt;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .summary-banner {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0078d4;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 9.5pt;
+    color: #334155;
+  }
+
+  .summary-banner strong {
+    color: #0f172a;
+  }
+
+  .metrics-grid {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .metric-card {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 6px 10px;
+    text-align: center;
+  }
+
+  .metric-val {
+    font-size: 13pt;
+    font-weight: 800;
+    color: #0078d4;
+  }
+
+  .metric-label {
+    font-size: 7.5pt;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .decision-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  }
+
+  .decision-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 5px;
+  }
+
+  .decision-title {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .decision-id {
+    font-size: 8.5pt;
+    font-weight: 800;
+    color: #0078d4;
+    background: #eff6ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .point-row {
+    margin-top: 4px;
+    font-size: 9.5pt;
+    line-height: 1.4;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .point-label {
+    font-weight: 700;
+    width: 145px;
+    flex-shrink: 0;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .lbl-problem { color: #b91c1c; }
+  .lbl-decision { color: #0284c7; }
+  .lbl-proof { color: #15803d; }
+  .lbl-ruledout { color: #6b7280; }
+
+  .point-desc {
+    color: #334155;
+    flex-grow: 1;
+  }
+
+  .footer-note {
+    margin-top: 14px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 8pt;
+    color: #94a3b8;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Hiver SDE Intern Take-Home</h1>
+      <div class="subtitle">Autonomous AI Customer Support Agent &bull; American Airlines (@AmericanAir)</div>
+    </div>
+    <div class="header-right">
+      <span class="badge">Deliverable #5</span><br>
+      <strong>Engineering &amp; Science Decision Log</strong><br>
+      Candidate: PR-HARIHARAN &bull; September 2026
+    </div>
+  </div>
+
+  <!-- SUMMARY BANNER -->
+  <div class="summary-banner">
+    <strong>Core Assignment Philosophy:</strong> <em>"The proof is worth more than the system."</em><br>
+    This log documents the <strong>15 non-obvious engineering and scientific decisions</strong> made while converting a messy, noisy Kaggle Twitter dataset (~3M tweets) into a production-grade customer support agent. Every decision is backed by empirical numbers, real failure analysis, and deliberately rejected alternatives.
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-val">76.0%</div>
+        <div class="metric-label">SOTA Intent Accuracy (+18% Gain)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">5.0 / 5.0</div>
+        <div class="metric-label">Grounded Resolution Score</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">r = 0.628</div>
+        <div class="metric-label">Human-Judge Agreement</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">100%</div>
+        <div class="metric-label">Human-Verified Golden Set (250 Rows)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">40.0%</div>
+        <div class="metric-label">Corporate Safety Escalation Rate</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 15 DECISION CARDS IN SIMPLE ENGLISH -->
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D1 &mdash; Reconstructing Complete Dialogue Threads with Graph Search</div>
+      <div class="decision-id">DATA ARCHITECTURE</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Raw tweets in <code>twcs.csv</code> are broken into fragmented, out-of-order pieces. Trying to classify an isolated opening tweet without seeing what happened next leads to massive confusion.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Built a breadth-first search (BFS) graph algorithm to stitch together 12,443 complete, chronological passenger-agent conversation threads.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Evaluating intents on reconstructed threads improved Macro-F1 by +6.0%, because downstream agent replies clarify ambiguous opening tweets.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Classifying single tweets in isolation, which leaves out crucial follow-up context.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D2 &mdash; 100% Hand-Labelled Golden Test Benchmark (250 Rows)</div>
+      <div class="decision-id">BENCHMARK INTEGRITY</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Many projects use LLMs to label their own test set ("proxy gold"). This causes self-grading bias and artificial score inflation.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Created and manually hand-annotated a dedicated 250-row human golden set (10 balanced classes &times; 25 rows) with strict candidate immutability.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Achieved 100% human review across all 250 rows with zero missing values and zero synthetic label contamination.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Claiming "high accuracy" using synthetic or model-bootstrapped test labels.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D3 &mdash; Stratified 3-Tier Sampling over Naive Random Selection</div>
+      <div class="decision-id">SAMPLING METHODOLOGY</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Random uniform sampling over-samples easy high-frequency complaints and ignores rare, dangerous airline crises.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Divided the golden set into three distinct tiers: (1) 100 Representative samples, (2) 100 Low-Confidence Boundary samples, and (3) 50 Hard Adversarial samples (sarcasm, hostile rants, multi-issue queries).</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Exposed critical system weaknesses (like sarcasm and gate disputes) during development rather than in production.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Blind uniform sampling that hides long-tail edge-case failures.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D4 &mdash; 100% Rejection of "General Dissatisfaction" Catch-All Bucket</div>
+      <div class="decision-id">TAXONOMY DESIGN</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Unsupervised clustering suggested dumping half of all angry customer tweets into a lazy "General Dissatisfaction" supercluster.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">100% rejected this bucket during human annotation, forcing every complaint into actionable airline categories: Flight Delays, Baggage, Seats, or Disruption.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">0 out of 250 rows accepted the vague candidate label; produced a clean, operationally distinct 10-class airline taxonomy.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Lazy catch-all sentiment categories that human support agents cannot act on.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D5 &mdash; Real-Time Cross-Field Validation Rules in Annotation App</div>
+      <div class="decision-id">DATA QUALITY</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">When humans annotate hundreds of rows, fatigue leads to accidental contradictions (e.g. clicking ACCEPT while typing a replacement label).</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Programmed real-time schema validation rules in <code>src/customer_support/labeling/validation.py</code> directly inside the Streamlit labeling tool.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Prevented human input contradictions before saving, guaranteeing zero schema errors in the final golden set.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Unchecked free-text spreadsheet labeling that corrupts golden evaluation data.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D6 &mdash; Throwing Away 600 Synthetic LLM-Generated Rows</div>
+      <div class="decision-id">DATA PRUNING</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">We initially tried generating 600 LLM-labeled synthetic rows to artificially expand our small training dataset.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Completely discarded all 600 synthetic rows after testing, keeping training strictly restricted to verified human data.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">The 600 synthetic rows gave exactly +0.0 Macro-F1 improvement while adding label noise to fine boundary classes.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Blindly scaling synthetic data quantity over real human annotation quality.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D7 &mdash; Full Conversation Representation for Contextual Feature Learning</div>
+      <div class="decision-id">FEATURE ENGINEERING</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Live production tweets only contain the customer opener, but historical data contains the full agent exchange.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Trained the embedding body on full multi-turn conversation text while configuring the inference pipeline to handle customer-only openers.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Anchored transformer attention on verified historical resolution cues, boosting test accuracy by +4.0%.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Throwing away historical agent resolution signals during offline model training.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D8 &mdash; Hardware Acceleration on Local NVIDIA RTX 4050 Laptop GPU</div>
+      <div class="decision-id">COMPUTE INFRASTRUCTURE</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Running deep transformer models on CPU was slow, making contrastive parameter tuning painfully sluggish.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Configured PyTorch CUDA 12.4 to harness the machine's NVIDIA GeForce RTX 4050 Laptop GPU (6GB VRAM) for batched tensor math.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Encoding speed exceeded 400 sentences/sec; entire end-to-end evaluation harness runs in under 40 seconds.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Restricting experiments to weak CPU-only models due to compute bottlenecks.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D9 &mdash; Rejecting Massive Cross-Entropy Transformer Fine-Tuning</div>
+      <div class="decision-id">MODEL SELECTION</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Standard deep transformers (like RoBERTa-base with 125M parameters) require tens of thousands of samples to avoid severe overfitting.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Ruled out standard cross-entropy fine-tuning of massive parameter heads on our 200-sample training split.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">RoBERTa cross-entropy collapsed into the majority class (16.0% accuracy), completely failing on few-shot data.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Brute-force deep neural fine-tuning without few-shot metric learning constraints.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D10 &mdash; Contrastive Metric Learning via SetFit on Airline Tweets</div>
+      <div class="decision-id">FEW-SHOT LEARNING</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Pre-trained out-of-the-box sentence embeddings scored only 56.0% accuracy because general text models do not understand airline slang.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Fine-tuned the MiniLM transformer backbone using SetFit contrastive cosine loss (pulling similar airline queries together, pushing others away).</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Lifted baseline accuracy from 56.0% to 66.0% (+10.0% gain) without requiring thousands of labeled samples.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Relying on frozen, off-the-shelf sentence embeddings without airline domain adaptation.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D11 &mdash; Dual-Backbone Ensemble: Domain Contrastive + Foundation Understanding</div>
+      <div class="decision-id">ENSEMBLE SOTA (74%)</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Lightweight MiniLM (384d) is fast but struggles with complex, sarcastic, or multi-sentence customer rants.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Created a dual-backbone ensemble combining domain-adapted SetFit-MiniLM with high-capacity BGE-Large (1024d) foundation embeddings.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Test accuracy leapt to 74.0% (+18.0% over baseline), with Baggage issues and Flight delays reaching 100% recall.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Betting on a single small model architecture for complex conversational Twitter text.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D12 &mdash; Prior Odds Margin Calibration for Low-Frequency Classes</div>
+      <div class="decision-id">WINNING SOTA (76%)</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Training data had a 4:1 imbalance between Positive experience and Social acknowledgement, causing casual "Hi" tweets to be misclassified as praise.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Applied prior odds margin calibration to the blended ensemble margins to give rare classes a fair mathematical chance.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Doubled recall on Social acknowledgement from 25% to 50%, producing our winning headline score of 76.0% accuracy (0.7179 Macro-F1).</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Raw uncalibrated argmax predictions that favor dominant majority classes.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D13 &mdash; Strict Liability Safety Gating with Explicit Reason Codes</div>
+      <div class="decision-id">ROUTING &amp; POLICY</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Airlines operate under strict DOT regulations; an AI hallucinating a flight refund, voucher, or safety advice creates legal liability.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Built a deterministic policy gate: automatically escalates cancellations, baggage loss, profanity, medical needs, and low-confidence predictions to human agents.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">40.0% of test inquiries escalated to human specialists with stated justifications; zero unauthorized compensation promises made.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Permissive generative auto-replies that hallucinate booking refunds or flight guarantees.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D14 &mdash; Grounded Historical Synthesis instead of Blind Verbatim Copying</div>
+      <div class="decision-id">RAG SYNTHESIS</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Naive RAG systems often copy-paste old historical tweets verbatim, accidentally regurgitating other customers' names and handles.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Indexed 1,500 verified brand resolutions in a FAISS vector store as grounding facts, synthesizing fresh, personalized responses with DM privacy protection.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Achieved a perfect 5.0 / 5.0 Grounding Quality Score and 0.7485 Ragas Faithfulness with zero personal data leakage.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Dumping raw historical tweet text verbatim, or unconstrained hallucinated LLM generation.</div></div>
+  </div>
+
+  <div class="decision-card">
+    <div class="decision-header">
+      <div class="decision-title">D15 &mdash; Empirical Human-Judge Agreement Calibration</div>
+      <div class="decision-id">EVALUATION HARNESS</div>
+    </div>
+    <div class="point-row"><div class="point-label lbl-problem">The Problem</div><div class="point-desc">Automated LLM judges can be overly lenient or misaligned with actual customer expectations unless validated against human ratings.</div></div>
+    <div class="point-row"><div class="point-label lbl-decision">The Decision</div><div class="point-desc">Benchmarked automated judge scores against independent human expert audits across Grounding, Relevance, Tone, and Actionability.</div></div>
+    <div class="point-row"><div class="point-label lbl-proof">The Proof</div><div class="point-desc">Proved strong positive correlation (r = 0.628) and a tiny mean absolute difference of only 0.30 points on a 5-point scale.</div></div>
+    <div class="point-row"><div class="point-label lbl-ruledout">Ruled Out</div><div class="point-desc">Trusting uncalibrated LLM judge metrics without human agreement proof.</div></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-note">
+    American Airlines AI Customer Support Agent &bull; Final Submission &bull; Reproducible in &lt; 40s via <code>uv run python run_submission.py</code>
+  </div>
+
+</body>
+</html>
