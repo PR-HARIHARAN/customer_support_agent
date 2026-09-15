@@ -1,0 +1,53 @@
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+flowchart TD
+
+    START(["Incoming Customer Tweet"])
+    
+    subgraph PIPELINE["LangGraph Agent Execution Pipeline"]
+        PREPROCESS["Text Preprocessing & Normalization<br/>(Whitespace cleanup, mention stripping)"]
+        
+        CLASSIFY["Dual-Backbone Intent Classification<br/>(SetFit 384d + BGE-Large 1024d Ensemble)<br/>Predict Intent + Calibrated Margin Confidence"]
+        
+        RETRIEVE["Historical Resolution Retrieval<br/>(FAISS Top-2 Cosine Semantic Search)"]
+        
+        DRAFT["Grounded Reply Synthesis<br/>(Anchored in Historical Resolution Patterns & DM Routing)"]
+        
+        PREPROCESS --> CLASSIFY --> RETRIEVE --> DRAFT
+    end
+
+    subgraph POLICY_GATE["SupportDecisionPolicy Gating Engine"]
+        CHECK{"Evaluate Corporate Policy & Risk<br/>- Safety / Medical / Unaccompanied Minor?<br/>- Legal / Regulatory (DOT/FAA) / Lawsuit?<br/>- Severe Agitation, Profanity, Sarcasm?<br/>- Active Flight Disruption / Overnight Stranded?<br/>- Baggage Loss / In-Cabin Property Claim?<br/>- Staff Misconduct / Service Grievance?<br/>- Classification Confidence < 0.20 or Low Sim?"}
+    end
+
+    AUTO["AUTO_HANDLE<br/>(56% Production Volume)<br/>Praise, Greetings, Flight Info, FAQs"]
+    
+    ESCALATE["ESCALATE<br/>(44% Production Volume)<br/>Cancellations, Bags, Legal, Safety, Complaints"]
+
+    PUBLIC_REPLY(["Autonomous Public Twitter Reply"])
+    HUMAN_QUEUE(["Tier-2 Human Specialist Support Queue"])
+
+    START --> PREPROCESS
+    DRAFT --> CHECK
+
+    CHECK -->|Low Risk & Validated Confidence| AUTO
+    CHECK -->|Violates Policy or High Risk| ESCALATE
+
+    AUTO --> PUBLIC_REPLY
+    ESCALATE --> HUMAN_QUEUE
+
+    %% Styles
+    classDef startFill fill:#f1f5f9,stroke:#475569,stroke-width:2px,color:#0f172a
+    classDef nodeFill fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#4c1d95
+    classDef checkFill fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
+    classDef autoFill fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
+    classDef escFill fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d
+
+    class START,PUBLIC_REPLY,HUMAN_QUEUE startFill
+    class PREPROCESS,CLASSIFY,RETRIEVE,DRAFT nodeFill
+    class CHECK checkFill
+    class AUTO autoFill
+    class ESCALATE escFill

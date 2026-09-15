@@ -1,0 +1,69 @@
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+flowchart LR
+
+    %% 1. DATA LAYER
+    subgraph DATA["DATA LAYER"]
+        direction TB
+        RAW["Raw Twitter Dataset<br/>(3M Customer Tweets)"]
+        FILTER["@AmericanAir Filtered<br/>& Anonymized Interactions"]
+        THREADS["12,443 Reconstructed<br/>Multi-Turn Threads"]
+        STORE[("FAISS Vector Store<br/>(Historical Resolutions)")]
+        GOLDEN["250-Row Curated<br/>Human Golden Set"]
+
+        RAW --> FILTER --> THREADS
+        THREADS --> STORE
+        THREADS -.-> GOLDEN
+    end
+
+    %% 2. AGENT RUNTIME
+    subgraph AGENT["AI SUPPORT AGENT (LangGraph)"]
+        direction TB
+        TWEET(["Incoming Customer Tweet"])
+        INTENT["Dual-Backbone Intent Classifier<br/>(SetFit 384d + BGE 1024d)"]
+        RETRIEVE["FAISS Semantic Search<br/>(Top-K Historical Resolutions)"]
+        DRAFT["Grounded Reply Synthesizer<br/>(Brand Voice & Past Precedent)"]
+        POLICY{"SupportDecisionPolicy<br/>(Safety & Risk Gate)"}
+        
+        AUTO["AUTO_HANDLE (56%)<br/>(Low-Risk FAQs, Status, Kudos)"]
+        ESCALATE["ESCALATE (44%)<br/>(Cancellations, Bags, Legal, Safety)"]
+
+        TWEET --> INTENT --> RETRIEVE --> DRAFT --> POLICY
+        POLICY -->|Safe & Confident| AUTO
+        POLICY -->|Risk or Low Conf| ESCALATE
+    end
+
+    %% 3. EVALUATION
+    subgraph EVAL["EVALUATION & BENCHMARK"]
+        direction TB
+        BENCH["Intent Benchmark<br/>(Majority: 16% | Centroid: 60% | SOTA: 76%)"]
+        JUDGE["LLM-as-a-Judge Rubric<br/>(4.50 / 5.0 Overall Quality)"]
+        HUMAN["Human Calibration Sample<br/>(Pearson r = 0.674 | MAD = 0.27)"]
+        FAILURES["Failure Mode Analysis<br/>(Top 5 Operational Edge Cases)"]
+
+        BENCH --> JUDGE --> HUMAN --> FAILURES
+    end
+
+    %% Inter-layer connections
+    STORE ==> RETRIEVE
+    GOLDEN ==> BENCH
+    AUTO ==> JUDGE
+    ESCALATE ==> JUDGE
+
+    %% Styles
+    classDef dataFill fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0369a1
+    classDef agentFill fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#4c1d95
+    classDef actionFill fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
+    classDef successFill fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#14532d
+    classDef alertFill fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d
+    classDef evalFill fill:#f3f4f6,stroke:#4b5563,stroke-width:2px,color:#1f2937
+
+    class RAW,FILTER,THREADS,STORE,GOLDEN dataFill
+    class TWEET,INTENT,RETRIEVE,DRAFT agentFill
+    class POLICY actionFill
+    class AUTO successFill
+    class ESCALATE alertFill
+    class BENCH,JUDGE,HUMAN,FAILURES evalFill
