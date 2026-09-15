@@ -95,9 +95,16 @@ def evaluate_classifiers(
 
     # 2. Embeddings for Centroid and LogReg (MiniLM)
     m_minilm_path = REPO_ROOT / "models" / "setfit_minilm_gpu"
+    m_s = None
     if m_minilm_path.exists():
-        m_s = SentenceTransformer(str(m_minilm_path), device=device)
-    else:
+        st_file = m_minilm_path / "model.safetensors"
+        # Verify it is a real binary weights file (> 1KB) and not an unhydrated Git-LFS pointer
+        if not st_file.exists() or st_file.stat().st_size > 1024:
+            try:
+                m_s = SentenceTransformer(str(m_minilm_path), device=device)
+            except Exception as e:
+                print(f"  [Notice] Could not load local fine-tuned weights ({e}), using base model.")
+    if m_s is None:
         m_s = SentenceTransformer("all-MiniLM-L6-v2", device=device)
 
     m_b = SentenceTransformer("BAAI/bge-large-en-v1.5", device=device)
